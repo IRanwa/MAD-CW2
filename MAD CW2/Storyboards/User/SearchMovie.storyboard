@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZ0-jM-lu8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="RSR-Sn-HHW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5eK-nM-4it">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IBL-Es-Pmm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RSR-Sn-HHW" firstAttribute="top" secondItem="sZ0-jM-lu8" secondAttribute="top" id="0Kx-dQ-0p4"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="leading" secondItem="IBL-Es-Pmm" secondAttribute="leading" id="292-8n-Q5i"/>
+                            <constraint firstItem="RSR-Sn-HHW" firstAttribute="leading" secondItem="sZ0-jM-lu8" secondAttribute="leading" id="4St-Vc-ZSr"/>
+                            <constraint firstItem="IBL-Es-Pmm" firstAttribute="bottom" secondItem="5eK-nM-4it" secondAttribute="bottom" id="ASf-pg-7gC"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="bottom" secondItem="IBL-Es-Pmm" secondAttribute="bottom" id="Hgk-V7-dGl"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="leading" secondItem="IBL-Es-Pmm" secondAttribute="leading" id="QoM-2e-J37"/>
+                            <constraint firstAttribute="bottom" secondItem="RSR-Sn-HHW" secondAttribute="bottom" id="Wax-Yp-iQy"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="trailing" secondItem="IBL-Es-Pmm" secondAttribute="trailing" id="cHu-Gh-qY1"/>
+                            <constraint firstAttribute="trailing" secondItem="RSR-Sn-HHW" secondAttribute="trailing" id="isX-wy-4R2"/>
+                            <constraint firstAttribute="bottom" secondItem="RSR-Sn-HHW" secondAttribute="bottom" id="kKL-4Y-dod"/>
+                            <constraint firstItem="IBL-Es-Pmm" firstAttribute="trailing" secondItem="5eK-nM-4it" secondAttribute="trailing" id="qGn-dP-nj1"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="top" secondItem="IBL-Es-Pmm" secondAttribute="top" id="v2y-kH-uTA"/>
+                            <constraint firstItem="5eK-nM-4it" firstAttribute="top" secondItem="IBL-Es-Pmm" secondAttribute="top" id="vFB-sc-P5I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

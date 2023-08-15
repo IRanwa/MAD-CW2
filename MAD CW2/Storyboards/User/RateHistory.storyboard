@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDj-OC-BDv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="gK8-uO-CIm">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-kO-Erp">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yNO-xN-9XD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gK8-uO-CIm" secondAttribute="bottom" id="CbL-rR-KAm"/>
+                            <constraint firstItem="yNO-xN-9XD" firstAttribute="bottom" secondItem="fdh-kO-Erp" secondAttribute="bottom" id="EXc-4G-cv3"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="bottom" secondItem="yNO-xN-9XD" secondAttribute="bottom" id="IVI-aG-h0g"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="top" secondItem="yNO-xN-9XD" secondAttribute="top" id="N3x-PF-oc7"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="leading" secondItem="yNO-xN-9XD" secondAttribute="leading" id="NPH-68-PQV"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="trailing" secondItem="yNO-xN-9XD" secondAttribute="trailing" id="PP4-dG-kua"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="leading" secondItem="yNO-xN-9XD" secondAttribute="leading" id="UBE-eJ-VZl"/>
+                            <constraint firstAttribute="bottom" secondItem="gK8-uO-CIm" secondAttribute="bottom" id="XHJ-Ii-nks"/>
+                            <constraint firstItem="gK8-uO-CIm" firstAttribute="top" secondItem="jDj-OC-BDv" secondAttribute="top" id="apV-ZJ-yQd"/>
+                            <constraint firstItem="fdh-kO-Erp" firstAttribute="top" secondItem="yNO-xN-9XD" secondAttribute="top" id="eeg-c7-qCa"/>
+                            <constraint firstAttribute="trailing" secondItem="gK8-uO-CIm" secondAttribute="trailing" id="ffm-Xm-dOO"/>
+                            <constraint firstItem="gK8-uO-CIm" firstAttribute="leading" secondItem="jDj-OC-BDv" secondAttribute="leading" id="gEc-q8-6Ys"/>
+                            <constraint firstItem="yNO-xN-9XD" firstAttribute="trailing" secondItem="fdh-kO-Erp" secondAttribute="trailing" id="nCO-5A-6e6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
