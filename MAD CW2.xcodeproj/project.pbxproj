@@ -36,6 +36,12 @@
 		0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */; };
 		0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */; };
 		0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */; };
+		FEC956592A8BFC96000F1237 /* MovieRating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */; };
+		FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */; };
+		FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */; };
+		FEC9565C2A8BFC96000F1237 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956562A8BFC96000F1237 /* Movie+CoreDataProperties.swift */; };
+		FEC9565F2A8C005B000F1237 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9565D2A8C005B000F1237 /* User+CoreDataClass.swift */; };
+		FEC956602A8C005B000F1237 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9565E2A8C005B000F1237 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,12 @@
 		0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
 		0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FEC956562A8BFC96000F1237 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FEC9565D2A8C005B000F1237 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FEC9565E2A8C005B000F1237 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,12 @@
 		0ACF3C452A8B4C76000AA6CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FEC9565D2A8C005B000F1237 /* User+CoreDataClass.swift */,
+				FEC9565E2A8C005B000F1237 /* User+CoreDataProperties.swift */,
+				FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */,
+				FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */,
+				FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */,
+				FEC956562A8BFC96000F1237 /* Movie+CoreDataProperties.swift */,
 				0ACF3C482A8B4CD1000AA6CB /* Stadia.xcdatamodeld */,
 			);
 			path = Models;
@@ -296,12 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */,
+				FEC9565C2A8BFC96000F1237 /* Movie+CoreDataProperties.swift in Sources */,
 				0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
 				0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */,
+				FEC9565F2A8C005B000F1237 /* User+CoreDataClass.swift in Sources */,
+				FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */,
+				FEC956602A8C005B000F1237 /* User+CoreDataProperties.swift in Sources */,
 				0ACF3C4F2A8B5D37000AA6CB /* GradientView.swift in Sources */,
 				0ACF3C552A8B83D0000AA6CB /* RegisterViewController.swift in Sources */,
+				FEC956592A8BFC96000F1237 /* MovieRating+CoreDataClass.swift in Sources */,
 				0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */,
 				0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */,
 				0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */,
