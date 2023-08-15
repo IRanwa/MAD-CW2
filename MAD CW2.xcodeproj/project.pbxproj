@@ -11,8 +11,16 @@
 		0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */; };
 		0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C352A8B36EE000AA6CB /* ViewController.swift */; };
 		0ACF3C392A8B36EE000AA6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C372A8B36EE000AA6CB /* Main.storyboard */; };
-		0ACF3C3B2A8B36EF000AA6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C3A2A8B36EF000AA6CB /* Assets.xcassets */; };
 		0ACF3C3E2A8B36EF000AA6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C3C2A8B36EF000AA6CB /* LaunchScreen.storyboard */; };
+		0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C482A8B4CD1000AA6CB /* Stadia.xcdatamodeld */; };
+		0ACF3C4F2A8B5D37000AA6CB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C4E2A8B5D37000AA6CB /* GradientView.swift */; };
+		0ACF3C512A8B7628000AA6CB /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C502A8B7628000AA6CB /* Register.storyboard */; };
+		0ACF3C552A8B83D0000AA6CB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C542A8B83D0000AA6CB /* RegisterViewController.swift */; };
+		0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C562A8B9803000AA6CB /* Login.storyboard */; };
+		0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */; };
+		0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */; };
+		0ACF3C612A8B9F04000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */; };
+		0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +29,17 @@
 		0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ACF3C352A8B36EE000AA6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ACF3C382A8B36EE000AA6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0ACF3C3A2A8B36EF000AA6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ACF3C3D2A8B36EF000AA6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ACF3C3F2A8B36EF000AA6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACF3C492A8B4CD1000AA6CB /* Stadia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stadia.xcdatamodel; sourceTree = "<group>"; };
+		0ACF3C4E2A8B5D37000AA6CB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0ACF3C502A8B7628000AA6CB /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		0ACF3C542A8B83D0000AA6CB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0ACF3C562A8B9803000AA6CB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
+		0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
+		0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		0ACF3C302A8B36EE000AA6CB /* MAD CW2 */ = {
 			isa = PBXGroup;
 			children = (
+				0ACF3C472A8B4C89000AA6CB /* Controllers */,
+				0ACF3C462A8B4C7D000AA6CB /* Storyboards */,
+				0ACF3C452A8B4C76000AA6CB /* Models */,
 				0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */,
 				0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */,
-				0ACF3C352A8B36EE000AA6CB /* ViewController.swift */,
-				0ACF3C372A8B36EE000AA6CB /* Main.storyboard */,
-				0ACF3C3A2A8B36EF000AA6CB /* Assets.xcassets */,
-				0ACF3C3C2A8B36EF000AA6CB /* LaunchScreen.storyboard */,
 				0ACF3C3F2A8B36EF000AA6CB /* Info.plist */,
 			);
 			path = "MAD CW2";
+			sourceTree = "<group>";
+		};
+		0ACF3C452A8B4C76000AA6CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C482A8B4CD1000AA6CB /* Stadia.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0ACF3C462A8B4C7D000AA6CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C5B2A8B9EC3000AA6CB /* User */,
+				0ACF3C5A2A8B9EBC000AA6CB /* Admin */,
+				0ACF3C372A8B36EE000AA6CB /* Main.storyboard */,
+				0ACF3C3C2A8B36EF000AA6CB /* LaunchScreen.storyboard */,
+				0ACF3C502A8B7628000AA6CB /* Register.storyboard */,
+				0ACF3C562A8B9803000AA6CB /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0ACF3C472A8B4C89000AA6CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C632A8BA172000AA6CB /* User */,
+				0ACF3C622A8BA16B000AA6CB /* Admin */,
+				0ACF3C352A8B36EE000AA6CB /* ViewController.swift */,
+				0ACF3C4E2A8B5D37000AA6CB /* GradientView.swift */,
+				0ACF3C542A8B83D0000AA6CB /* RegisterViewController.swift */,
+				0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0ACF3C5A2A8B9EBC000AA6CB /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		0ACF3C5B2A8B9EC3000AA6CB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0ACF3C622A8BA16B000AA6CB /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		0ACF3C632A8BA172000AA6CB /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACF3C3E2A8B36EF000AA6CB /* LaunchScreen.storyboard in Resources */,
-				0ACF3C3B2A8B36EF000AA6CB /* Assets.xcassets in Resources */,
+				0ACF3C612A8B9F04000AA6CB /* MovieList.storyboard in Resources */,
 				0ACF3C392A8B36EE000AA6CB /* Main.storyboard in Resources */,
+				0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */,
+				0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */,
+				0ACF3C512A8B7628000AA6CB /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
+				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
+				0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */,
+				0ACF3C4F2A8B5D37000AA6CB /* GradientView.swift in Sources */,
+				0ACF3C552A8B83D0000AA6CB /* RegisterViewController.swift in Sources */,
 				0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */,
 				0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +444,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0ACF3C482A8B4CD1000AA6CB /* Stadia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0ACF3C492A8B4CD1000AA6CB /* Stadia.xcdatamodel */,
+			);
+			currentVersion = 0ACF3C492A8B4CD1000AA6CB /* Stadia.xcdatamodel */;
+			path = Stadia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0ACF3C262A8B36EE000AA6CB /* Project object */;
 }
