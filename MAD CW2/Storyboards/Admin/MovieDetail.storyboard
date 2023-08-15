@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vei-YR-YAa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="WPT-uC-m9J">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BOF-E3-gqX">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eeU-0q-77m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WPT-uC-m9J" firstAttribute="top" secondItem="Vei-YR-YAa" secondAttribute="top" id="1XX-b2-EYV"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="leading" secondItem="eeU-0q-77m" secondAttribute="leading" id="6ZZ-cy-0BB"/>
+                            <constraint firstItem="eeU-0q-77m" firstAttribute="trailing" secondItem="BOF-E3-gqX" secondAttribute="trailing" id="9mo-gH-4Ax"/>
+                            <constraint firstItem="WPT-uC-m9J" firstAttribute="leading" secondItem="Vei-YR-YAa" secondAttribute="leading" id="DCJ-Sl-iBf"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="top" secondItem="eeU-0q-77m" secondAttribute="top" id="G1V-e3-yTQ"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="top" secondItem="eeU-0q-77m" secondAttribute="top" id="JGa-2F-NdX"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="bottom" secondItem="eeU-0q-77m" secondAttribute="bottom" id="QVr-wC-hCV"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="trailing" secondItem="eeU-0q-77m" secondAttribute="trailing" id="Sue-Ee-5uZ"/>
+                            <constraint firstAttribute="bottom" secondItem="WPT-uC-m9J" secondAttribute="bottom" id="Uf3-7b-2bo"/>
+                            <constraint firstAttribute="bottom" secondItem="WPT-uC-m9J" secondAttribute="bottom" id="Wd7-iO-j51"/>
+                            <constraint firstItem="eeU-0q-77m" firstAttribute="bottom" secondItem="BOF-E3-gqX" secondAttribute="bottom" id="cGZ-YF-BBY"/>
+                            <constraint firstAttribute="trailing" secondItem="WPT-uC-m9J" secondAttribute="trailing" id="fn8-HV-vQC"/>
+                            <constraint firstItem="BOF-E3-gqX" firstAttribute="leading" secondItem="eeU-0q-77m" secondAttribute="leading" id="ho6-u9-of6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

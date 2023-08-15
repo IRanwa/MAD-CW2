@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cHS-Pc-QUn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Txo-Fa-eFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tcV-a7-vSP">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XM5-rr-2yk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="top" secondItem="XM5-rr-2yk" secondAttribute="top" id="0P5-0m-MyD"/>
+                            <constraint firstAttribute="trailing" secondItem="Txo-Fa-eFZ" secondAttribute="trailing" id="9H3-wN-cmv"/>
+                            <constraint firstAttribute="bottom" secondItem="Txo-Fa-eFZ" secondAttribute="bottom" id="D4m-8o-d6o"/>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="leading" secondItem="XM5-rr-2yk" secondAttribute="leading" id="KRq-5z-WrG"/>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="top" secondItem="XM5-rr-2yk" secondAttribute="top" id="KpN-Sd-0Mf"/>
+                            <constraint firstItem="XM5-rr-2yk" firstAttribute="bottom" secondItem="tcV-a7-vSP" secondAttribute="bottom" id="LzC-0g-lac"/>
+                            <constraint firstItem="Txo-Fa-eFZ" firstAttribute="top" secondItem="cHS-Pc-QUn" secondAttribute="top" id="SIY-Yg-kJI"/>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="leading" secondItem="XM5-rr-2yk" secondAttribute="leading" id="VBV-ks-xAg"/>
+                            <constraint firstItem="Txo-Fa-eFZ" firstAttribute="leading" secondItem="cHS-Pc-QUn" secondAttribute="leading" id="aPZ-Fb-kfE"/>
+                            <constraint firstItem="XM5-rr-2yk" firstAttribute="trailing" secondItem="tcV-a7-vSP" secondAttribute="trailing" id="dyl-6W-xwE"/>
+                            <constraint firstAttribute="bottom" secondItem="Txo-Fa-eFZ" secondAttribute="bottom" id="jU6-oJ-kZc"/>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="bottom" secondItem="XM5-rr-2yk" secondAttribute="bottom" id="ryt-J1-myZ"/>
+                            <constraint firstItem="tcV-a7-vSP" firstAttribute="trailing" secondItem="XM5-rr-2yk" secondAttribute="trailing" id="zNn-7f-ujL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="SettingsIcon" selectedImage="SettingsIcon" id="qlp-hD-VGr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tabBarItem" destination="qlp-hD-VGr" id="KA7-2h-td5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="100" height="100"/>
+        <image name="SettingsIcon" width="8" height="8"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

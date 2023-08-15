@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A88A0942A8BDA60006C630F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0932A8BDA60006C630F /* Assets.xcassets */; };
+		0A88A0962A8BDBC2006C630F /* MovieDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */; };
+		0A88A0982A8BDBDE006C630F /* ManageMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */; };
+		0A88A09C2A8BDC29006C630F /* SearchMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */; };
+		0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */; };
+		0A88A0A02A8BDC48006C630F /* ViewMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */; };
+		0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A12A8BDC56006C630F /* Favourites.storyboard */; };
+		0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */; };
+		0A88A0A72A8BDC9E006C630F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A62A8BDC9E006C630F /* Settings.storyboard */; };
+		0A88A0A92A8BDCAF006C630F /* FAQs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */; };
+		0A88A0AB2A8BDCBC006C630F /* ManageAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */; };
+		0A88A0AD2A8BDCC9006C630F /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0AC2A8BDCC9006C630F /* ChangePassword.storyboard */; };
+		0A88A0AF2A8BDD13006C630F /* UserHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0AE2A8BDD13006C630F /* UserHome.storyboard */; };
+		0A88A0B12A8BDD1F006C630F /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */; };
+		0A88A0B32A8BDE88006C630F /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B22A8BDE88006C630F /* Statistics.storyboard */; };
+		0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88A0B52A8BE444006C630F /* SettingsViewController.swift */; };
+		0A88A0B82A8BE6D6006C630F /* settings-5-fill.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */; };
 		0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */; };
 		0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */; };
 		0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C352A8B36EE000AA6CB /* ViewController.swift */; };
@@ -19,11 +36,27 @@
 		0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C562A8B9803000AA6CB /* Login.storyboard */; };
 		0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */; };
 		0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */; };
-		0ACF3C612A8B9F04000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */; };
 		0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A88A0932A8BDA60006C630F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetail.storyboard; sourceTree = "<group>"; };
+		0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageMovie.storyboard; sourceTree = "<group>"; };
+		0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchMovie.storyboard; sourceTree = "<group>"; };
+		0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateMovie.storyboard; sourceTree = "<group>"; };
+		0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewMovie.storyboard; sourceTree = "<group>"; };
+		0A88A0A12A8BDC56006C630F /* Favourites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourites.storyboard; sourceTree = "<group>"; };
+		0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateHistory.storyboard; sourceTree = "<group>"; };
+		0A88A0A62A8BDC9E006C630F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQs.storyboard; sourceTree = "<group>"; };
+		0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageAccount.storyboard; sourceTree = "<group>"; };
+		0A88A0AC2A8BDCC9006C630F /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
+		0A88A0AE2A8BDD13006C630F /* UserHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserHome.storyboard; sourceTree = "<group>"; };
+		0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
+		0A88A0B22A8BDE88006C630F /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		0A88A0B52A8BE444006C630F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "settings-5-fill.svg"; path = "../../../Downloads/settings-5-fill.svg"; sourceTree = "<group>"; };
 		0ACF3C2E2A8B36EE000AA6CB /* MAD CW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAD CW2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +71,6 @@
 		0ACF3C562A8B9803000AA6CB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
-		0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
 		0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A88A0A52A8BDC8C006C630F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A88A0A62A8BDC9E006C630F /* Settings.storyboard */,
+				0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */,
+				0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */,
+				0A88A0AC2A8BDCC9006C630F /* ChangePassword.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0A88A0B42A8BE430006C630F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A88A0B52A8BE444006C630F /* SettingsViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0ACF3C252A8B36EE000AA6CB = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +123,14 @@
 		0ACF3C302A8B36EE000AA6CB /* MAD CW2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */,
 				0ACF3C472A8B4C89000AA6CB /* Controllers */,
 				0ACF3C462A8B4C7D000AA6CB /* Storyboards */,
 				0ACF3C452A8B4C76000AA6CB /* Models */,
 				0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */,
 				0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */,
 				0ACF3C3F2A8B36EF000AA6CB /* Info.plist */,
+				0A88A0932A8BDA60006C630F /* Assets.xcassets */,
 			);
 			path = "MAD CW2";
 			sourceTree = "<group>";
@@ -93,6 +146,7 @@
 		0ACF3C462A8B4C7D000AA6CB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				0A88A0A52A8BDC8C006C630F /* Common */,
 				0ACF3C5B2A8B9EC3000AA6CB /* User */,
 				0ACF3C5A2A8B9EBC000AA6CB /* Admin */,
 				0ACF3C372A8B36EE000AA6CB /* Main.storyboard */,
@@ -106,6 +160,7 @@
 		0ACF3C472A8B4C89000AA6CB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A88A0B42A8BE430006C630F /* Common */,
 				0ACF3C632A8BA172000AA6CB /* User */,
 				0ACF3C622A8BA16B000AA6CB /* Admin */,
 				0ACF3C352A8B36EE000AA6CB /* ViewController.swift */,
@@ -120,6 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */,
+				0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */,
+				0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */,
+				0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -127,7 +185,13 @@
 		0ACF3C5B2A8B9EC3000AA6CB /* User */ = {
 			isa = PBXGroup;
 			children = (
-				0ACF3C602A8B9F04000AA6CB /* MovieList.storyboard */,
+				0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */,
+				0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */,
+				0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */,
+				0A88A0A12A8BDC56006C630F /* Favourites.storyboard */,
+				0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */,
+				0A88A0AE2A8BDD13006C630F /* UserHome.storyboard */,
+				0A88A0B22A8BDE88006C630F /* Statistics.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -206,11 +270,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACF3C3E2A8B36EF000AA6CB /* LaunchScreen.storyboard in Resources */,
-				0ACF3C612A8B9F04000AA6CB /* MovieList.storyboard in Resources */,
+				0A88A0AD2A8BDCC9006C630F /* ChangePassword.storyboard in Resources */,
+				0A88A0A92A8BDCAF006C630F /* FAQs.storyboard in Resources */,
+				0A88A0B32A8BDE88006C630F /* Statistics.storyboard in Resources */,
 				0ACF3C392A8B36EE000AA6CB /* Main.storyboard in Resources */,
 				0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */,
+				0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */,
+				0A88A0AF2A8BDD13006C630F /* UserHome.storyboard in Resources */,
+				0A88A0B82A8BE6D6006C630F /* settings-5-fill.svg in Resources */,
+				0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */,
 				0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */,
+				0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */,
+				0A88A0A02A8BDC48006C630F /* ViewMovie.storyboard in Resources */,
+				0A88A0AB2A8BDCBC006C630F /* ManageAccount.storyboard in Resources */,
+				0A88A0A72A8BDC9E006C630F /* Settings.storyboard in Resources */,
+				0A88A0962A8BDBC2006C630F /* MovieDetail.storyboard in Resources */,
+				0A88A0942A8BDA60006C630F /* Assets.xcassets in Resources */,
+				0A88A09C2A8BDC29006C630F /* SearchMovie.storyboard in Resources */,
+				0A88A0982A8BDBDE006C630F /* ManageMovie.storyboard in Resources */,
 				0ACF3C512A8B7628000AA6CB /* Register.storyboard in Resources */,
+				0A88A0B12A8BDD1F006C630F /* AdminHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +308,7 @@
 				0ACF3C552A8B83D0000AA6CB /* RegisterViewController.swift in Sources */,
 				0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */,
 				0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */,
+				0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
