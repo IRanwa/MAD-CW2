@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Eq-02-1nb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="iEd-27-9DU">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OBe-N0-QPs">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xNI-Gk-NRi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="leading" secondItem="xNI-Gk-NRi" secondAttribute="leading" id="4wF-mW-AQg"/>
+                            <constraint firstItem="xNI-Gk-NRi" firstAttribute="trailing" secondItem="OBe-N0-QPs" secondAttribute="trailing" id="8tA-2M-tJ5"/>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="top" secondItem="xNI-Gk-NRi" secondAttribute="top" id="8zQ-QP-L1z"/>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="trailing" secondItem="xNI-Gk-NRi" secondAttribute="trailing" id="DUx-Ak-a1d"/>
+                            <constraint firstItem="iEd-27-9DU" firstAttribute="top" secondItem="0Eq-02-1nb" secondAttribute="top" id="Go7-ZP-7nU"/>
+                            <constraint firstAttribute="bottom" secondItem="iEd-27-9DU" secondAttribute="bottom" id="KX6-7T-KPa"/>
+                            <constraint firstItem="iEd-27-9DU" firstAttribute="leading" secondItem="0Eq-02-1nb" secondAttribute="leading" id="WgW-I3-DCA"/>
+                            <constraint firstItem="xNI-Gk-NRi" firstAttribute="bottom" secondItem="OBe-N0-QPs" secondAttribute="bottom" id="cAH-hD-7gH"/>
+                            <constraint firstAttribute="trailing" secondItem="iEd-27-9DU" secondAttribute="trailing" id="eCi-lL-64h"/>
+                            <constraint firstAttribute="bottom" secondItem="iEd-27-9DU" secondAttribute="bottom" id="jo1-lX-4qE"/>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="bottom" secondItem="xNI-Gk-NRi" secondAttribute="bottom" id="kUW-o4-rCp"/>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="top" secondItem="xNI-Gk-NRi" secondAttribute="top" id="wp3-SL-tU7"/>
+                            <constraint firstItem="OBe-N0-QPs" firstAttribute="leading" secondItem="xNI-Gk-NRi" secondAttribute="leading" id="xTH-0i-dGh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

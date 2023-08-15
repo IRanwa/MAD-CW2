@@ -23,7 +23,6 @@
 		0A88A0B12A8BDD1F006C630F /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */; };
 		0A88A0B32A8BDE88006C630F /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B22A8BDE88006C630F /* Statistics.storyboard */; };
 		0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88A0B52A8BE444006C630F /* SettingsViewController.swift */; };
-		0A88A0B82A8BE6D6006C630F /* settings-5-fill.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */; };
 		0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */; };
 		0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */; };
 		0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C352A8B36EE000AA6CB /* ViewController.swift */; };
@@ -56,7 +55,6 @@
 		0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		0A88A0B22A8BDE88006C630F /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		0A88A0B52A8BE444006C630F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "settings-5-fill.svg"; path = "../../../Downloads/settings-5-fill.svg"; sourceTree = "<group>"; };
 		0ACF3C2E2A8B36EE000AA6CB /* MAD CW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAD CW2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		0ACF3C302A8B36EE000AA6CB /* MAD CW2 */ = {
 			isa = PBXGroup;
 			children = (
-				0A88A0B72A8BE6D6006C630F /* settings-5-fill.svg */,
 				0ACF3C472A8B4C89000AA6CB /* Controllers */,
 				0ACF3C462A8B4C7D000AA6CB /* Storyboards */,
 				0ACF3C452A8B4C76000AA6CB /* Models */,
@@ -277,7 +274,6 @@
 				0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */,
 				0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */,
 				0A88A0AF2A8BDD13006C630F /* UserHome.storyboard in Resources */,
-				0A88A0B82A8BE6D6006C630F /* settings-5-fill.svg in Resources */,
 				0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */,
 				0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */,
 				0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */,
