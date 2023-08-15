@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-579" y="-325"/>
         </scene>
-        <!--SearchMovies-->
+        <!--SearchMovie-->
         <scene sceneID="tqo-jM-OtE">
             <objects>
-                <viewControllerPlaceholder storyboardName="SearchMovies" id="tuf-FU-fHr" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SearchMovie" id="tuf-FU-fHr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gaS-cl-yK1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pA4-Ko-vqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
