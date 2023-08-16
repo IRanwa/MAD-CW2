@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5eK-nM-4it">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IBL-Es-Pmm"/>
@@ -41,6 +41,10 @@
                             <constraint firstItem="5eK-nM-4it" firstAttribute="top" secondItem="IBL-Es-Pmm" secondAttribute="top" id="vFB-sc-P5I"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="HomeIcon" id="3Do-IE-p7i">
+                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +53,7 @@
     </scenes>
     <resources>
         <image name="BackGround" width="100" height="100"/>
+        <image name="HomeIcon" width="8" height="8"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

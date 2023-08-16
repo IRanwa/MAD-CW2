@@ -41,7 +41,9 @@
                             <constraint firstItem="tcV-a7-vSP" firstAttribute="trailing" secondItem="XM5-rr-2yk" secondAttribute="trailing" id="zNn-7f-ujL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="SettingsIcon" selectedImage="SettingsIcon" id="qlp-hD-VGr"/>
+                    <tabBarItem key="tabBarItem" title="" image="SettingsIcon" selectedImage="SettingsIcon" id="qlp-hD-VGr">
+                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tabBarItem" destination="qlp-hD-VGr" id="KA7-2h-td5"/>
