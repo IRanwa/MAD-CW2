@@ -51,9 +51,14 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHv-aB-DRj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <gestureRecognizers/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="sq7-8A-iIP" appends="YES" id="r4o-lx-8Ls"/>
+                                                                            <outletCollection property="gestureRecognizers" destination="sq7-8A-iIP" appends="YES" id="3LX-4B-j6y"/>
+                                                                        </connections>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +79,7 @@
                                                                     </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <gestureRecognizers/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="Wb9-tu-nF3" secondAttribute="trailing" constant="10" id="20t-Hm-2Cn"/>
                                                                     <constraint firstAttribute="bottom" secondItem="Wb9-tu-nF3" secondAttribute="bottom" id="Cik-De-Vs6"/>
@@ -81,21 +87,25 @@
                                                                     <constraint firstItem="Wb9-tu-nF3" firstAttribute="top" secondItem="Dql-qw-ZGp" secondAttribute="top" id="uTo-wm-v6w"/>
                                                                     <constraint firstItem="Wb9-tu-nF3" firstAttribute="leading" secondItem="Dql-qw-ZGp" secondAttribute="leading" constant="10" id="v7n-81-Syk"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="G3w-aR-exe" appends="YES" id="GYg-EL-tli"/>
+                                                                    <outletCollection property="gestureRecognizers" destination="sq7-8A-iIP" appends="YES" id="MrH-V3-iIa"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-Ja-W0b">
                                                                 <rect key="frame" x="120.00000000000003" y="0.0" width="50" height="50"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThumbUpIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lls-Kj-l4K">
-                                                                        <rect key="frame" x="10" y="0.0" width="30" height="50"/>
+                                                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
+                                                                    <constraint firstItem="lls-Kj-l4K" firstAttribute="top" secondItem="qg6-Ja-W0b" secondAttribute="top" constant="10" id="Dy3-wf-T36"/>
                                                                     <constraint firstAttribute="trailing" secondItem="lls-Kj-l4K" secondAttribute="trailing" constant="10" id="Gro-HX-Ue5"/>
                                                                     <constraint firstItem="lls-Kj-l4K" firstAttribute="leading" secondItem="qg6-Ja-W0b" secondAttribute="leading" constant="10" id="SZT-Wl-QIG"/>
                                                                     <constraint firstAttribute="width" constant="50" id="VJo-22-VaC"/>
-                                                                    <constraint firstItem="lls-Kj-l4K" firstAttribute="top" secondItem="qg6-Ja-W0b" secondAttribute="top" id="Wbt-13-LHw"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="lls-Kj-l4K" secondAttribute="bottom" id="q6B-2k-Zd9"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="lls-Kj-l4K" secondAttribute="bottom" constant="10" id="d8N-lY-KYL"/>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwY-bo-aYI">
@@ -105,6 +115,10 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="9EM-Wt-A0a" appends="YES" id="ndZ-Bf-Udo"/>
+                                                        </connections>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoE-ti-t45">
                                                         <rect key="frame" x="0.0" y="209.66666666666669" width="181.33333333333334" height="30"/>
@@ -268,10 +282,7 @@
                                                                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="8U2-bl-lVT" secondAttribute="trailing" constant="5" id="49I-5t-wry"/>
-                                                                        <constraint firstItem="8U2-bl-lVT" firstAttribute="top" secondItem="YK6-i0-vzv" secondAttribute="top" id="bmO-cz-8Tz"/>
                                                                         <constraint firstAttribute="bottom" secondItem="8U2-bl-lVT" secondAttribute="bottom" constant="5" id="ckT-cW-h2L"/>
-                                                                        <constraint firstItem="8U2-bl-lVT" firstAttribute="centerY" secondItem="YK6-i0-vzv" secondAttribute="centerY" id="rEp-aA-Dqn"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="8U2-bl-lVT" secondAttribute="bottom" id="sHw-y9-WlQ"/>
                                                                         <constraint firstItem="8U2-bl-lVT" firstAttribute="leading" secondItem="YK6-i0-vzv" secondAttribute="leading" constant="5" id="scG-lQ-mUY"/>
                                                                         <constraint firstItem="8U2-bl-lVT" firstAttribute="top" secondItem="YK6-i0-vzv" secondAttribute="top" constant="5" id="wDW-8b-leE"/>
                                                                     </constraints>
@@ -308,6 +319,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G3w-aR-exe"/>
+                <tapGestureRecognizer id="sq7-8A-iIP"/>
+                <tapGestureRecognizer id="9EM-Wt-A0a"/>
             </objects>
             <point key="canvasLocation" x="130" y="-2"/>
         </scene>
