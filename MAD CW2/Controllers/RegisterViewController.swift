@@ -159,7 +159,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 status = false
             }
             if(status){
-                _ = User(email: txtEmail.text!, firstname: txtFirstName.text!, id: UUID().uuidString, lastname: txtLastName.text!, password: txtPassword.text!, phone: txtPhone.text!, usertype: "User", insertIntoManagedObjectContext: context!)
+                _ = User(email: txtEmail.text!, firstname: txtFirstName.text!, id: UUID().uuidString, lastname: txtLastName.text!, password: txtPassword.text!, phone: txtPhone.text!, usertype: String(describing:  Enums.UserType.standard), insertIntoManagedObjectContext: context!)
                 try context?.save()
                 print("User registration completed")
                 
@@ -195,7 +195,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             lastNameView.layer.borderWidth = 1
             status = false
         }
-        if(email == "" || !isValidEmail(email)){
+        if(email == "" || !Validations.isValidEmail(email)){
             lblEmailError.text = "Email field value is invalid."
             lblEmailError.isHidden = false
             emailView.layer.borderColor = UIColor.red.cgColor
@@ -215,7 +215,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             passwordView.layer.borderColor = UIColor.red.cgColor
             passwordView.layer.borderWidth = 1
             status = false
-        }else if(!isValidPassword(password ?? "")){
+        }else if(!Validations.isValidPassword(password ?? "")){
             lblPasswordError.text = "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character."
             lblPasswordError.isHidden = false
             passwordView.layer.borderColor = UIColor.red.cgColor
@@ -236,18 +236,6 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             status = false
         }
         return status
-    }
-    
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        return emailPredicate.evaluate(with: email)
-    }
-    
-    func isValidPassword(_ password: String) -> Bool {
-        let passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
-        let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
-        return passwordPredicate.evaluate(with: password)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString txtVal: String) -> Bool {
