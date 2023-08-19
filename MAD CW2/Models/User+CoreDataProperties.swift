@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  MAD CW2
 //
-//  Created by user235597 on 8/16/23.
+//  Created by user239258 on 8/19/23.
 //
 //
 
@@ -23,6 +23,7 @@ extension User {
     @NSManaged public var password: String?
     @NSManaged public var phone: String?
     @NSManaged public var usertype: String?
+    @NSManaged public var title: String?
     @NSManaged public var ratinguserrelationship: MovieRating?
 
 }

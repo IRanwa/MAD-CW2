@@ -9,7 +9,6 @@ import UIKit
 import CoreData
 
 class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
-    let titles = ["Mr", "Mrs", "Ms", "Miss"]
     var togglePassword = false
     var toggleConfirmPassword = false
     
@@ -80,7 +79,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         txtConfirmPassword.delegate = self
         txtPhone.delegate = self
         
-        txtTitle.text = titles[0]
+        txtTitle.text = CommonData.titles[0]
         
         lblFirstNameError.isHidden = true
         lblLastNameError.isHidden = true
@@ -122,15 +121,15 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return titles.count
+        return CommonData.titles.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return titles[row]
+        return CommonData.titles[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        txtTitle.text = titles[row]
+        txtTitle.text = CommonData.titles[row]
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -159,7 +158,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 status = false
             }
             if(status){
-                _ = User(email: txtEmail.text!, firstname: txtFirstName.text!, id: UUID().uuidString, lastname: txtLastName.text!, password: txtPassword.text!, phone: txtPhone.text!, usertype: String(describing:  Enums.UserType.standard), insertIntoManagedObjectContext: context!)
+                _ = User(email: txtEmail.text!, firstname: txtFirstName.text!, id: UUID().uuidString, lastname: txtLastName.text!, password: txtPassword.text!, phone: txtPhone.text!, usertype: String(describing:  Enums.UserType.standard), title: txtTitle.text!, insertIntoManagedObjectContext: context!)
                 try context?.save()
                 print("User registration completed")
                 

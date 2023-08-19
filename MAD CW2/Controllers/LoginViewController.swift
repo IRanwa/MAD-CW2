@@ -59,7 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         do{
             let adminUser = try self.context?.fetch(request) as? [User]
             if(adminUser == nil || (adminUser != nil && adminUser?.count == 0)){
-                _ = User(email: adminEmail, firstname: "Admin", id: UUID().uuidString, lastname: "Admin", password: adminPassword, phone: nil, usertype: String(describing: Enums.UserType.admin), insertIntoManagedObjectContext: context!)
+                _ = User(email: adminEmail, firstname: "Admin", id: UUID().uuidString, lastname: "Admin", password: adminPassword, phone: nil, usertype: String(describing: Enums.UserType.admin), title: nil, insertIntoManagedObjectContext: context!)
                 try context?.save()
                 print("Admin new user created")
             }
