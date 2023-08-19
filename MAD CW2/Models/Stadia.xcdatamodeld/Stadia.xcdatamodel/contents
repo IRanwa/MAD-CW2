@@ -27,6 +27,7 @@
         <attribute name="lastname" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="usertype" optional="YES" attributeType="String"/>
         <relationship name="ratinguserrelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MovieRating" inverseName="userrelationship" inverseEntity="MovieRating"/>
     </entity>

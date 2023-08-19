@@ -8,11 +8,19 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var myAccountView: UIView!
+    @IBOutlet weak var faqView: UIView!
+    @IBOutlet weak var changePasswordView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if(UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userType))
+           == String(describing: Enums.UserType.admin)){
+            myAccountView.isHidden = true
+            faqView.isHidden = true
+            changePasswordView.isHidden = true
+        }
     }
     
 
