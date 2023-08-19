@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Admin Home View Controller-->
         <scene sceneID="0mw-Q6-tUc">
             <objects>
-                <tabBarController storyboardIdentifier="adminHomeTabBar" id="gse-tK-Xpe" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="adminHomeTabBar" id="gse-tK-Xpe" customClass="AdminHomeViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xay-UP-iIt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

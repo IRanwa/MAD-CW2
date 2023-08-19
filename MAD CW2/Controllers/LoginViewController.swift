@@ -83,6 +83,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func submitOnClick(_ sender: Any) {
+        txtEmail.text = "admin@gmail.com"
+        txtPassword.text = "Admin@123"
         do{
             let status = verifyFields()
             if(status){
@@ -104,8 +106,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                 UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
                                 UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
                                 let storyboard = UIStoryboard(name: "UserHome", bundle: nil)
-                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar")
-                                navigationController?.pushViewController(tabBarController, animated: true)
+                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar") as! UITabBarController
+                                navigationController!.setViewControllers([tabBarController], animated: true)
                             }
                         }else{
                             if(password != txtPassword.text){
@@ -113,9 +115,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             }else{
                                 UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
                                 UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
+                                
                                 let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
-                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar")
-                                navigationController?.pushViewController(tabBarController, animated: true)
+                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar") as! UITabBarController
+                                navigationController!.setViewControllers([tabBarController], animated: true)
+                                
                             }
                         }
                     }

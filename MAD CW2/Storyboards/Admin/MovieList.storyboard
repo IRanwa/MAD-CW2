@@ -139,7 +139,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="FilmIcon" selectedImage="FilmIcon" id="xr6-ZZ-jIZ">
-                        <inset key="imageInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="0BW-Ii-frl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -147,6 +147,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE5-ky-flW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2727" y="-68"/>
+        </scene>
+        <!--ManageMovie-->
+        <scene sceneID="3aI-1Z-EFu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManageMovie" id="QeP-Z0-u1j" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m9F-Av-MIt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocA-zl-W9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3443" y="-100"/>
         </scene>
     </scenes>
     <resources>

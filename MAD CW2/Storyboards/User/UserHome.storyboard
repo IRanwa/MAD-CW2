@@ -6,10 +6,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--User Home View Controller-->
         <scene sceneID="LyX-2t-3pa">
             <objects>
-                <tabBarController storyboardIdentifier="userHomeTabBar" id="Vaj-Wo-zVp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="userHomeTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vaj-Wo-zVp" customClass="UserHomeViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nGz-r8-ODl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0hn-81-ZJV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +26,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbD-eR-Z8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1301" y="-403"/>
+            <point key="canvasLocation" x="-374.80916030534348" y="-403.52112676056339"/>
         </scene>
         <!--Favourites-->
         <scene sceneID="cZy-EQ-c1j">
@@ -35,7 +36,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbH-2u-Qf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-577" y="-540"/>
+            <point key="canvasLocation" x="349.61832061068702" y="-540.14084507042253"/>
         </scene>
         <!--RateHistory-->
         <scene sceneID="fB3-UV-fEc">
@@ -45,7 +46,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrq-Z4-h9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="-390"/>
+            <point key="canvasLocation" x="346.56488549618319" y="-390.14084507042253"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="67W-J4-dF5">
@@ -55,7 +56,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOT-9K-QdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="-496"/>
+            <point key="canvasLocation" x="348.09160305343511" y="-496.47887323943667"/>
         </scene>
         <!--Settings-->
         <scene sceneID="7y3-vA-iib">
@@ -65,7 +66,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNt-VC-fh8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="-325"/>
+            <point key="canvasLocation" x="347.32824427480915" y="-325.35211267605638"/>
         </scene>
         <!--SearchMovie-->
         <scene sceneID="tqo-jM-OtE">
@@ -75,7 +76,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pA4-Ko-vqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="-427"/>
+            <point key="canvasLocation" x="346.56488549618319" y="-427.46478873239437"/>
         </scene>
     </scenes>
 </document>
