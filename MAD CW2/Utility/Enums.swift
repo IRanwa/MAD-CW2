@@ -12,4 +12,9 @@ class Enums{
         case admin
         case standard
     }
+    
+    enum UserDefaultKeys{
+        case email
+        case userType
+    }
 }

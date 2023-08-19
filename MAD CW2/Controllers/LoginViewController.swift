@@ -96,10 +96,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     let loginUser = user![0]
                     if let userType = loginUser.usertype{
                         let password = loginUser.password!
+                        let email = loginUser.email!
                         if(userType == String(describing:  Enums.UserType.standard)){
                             if(password != txtPassword.text){
                                 showErrorPopup(message: "User login credentials invalid.")
                             }else{
+                                UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
+                                UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
                                 let storyboard = UIStoryboard(name: "UserHome", bundle: nil)
                                 let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar")
                                 navigationController?.pushViewController(tabBarController, animated: true)
@@ -108,6 +111,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             if(password != txtPassword.text){
                                 showErrorPopup(message: "User login credentials invalid.")
                             }else{
+                                UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
+                                UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
                                 let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
                                 let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar")
                                 navigationController?.pushViewController(tabBarController, animated: true)
