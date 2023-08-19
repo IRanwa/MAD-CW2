@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MovieDetail-->
+        <!--UserHome-->
         <scene sceneID="E0d-JI-fBt">
             <objects>
-                <viewControllerPlaceholder storyboardName="MovieDetail" id="lDp-lV-OBx" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="UserHome" id="lDp-lV-OBx" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="CWx-iT-Yo8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngY-5y-X5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
