@@ -13,6 +13,13 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var imgMovie: UIImageView!
+    @IBOutlet weak var txtMovieRating: UILabel!
+    @IBOutlet weak var txtMovieDesc: UITextView!
+    @IBOutlet weak var txtMovieTrailer: UITextField!
+    @IBOutlet weak var txtMoviewName: UITextField!
+    @IBOutlet weak var txtMovieIMDBUrl: UITextField!
+    @IBOutlet weak var txtMovieGenres: UITextField!
+    @IBOutlet weak var txtMovieReleaseDate: UITextField!
     var identifier: String?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +38,23 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
         // Do any additional setup after loading the view.
     }
     
-    
-    @objc func saveButtonTapped() {
-    }
-    
-    @objc func updateButtonTapped() {
+    @IBAction func btnSaveTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
+            // Handle "Yes" button tap
+            print("User tapped Yes")
+        }
+        
+        let noAction = UIAlertAction(title: "No", style: .default) { _ in
+            // Handle "No" button tap
+            print("User tapped No")
+        }
+        
+        alertController.addAction(yesAction)
+        alertController.addAction(noAction)
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     

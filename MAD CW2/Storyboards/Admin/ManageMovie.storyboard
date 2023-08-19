@@ -331,6 +331,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="SAVE">
                                             <color key="baseBackgroundColor" red="0.094117656349999995" green="0.3058823645" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnSaveTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gOh-hD-ABh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -359,6 +362,13 @@
                         <outlet property="contentView" destination="hCZ-aK-Dis" id="EcE-cs-iUN"/>
                         <outlet property="imgMovie" destination="oar-DX-MEU" id="O8t-1t-h9F"/>
                         <outlet property="scrollView" destination="SZp-tR-bFh" id="dIT-25-fJw"/>
+                        <outlet property="txtMovieDesc" destination="sIf-rW-bvg" id="puG-ZB-2fH"/>
+                        <outlet property="txtMovieGenres" destination="GQ9-2m-pF9" id="9vM-1z-1vD"/>
+                        <outlet property="txtMovieIMDBUrl" destination="GQ9-2m-pF9" id="ic3-LH-SZh"/>
+                        <outlet property="txtMovieRating" destination="FhX-Jc-tGK" id="jab-i2-wNV"/>
+                        <outlet property="txtMovieReleaseDate" destination="GQ9-2m-pF9" id="AL0-It-3TJ"/>
+                        <outlet property="txtMovieTrailer" destination="4WD-LX-ZUc" id="Pf7-QZ-yzw"/>
+                        <outlet property="txtMoviewName" destination="V8I-TG-4kF" id="fAc-Zd-cya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
