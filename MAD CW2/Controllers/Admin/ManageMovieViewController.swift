@@ -11,7 +11,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentView: UIView!
+    //@IBOutlet weak var contentView: UIView!
     @IBOutlet weak var imgMovie: UIImageView!
     @IBOutlet weak var txtMovieRating: UILabel!
     @IBOutlet weak var txtMovieDesc: UITextView!
@@ -24,7 +24,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = contentView.frame.size
+        //scrollView.contentSize = contentView.frame.size
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.backBarButtonItem?.isEnabled = true
         self.navigationItem.rightBarButtonItem?.isEnabled = false
