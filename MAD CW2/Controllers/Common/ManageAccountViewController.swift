@@ -36,6 +36,8 @@ class ManageAccountViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Manage Account"
+        
         lblLoginAs.text = UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.email))
         
         lblFirstNameError.isHidden = true

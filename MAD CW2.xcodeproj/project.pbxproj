@@ -36,6 +36,9 @@
 		0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */; };
 		0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */; };
 		0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */; };
+		3D6966722A91162700251B76 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966712A91162700251B76 /* UserHomeViewController.swift */; };
+		3D6966742A911E7900251B76 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966732A911E7900251B76 /* AdminHomeViewController.swift */; };
+		3D6966762A91215300251B76 /* ManageMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966752A91215300251B76 /* ManageMovieViewController.swift */; };
 		EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB692A8E66A30095A967 /* Validations.swift */; };
 		EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB6B2A8E67F20095A967 /* Enums.swift */; };
 		EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */; };
@@ -81,6 +84,9 @@
 		0ACF3C582A8B9AB3000AA6CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieList.storyboard; sourceTree = "<group>"; };
 		0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		3D6966712A91162700251B76 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		3D6966732A911E7900251B76 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		3D6966752A91215300251B76 /* ManageMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMovieViewController.swift; sourceTree = "<group>"; };
 		EB2BEB692A8E66A30095A967 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		EB2BEB6B2A8E67F20095A967 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
@@ -188,8 +194,8 @@
 		0ACF3C472A8B4C89000AA6CB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D6966702A91161100251B76 /* User */,
 				0A88A0B42A8BE430006C630F /* Common */,
-				0ACF3C632A8BA172000AA6CB /* User */,
 				0ACF3C622A8BA16B000AA6CB /* Admin */,
 				0ACF3C352A8B36EE000AA6CB /* ViewController.swift */,
 				0ACF3C4E2A8B5D37000AA6CB /* GradientView.swift */,
@@ -228,13 +234,16 @@
 			isa = PBXGroup;
 			children = (
 				0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */,
+				3D6966732A911E7900251B76 /* AdminHomeViewController.swift */,
+				3D6966752A91215300251B76 /* ManageMovieViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
 		};
-		0ACF3C632A8BA172000AA6CB /* User */ = {
+		3D6966702A91161100251B76 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				3D6966712A91162700251B76 /* UserHomeViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 			files = (
 				FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */,
 				EB4256762A908D8B00B00F20 /* CommonData.swift in Sources */,
+				3D6966762A91215300251B76 /* ManageMovieViewController.swift in Sources */,
 				FEC9565C2A8BFC96000F1237 /* Movie+CoreDataProperties.swift in Sources */,
 				0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
@@ -356,6 +366,8 @@
 				EB4256792A9090CF00B00F20 /* User+CoreDataClass.swift in Sources */,
 				0ACF3C322A8B36EE000AA6CB /* AppDelegate.swift in Sources */,
 				0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */,
+				3D6966742A911E7900251B76 /* AdminHomeViewController.swift in Sources */,
+				3D6966722A91162700251B76 /* UserHomeViewController.swift in Sources */,
 				0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

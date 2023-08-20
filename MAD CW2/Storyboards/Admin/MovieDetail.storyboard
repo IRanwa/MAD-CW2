@@ -108,6 +108,9 @@
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                             <color key="baseBackgroundColor" red="0.094117656349999995" green="0.3058823645" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="brJ-lm-81H" kind="show" id="xhy-EH-pP9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -190,6 +193,9 @@
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Ok-Km8">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="239.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="separatorColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="sectionIndexBackgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pp2-dD-gyL">
                                                         <rect key="frame" x="0.0" y="50" width="373" height="80"/>
@@ -256,7 +262,7 @@
                                                                             </constraints>
                                                                         </stackView>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                                    <color key="backgroundColor" red="0.57530680315807503" green="0.57622860077062943" blue="0.59029510794216677" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstItem="w6o-Bc-yf4" firstAttribute="leading" secondItem="yRQ-s2-D3F" secondAttribute="leading" constant="5" id="2EH-lp-cgd"/>
                                                                         <constraint firstAttribute="bottom" secondItem="w6o-Bc-yf4" secondAttribute="bottom" constant="5" id="3rk-Tf-3yQ"/>
@@ -266,6 +272,7 @@
                                                                     </constraints>
                                                                 </view>
                                                             </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="bottom" secondItem="yRQ-s2-D3F" secondAttribute="bottom" id="BD6-34-MQc"/>
                                                                 <constraint firstItem="yRQ-s2-D3F" firstAttribute="top" secondItem="agT-np-6Fl" secondAttribute="top" id="dfk-5d-XVM"/>
@@ -273,10 +280,12 @@
                                                                 <constraint firstAttribute="trailing" secondItem="yRQ-s2-D3F" secondAttribute="trailing" id="u06-l3-Qcc"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -302,6 +311,16 @@
             </objects>
             <point key="canvasLocation" x="130" y="-2"/>
         </scene>
+        <!--ManageMovie-->
+        <scene sceneID="TCC-ZO-Tzl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManageMovie" id="brJ-lm-81H" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eL1-Jc-kbd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yM-9z-D8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-50"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackGround" width="100" height="100"/>
@@ -311,9 +330,6 @@
         <image name="YoutubeIcon" width="8" height="8"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

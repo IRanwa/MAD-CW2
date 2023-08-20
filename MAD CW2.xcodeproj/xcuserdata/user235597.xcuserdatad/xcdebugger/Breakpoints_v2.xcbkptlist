@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "67D0286B-E1F9-4630-AA60-F805E86B2356"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C165679-FFD2-43CD-8EC9-A85C6C80E93C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "seedAdminLogin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C165679-FFD2-43CD-8EC9-A85C6C80E93C - af273a02e234b75a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.LoginViewController.seedAdminLogin() -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user235597/Desktop/IIT%20Imesh/CW2/MAD-CW2/MAD%20CW2/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "4C165679-FFD2-43CD-8EC9-A85C6C80E93C - af273a02e234b75a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.LoginViewController.seedAdminLogin() -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user235597/Desktop/IIT%20Imesh/CW2/MAD-CW2/MAD%20CW2/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FD50A52-DEE7-41CB-A303-CCAC435F5D55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "seedAdminLogin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9FD50A52-DEE7-41CB-A303-CCAC435F5D55 - af273a02e234b77b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.LoginViewController.seedAdminLogin() -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user235597/Desktop/IIT%20Imesh/CW2/MAD-CW2/MAD%20CW2/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+               <Location
+                  uuid = "9FD50A52-DEE7-41CB-A303-CCAC435F5D55 - af273a02e234b77b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.LoginViewController.seedAdminLogin() -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user235597/Desktop/IIT%20Imesh/CW2/MAD-CW2/MAD%20CW2/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
