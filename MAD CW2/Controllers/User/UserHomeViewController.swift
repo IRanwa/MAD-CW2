@@ -12,6 +12,7 @@ class UserHomeViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
+        self.selectedIndex = 2
         // Do any additional setup after loading the view.
     }
     
