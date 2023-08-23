@@ -11,8 +11,8 @@ import CoreData
 
 @objc(MovieRating)
 public class MovieRating: NSManagedObject {
-    convenience init(comment: String, id: Int64, movieid: Int64, rating: Double,
-                     userid: Int64, movierelationship: Movie, userrelationship: User,
+    convenience init(comment: String, id: String, movieid: String, rating: Double,
+                     userid: String, movierelationship: Movie, userrelationship: User,
                      insertIntoManagedObjectContext context : NSManagedObjectContext) {
         self.init(context: context)
         self.comment = comment

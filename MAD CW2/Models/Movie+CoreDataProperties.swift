@@ -18,7 +18,7 @@ extension Movie {
 
     @NSManaged public var coverimage: String?
     @NSManaged public var desc: String?
-    @NSManaged public var id: Int64
+    @NSManaged public var id: String
     @NSManaged public var imdblink: String?
     @NSManaged public var name: String?
     @NSManaged public var rating: Double

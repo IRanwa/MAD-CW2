@@ -56,7 +56,7 @@ class AdminHomeViewController: UITabBarController, UITabBarControllerDelegate {
                 
                 self.navigationItem.title = "Settings"
                 self.navigationItem.backBarButtonItem?.isEnabled = false
-                self.navigationItem.rightBarButtonItem?.isEnabled = false
+                self.navigationItem.rightBarButtonItem?.isHidden = true
             }else{
                 self.navigationController?.navigationBar.isHidden = true
             }

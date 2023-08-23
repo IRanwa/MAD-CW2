@@ -11,7 +11,7 @@ import CoreData
 
 @objc(Movie)
 public class Movie: NSManagedObject {
-    convenience init(coverimage: String, desc: String, id: Int64, imdblink: String,
+    convenience init(coverimage: String, desc: String, id: String, imdblink: String,
                      name: String, rating: Double, useroverallrating: Double, youtubelink: String,
                      insertIntoManagedObjectContext context : NSManagedObjectContext) {
         self.init(context: context)
