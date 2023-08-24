@@ -47,6 +47,10 @@
 		EB42567A2A9090CF00B00F20 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256782A9090CF00B00F20 /* User+CoreDataProperties.swift */; };
 		EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */; };
 		EB4A50342A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A50332A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift */; };
+		EB857A2C2A97931E0086B905 /* MultipleOptionsPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB857A2B2A97931E0086B905 /* MultipleOptionsPicker.storyboard */; };
+		EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */; };
+		EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */; };
+		EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */; };
 		FEC956592A8BFC96000F1237 /* MovieRating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */; };
 		FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */; };
 		FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */; };
@@ -96,6 +100,10 @@
 		EB4256782A9090CF00B00F20 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		EB4A50332A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMovieDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EB857A2B2A97931E0086B905 /* MultipleOptionsPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleOptionsPicker.storyboard; sourceTree = "<group>"; };
+		EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsPickerViewController.swift; sourceTree = "<group>"; };
+		EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsTableViewCell.swift; sourceTree = "<group>"; };
 		FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -120,6 +128,7 @@
 				0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */,
 				0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */,
 				0A88A0AC2A8BDCC9006C630F /* ChangePassword.storyboard */,
+				EB857A2B2A97931E0086B905 /* MultipleOptionsPicker.storyboard */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -130,6 +139,7 @@
 				0A88A0B52A8BE444006C630F /* SettingsViewController.swift */,
 				EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */,
 				EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */,
+				EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				EB4A50332A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift */,
+				EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */,
+				EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -336,6 +348,7 @@
 				0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */,
 				0A88A0AF2A8BDD13006C630F /* UserHome.storyboard in Resources */,
 				0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */,
+				EB857A2C2A97931E0086B905 /* MultipleOptionsPicker.storyboard in Resources */,
 				0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */,
 				0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */,
 				0A88A0A02A8BDC48006C630F /* ViewMovie.storyboard in Resources */,
@@ -366,10 +379,13 @@
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
 				EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */,
+				EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */,
 				EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */,
 				0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */,
+				EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */,
 				FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */,
 				EB42567A2A9090CF00B00F20 /* User+CoreDataProperties.swift in Sources */,
+				EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */,
 				0ACF3C4F2A8B5D37000AA6CB /* GradientView.swift in Sources */,
 				EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */,
 				EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */,
