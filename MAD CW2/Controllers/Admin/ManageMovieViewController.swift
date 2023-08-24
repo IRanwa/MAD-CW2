@@ -6,19 +6,26 @@
 //
 
 import UIKit
+import CoreData
 
-class ManageMovieViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MultipleOptionsViewControllerDelegate {
+class ManageMovieViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, MultipleOptionsViewControllerDelegate {
+    var context:NSManagedObjectContext?{
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return nil
+        }
+        return appDelegate.stadiaContainer.viewContext;
+    }
     
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
-    //@IBOutlet weak var contentView: UIView!
     @IBOutlet weak var imgMovie: UIImageView!
-    @IBOutlet weak var txtMovieRating: UILabel!
+    @IBOutlet weak var txtMovieRating: UITextField!
     @IBOutlet weak var txtMovieDesc: UITextView!
     @IBOutlet weak var txtMovieTrailer: UITextField!
-    @IBOutlet weak var txtMoviewName: UITextField!
     @IBOutlet weak var txtGenres: UITextField!
     @IBOutlet weak var txtReleaseDate: UITextField!
+    @IBOutlet weak var txtMovieIMDB: UITextField!
+    @IBOutlet weak var txtMovieName: UITextField!
     
     var identifier: String?
     let datePicker = UIDatePicker()
@@ -37,6 +44,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
         toolbar.setItems([flexibleSpace, doneButton], animated: false)
         txtReleaseDate.inputAccessoryView = toolbar
         
+        txtMovieRating.keyboardType = .decimalPad
         
         //scrollView.contentSize = contentView.frame.size
         self.navigationController?.navigationBar.isHidden = false
@@ -49,6 +57,10 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
             self.navigationItem.title = "Update Movie"
         }
         
+        txtMovieName.delegate = self
+        txtMovieRating.delegate = self
+        txtMovieTrailer.delegate = self
+        txtMovieIMDB.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -63,24 +75,69 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func btnSaveTapped(_ sender: Any) {
-        let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
-        
-        let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
-            // Handle "Yes" button tap
-            print("User tapped Yes")
+//        let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
+//
+//        let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
+//            // Handle "Yes" button tap
+//            print("User tapped Yes")
+//        }
+//
+//        let noAction = UIAlertAction(title: "No", style: .default) { _ in
+//            // Handle "No" button tap
+//            print("User tapped No")
+//        }
+//
+//        alertController.addAction(yesAction)
+//        alertController.addAction(noAction)
+//
+//        present(alertController, animated: true, completion: nil)
+        do{
+            let status = verifyFields()
+            if(status){
+                _ = Movie(coverimage: CommonData.imageToBase64(image: imgMovie.image!), desc: txtMovieDesc.text!, id: UUID().uuidString, imdblink: txtMovieIMDB.text!, name: txtMovieName.text!, rating: Double(txtMovieRating.text!) ?? 0.0, useroverallrating: 0.0, youtubelink: txtMovieTrailer.text!, releaseDate: DateFormatter().date(from: txtReleaseDate.text!), genres: txtGenres.text!, insertIntoManagedObjectContext: context!)
+                try context?.save()
+                
+                let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
+                let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar") as! UITabBarController
+                navigationController!.setViewControllers([tabBarController], animated: true)
+            }
+        }catch{
+            print("Movie create failed.")
         }
-        
-        let noAction = UIAlertAction(title: "No", style: .default) { _ in
-            // Handle "No" button tap
-            print("User tapped No")
-        }
-        
-        alertController.addAction(yesAction)
-        alertController.addAction(noAction)
-        
-        present(alertController, animated: true, completion: nil)
     }
     
+    func verifyFields() -> Bool{
+        var status = true
+        let movieName = txtMovieName.text!.trimmingCharacters(in: .whitespaces)
+        let movieDesc = txtMovieDesc.text!.trimmingCharacters(in: .whitespaces)
+        let movieRating = txtMovieRating.text!.trimmingCharacters(in: .whitespaces)
+        let movieTrailer = txtMovieTrailer.text!.trimmingCharacters(in: .whitespaces)
+        let movieIMDB = txtMovieIMDB.text!.trimmingCharacters(in: .whitespaces)
+        let movieGenre = txtGenres.text!.trimmingCharacters(in: .whitespaces)
+        let movieReleaseDate = txtReleaseDate.text!.trimmingCharacters(in: .whitespaces)
+        
+        if(movieName == "" || movieDesc == "" || movieRating == "" || movieTrailer == "" || movieIMDB == "" || movieGenre == "" || movieReleaseDate == ""){
+            showErrorPopup(message: "Fill all the field.")
+            status = false
+        }
+        return status
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtMovieName.resignFirstResponder()
+        txtMovieDesc.resignFirstResponder()
+        txtMovieRating.resignFirstResponder()
+        txtMovieTrailer.resignFirstResponder()
+        txtMovieIMDB.resignFirstResponder()
+        return true
+    }
+    
+    func showErrorPopup(message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
     
     @IBAction func movieImageTapped(_ sender: Any) {
         let imagePicker = UIImagePickerController()
@@ -92,6 +149,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.originalImage] as? UIImage {
             imgMovie.image = selectedImage
+            imgMovie.contentMode = .scaleAspectFit
         }
         picker.dismiss(animated: true, completion: nil)
         

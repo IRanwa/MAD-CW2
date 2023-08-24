@@ -13,6 +13,7 @@ import CoreData
 public class Movie: NSManagedObject {
     convenience init(coverimage: String, desc: String, id: String, imdblink: String,
                      name: String, rating: Double, useroverallrating: Double, youtubelink: String,
+                     releaseDate: Date?, genres: String,
                      insertIntoManagedObjectContext context : NSManagedObjectContext) {
         self.init(context: context)
         self.coverimage = coverimage
@@ -23,5 +24,7 @@ public class Movie: NSManagedObject {
         self.rating = rating
         self.useroverallrating = useroverallrating
         self.youtubelink = youtubelink
+        self.releaseDate = releaseDate
+        self.genres = genres
     }
 }

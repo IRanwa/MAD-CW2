@@ -38,10 +38,11 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
             if(movies != nil && movies!.count > 0){
                 self.moviesList = movies!
                 moviesTblView.reloadData()
-            }else{
-                _ = Movie(coverimage: CommonData.imageToBase64(image: UIImage(named: "TestMovie")!), desc: "Mission Impossible Image", id: UUID().uuidString, imdblink: "https://www.imdb.com/title/tt9603212/", name: "Mission Impossible", rating: 4.5, useroverallrating: 4.5, youtubelink: "https://www.youtube.com/watch?v=avz06PDqDbM&t=55s&pp=ygUabWlzc2lvbiBpbXBvc3NpYmxlIHRyYWlsZXI%3D", insertIntoManagedObjectContext: context!)
-                try context?.save()
             }
+//            else{
+//                _ = Movie(coverimage: CommonData.imageToBase64(image: UIImage(named: "TestMovie")!), desc: "Mission Impossible Image", id: UUID().uuidString, imdblink: "https://www.imdb.com/title/tt9603212/", name: "Mission Impossible", rating: 4.5, useroverallrating: 4.5, youtubelink: "https://www.youtube.com/watch?v=avz06PDqDbM&t=55s&pp=ygUabWlzc2lvbiBpbXBvc3NpYmxlIHRyYWlsZXI%3D", insertIntoManagedObjectContext: context!)
+//                try context?.save()
+//            }
         }catch{
             print("Movies loading failed")
         }
@@ -56,8 +57,36 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
             let cell = tableView.dequeueReusableCell(withIdentifier: "movieDetailTblViewCell", for: indexPath) as! AdminMovieDetailTableViewCell
             cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
             cell.movieTitleLbl.text = movie.name
+            cell.movieGenresLbl.text = movie.genres?.replacingOccurrences(of: ",", with: "|")
             return cell
         }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let movie = moviesList[indexPath.row]
+            let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
+           
+                   let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
+                       do{
+                           self.context?.delete(movie)
+                           try self.context?.save()
+                           self.moviesList.remove(at: indexPath.row)
+                           self.moviesTblView.reloadData()
+                       }catch{
+                           print("Movie remove failed")
+                       }
+                   }
+           
+                   let noAction = UIAlertAction(title: "No", style: .default) { _ in
+                       print("User tapped No")
+                   }
+           
+                   alertController.addAction(yesAction)
+                   alertController.addAction(noAction)
+           
+                   present(alertController, animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

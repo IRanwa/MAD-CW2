@@ -31,7 +31,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-FP-iYy">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="250"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestMovie" translatesAutoresizingMaskIntoConstraints="NO" id="oar-DX-MEU">
+                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UploadMovieImage" translatesAutoresizingMaskIntoConstraints="NO" id="oar-DX-MEU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="250"/>
                                                                 <gestureRecognizers/>
                                                                 <connections>
@@ -40,7 +40,9 @@
                                                             </imageView>
                                                         </subviews>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="oar-DX-MEU" secondAttribute="trailing" id="aIy-gU-kLG"/>
                                                             <constraint firstAttribute="height" constant="250" id="bHP-SS-nUI"/>
+                                                            <constraint firstItem="oar-DX-MEU" firstAttribute="leading" secondItem="xdI-FP-iYy" secondAttribute="leading" id="dlP-yd-SAy"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="J5R-y8-4Km">
@@ -96,7 +98,6 @@
                                                                             </label>
                                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-rW-bvg">
                                                                                 <rect key="frame" x="0.0" y="17" width="353" height="123"/>
-                                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -374,9 +375,10 @@
                         <outlet property="scrollView" destination="SZp-tR-bFh" id="dIT-25-fJw"/>
                         <outlet property="txtGenres" destination="xuQ-o9-HLd" id="M7D-WI-v2a"/>
                         <outlet property="txtMovieDesc" destination="sIf-rW-bvg" id="puG-ZB-2fH"/>
-                        <outlet property="txtMovieRating" destination="FhX-Jc-tGK" id="jab-i2-wNV"/>
+                        <outlet property="txtMovieIMDB" destination="V8I-TG-4kF" id="oGy-VR-rS4"/>
+                        <outlet property="txtMovieName" destination="wuS-FR-E7l" id="Ld9-Kw-V7A"/>
+                        <outlet property="txtMovieRating" destination="Xzl-Ng-lqi" id="wtJ-Mu-Yfi"/>
                         <outlet property="txtMovieTrailer" destination="4WD-LX-ZUc" id="Pf7-QZ-yzw"/>
-                        <outlet property="txtMoviewName" destination="V8I-TG-4kF" id="fAc-Zd-cya"/>
                         <outlet property="txtReleaseDate" destination="2w5-VM-Jrm" id="ZDP-go-k1B"/>
                     </connections>
                 </viewController>
@@ -397,7 +399,7 @@
     </scenes>
     <resources>
         <image name="BackGround" width="100" height="100"/>
-        <image name="TestMovie" width="666.66668701171875" height="1000"/>
+        <image name="UploadMovieImage" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

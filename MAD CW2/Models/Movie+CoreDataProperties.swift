@@ -24,6 +24,8 @@ extension Movie {
     @NSManaged public var rating: Double
     @NSManaged public var useroverallrating: Double
     @NSManaged public var youtubelink: String?
+    @NSManaged public var releaseDate: Date?
+    @NSManaged public var genres: String?
     @NSManaged public var movieratingrelationship: MovieRating?
 
 }
