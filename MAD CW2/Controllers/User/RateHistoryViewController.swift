@@ -16,7 +16,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         }
         return appDelegate.stadiaContainer.viewContext;
     }
-    var moviesList = [Movie]()
+    var ratingList = [MovieRating]()
     var selectedMovie: Movie?
     
     @IBOutlet weak var moviesTblView: UITableView!
@@ -34,15 +34,18 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     func loadMoviesList(movieName: String){
         do{
             let request = NSFetchRequest<NSFetchRequestResult>(
-                entityName: "Movie"
+                entityName: "MovieRating"
             )
-            request.predicate = NSPredicate(format: "name LIKE[c] %@", "*\(movieName)*")
-            let movies = try self.context?.fetch(request) as? [Movie]
-            if(movies != nil && movies!.count > 0){
-                self.moviesList = movies!
+            
+            request.predicate = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            let movieRatings = try self.context?.fetch(request) as? [MovieRating]
+            
+            
+            if(movieRatings != nil && movieRatings!.count > 0){
+                self.ratingList = movieRatings!
                 
             }else{
-                self.moviesList = []
+                self.ratingList = []
             }
             moviesTblView.reloadData()
         }catch{
@@ -51,11 +54,12 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return moviesList.count
+        return ratingList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let movie = moviesList[indexPath.row]
+        let movie = ratingList[indexPath.row].movierelationship as! Movie
+        let movierating = ratingList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "userRatingDetailTblViewCell", for: indexPath) as! UserRatingDetailTableViewCell
         cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
         cell.movieTitleLbl.text = movie.name
@@ -74,14 +78,14 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let movie = moviesList[indexPath.row]
+            let movie = ratingList[indexPath.row]
             let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
             
             let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
                 do{
                     self.context?.delete(movie)
                     try self.context?.save()
-                    self.moviesList.remove(at: indexPath.row)
+                    self.ratingList.remove(at: indexPath.row)
                     self.moviesTblView.reloadData()
                 }catch{
                     print("Movie remove failed")
@@ -100,7 +104,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedMovie = moviesList[indexPath.row]
+        selectedMovie = ratingList[indexPath.row].movierelationship as! Movie
         performSegue(withIdentifier: "ShowMovieDetail", sender: self)
                                   
     }
@@ -118,6 +122,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
             
             detailviewcontroller.selectedMovie = selectedMovie
             detailviewcontroller.context = self.context
+            detailviewcontroller.identifier = segue.identifier
             
         default:
             fatalError("Unexpected seague identifier \(segue.identifier)")

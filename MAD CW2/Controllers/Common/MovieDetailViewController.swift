@@ -11,6 +11,7 @@ import CoreData
 class MovieDetailViewController: UIViewController {
 
     var selectedMovie: Movie?
+    var identifier: String?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var lblMovieGenre: UILabel!
@@ -19,13 +20,25 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var imgMovie: UIImageView!
     @IBOutlet weak var lblMovieTitle: UILabel!
     @IBOutlet weak var containerMovieRating: UIStackView!
+    @IBOutlet weak var btnMovieAction: UIButton!
     
     var ratingImgs = [UIImageView]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadMovieDetails()
         
-
+        if let ident = identifier {
+            loadMovieDetails()
+            
+            if ident == "ShowMovieDetail" {
+                btnMovieAction.setTitle("Update Info", for: <#T##UIControl.State#>)
+            } else if ident == "UserMovieDetail" {
+                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+            } else if ident == "ShowUserFavMovieDetail" {
+                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+            }
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -51,12 +64,33 @@ class MovieDetailViewController: UIViewController {
     
 
     @IBAction func clickUpdateMovie(_ sender: Any) {
+        if let ident = identifier {
+            if ident == "ShowMovieDetail" {
+                updateMovieDetails()
+            } else if ident == "UserMovieDetail" {
+            } else if ident == "ShowUserFavMovieDetail" {
+            }
+        }
+        
+    }
+    
+    func updateMovieDetails(){
         let storyboard = UIStoryboard(name: "ManageMovie", bundle: nil)
         let manageMovieViewController = storyboard.instantiateViewController(withIdentifier: "ManageMovieView") as! ManageMovieViewController
         manageMovieViewController.selectedMovie = selectedMovie
         manageMovieViewController.identifier = "Update"
         navigationController!.pushViewController(manageMovieViewController, animated: true)
     }
+    
+    
+    func rateMovie(){
+        /*let storyboard = UIStoryboard(name: "RateMovie", bundle: nil)
+        let manageMovieViewController = storyboard.instantiateViewController(withIdentifier: "RateMovieView") as! ManageMovieViewController
+        manageMovieViewController.selectedMovie = selectedMovie
+        manageMovieViewController.identifier = "Update"
+        navigationController!.pushViewController(manageMovieViewController, animated: true)*/
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
