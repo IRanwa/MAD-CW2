@@ -88,6 +88,7 @@ class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowL
             
             detailviewcontroller.selectedMovie = selectedMovie
             detailviewcontroller.context = self.context
+            detailviewcontroller.identifier = segue.identifier
             
         default:
             fatalError("Unexpected seague identifier \(segue.identifier)")

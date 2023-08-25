@@ -327,6 +327,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnMovieAction" destination="OxU-OO-LF2" id="i7g-eb-zZ0"/>
                         <outlet property="containerMovieRating" destination="rjA-bR-YPZ" id="nwH-Ty-Wu4"/>
                         <outlet property="imgMovie" destination="pHG-Bu-bVb" id="i2I-kH-0Hb"/>
                         <outlet property="lblMovieDesc" destination="Itu-a2-qbz" id="UZ6-hg-ZFN"/>

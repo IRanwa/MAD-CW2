@@ -11,6 +11,7 @@ import CoreData
 class MovieDetailViewController: UIViewController {
 
     var selectedMovie: Movie?
+    var identifier: String?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var lblMovieGenre: UILabel!
@@ -19,6 +20,7 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var imgMovie: UIImageView!
     @IBOutlet weak var lblMovieTitle: UILabel!
     @IBOutlet weak var containerMovieRating: UIStackView!
+    @IBOutlet weak var btnMovieAction: UIButton!
     @IBOutlet weak var updateAndRateButton: UIButton!
     @IBOutlet weak var movieLikeView: UIView!
     @IBOutlet weak var movieLikeImg: UIImageView!
@@ -26,6 +28,18 @@ class MovieDetailViewController: UIViewController {
     var ratingImgs = [UIImageView]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let ident = identifier {
+            loadMovieDetails()
+            
+            if ident == "ShowMovieDetail" {
+                btnMovieAction.setTitle("Update Info", for: <#T##UIControl.State#>)
+            } else if ident == "UserMovieDetail" {
+                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+            } else if ident == "ShowUserFavMovieDetail" {
+                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+            }
+            
         loadMovieDetails()
         if(UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userType)) == String(describing: Enums.UserType.standard)){
             updateAndRateButton.titleLabel?.text = "Rate Movie"
@@ -33,6 +47,8 @@ class MovieDetailViewController: UIViewController {
         }else{
             movieLikeView.isHidden = true
         }
+        
+        // Do any additional setup after loading the view.
     }
     
     func loadMovieDetails(){
@@ -57,14 +73,19 @@ class MovieDetailViewController: UIViewController {
     
 
     @IBAction func clickUpdateMovie(_ sender: Any) {
-        if(UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userType)) == String(describing: Enums.UserType.admin)){
-            updateMovie()
-        }else{
-            rateMovie()
+        if let ident = identifier {
+            if ident == "ShowMovieDetail" {
+                updateMovieDetails()
+            } else if ident == "UserMovieDetail" {
+                rateMovie()
+            } else if ident == "ShowUserFavMovieDetail" {
+                rateMovie()
+            }
         }
+        
     }
     
-    func updateMovie(){
+    func updateMovieDetails(){
         let storyboard = UIStoryboard(name: "ManageMovie", bundle: nil)
         let manageMovieViewController = storyboard.instantiateViewController(withIdentifier: "ManageMovieView") as! ManageMovieViewController
         manageMovieViewController.selectedMovie = selectedMovie

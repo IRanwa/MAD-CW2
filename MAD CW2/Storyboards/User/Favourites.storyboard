@@ -45,6 +45,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="VsD-fe-fGs"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="BTw-9r-2UQ" appends="YES" id="ocz-Sd-VJo"/>
+                                                        </connections>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -187,6 +190,11 @@
                 <tapGestureRecognizer id="oI8-LQ-afv">
                     <connections>
                         <segue destination="xaY-JW-OqH" kind="show" identifier="ShowUserFavMovieDetail" id="Asi-Wo-82N"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BTw-9r-2UQ">
+                    <connections>
+                        <action selector="searchOnClick:" destination="Y6W-OH-hqX" id="keJ-RR-PBv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
