@@ -16,5 +16,6 @@ class Enums{
     enum UserDefaultKeys{
         case email
         case userType
+        case userId
     }
 }

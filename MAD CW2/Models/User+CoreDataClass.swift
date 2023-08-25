@@ -2,7 +2,7 @@
 //  User+CoreDataClass.swift
 //  MAD CW2
 //
-//  Created by user239258 on 8/19/23.
+//  Created by user245466 on 8/26/23.
 //
 //
 

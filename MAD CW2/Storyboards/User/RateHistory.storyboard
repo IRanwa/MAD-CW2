@@ -22,17 +22,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-XD-BVe">
                                 <rect key="frame" x="5" y="59" width="383" height="710"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjT-rp-u8U">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYH-Ah-NYf">
                                         <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnL-u3-ret">
-                                                <rect key="frame" x="10" y="5" width="363" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oK4-RX-18N">
+                                                <rect key="frame" x="10" y="0.0" width="363" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7t2-xA-mYH">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fag-zU-DwF">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="1bR-4g-O8b"/>
-                                                        </constraints>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -42,11 +39,11 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-n9-5Dv">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0OX-VY-AcD">
                                                         <rect key="frame" x="343" y="0.0" width="20" height="50"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="3XI-Ur-b6j"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="jDH-8C-RVS"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -54,10 +51,11 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="gnL-u3-ret" firstAttribute="top" secondItem="fjT-rp-u8U" secondAttribute="top" constant="5" id="MvV-Km-s6L"/>
-                                            <constraint firstItem="gnL-u3-ret" firstAttribute="leading" secondItem="fjT-rp-u8U" secondAttribute="leading" constant="10" id="ZBK-PU-OHE"/>
-                                            <constraint firstAttribute="trailing" secondItem="gnL-u3-ret" secondAttribute="trailing" constant="10" id="eMd-jR-JLd"/>
-                                            <constraint firstAttribute="height" constant="50" id="liL-gj-6wT"/>
+                                            <constraint firstItem="oK4-RX-18N" firstAttribute="leading" secondItem="tYH-Ah-NYf" secondAttribute="leading" constant="10" id="2M9-pg-mAW"/>
+                                            <constraint firstAttribute="bottom" secondItem="oK4-RX-18N" secondAttribute="bottom" id="Pnc-U2-reS"/>
+                                            <constraint firstAttribute="trailing" secondItem="oK4-RX-18N" secondAttribute="trailing" constant="10" id="eyD-1T-YYD"/>
+                                            <constraint firstAttribute="height" constant="50" id="xqu-QU-wg1"/>
+                                            <constraint firstItem="oK4-RX-18N" firstAttribute="top" secondItem="tYH-Ah-NYf" secondAttribute="top" id="zOu-cY-DTd"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-ID-eM8">
@@ -160,12 +158,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="6zo-ID-eM8" firstAttribute="top" secondItem="fjT-rp-u8U" secondAttribute="bottom" constant="20" id="20X-zB-2ky"/>
-                                    <constraint firstItem="fjT-rp-u8U" firstAttribute="leading" secondItem="fiw-XD-BVe" secondAttribute="leading" id="Ovl-3X-lkZ"/>
-                                    <constraint firstItem="fjT-rp-u8U" firstAttribute="top" secondItem="fiw-XD-BVe" secondAttribute="top" id="Roh-uK-Ocs"/>
-                                    <constraint firstAttribute="trailing" secondItem="fjT-rp-u8U" secondAttribute="trailing" id="aqW-8h-mtQ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CeT-3P-ioZ"/>
@@ -188,7 +180,6 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="moviesTblView" destination="Hj1-K0-NT7" id="SsA-SX-3la"/>
-                        <outlet property="txtMovieSearch" destination="7t2-xA-mYH" id="hmT-xV-cSj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

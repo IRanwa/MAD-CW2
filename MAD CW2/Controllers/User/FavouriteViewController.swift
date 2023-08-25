@@ -16,7 +16,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         return appDelegate.stadiaContainer.viewContext;
     }
-    var moviesList = [Movie]()
+    var moviesList = [Favourite]()
     var selectedMovie: Movie?
     
     @IBOutlet weak var moviesTblView: UITableView!
@@ -34,12 +34,13 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     func loadMoviesList(movieName: String){
         do{
             let request = NSFetchRequest<NSFetchRequestResult>(
-                entityName: "Movie"
+                entityName: "Favourite"
             )
-            request.predicate = NSPredicate(format: "name LIKE[c] %@", "*\(movieName)*")
-            let movies = try self.context?.fetch(request) as? [Movie]
-            if(movies != nil && movies!.count > 0){
-                self.moviesList = movies!
+            request.predicate = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            let favouriteMovies = try self.context?.fetch(request) as? [Favourite]
+            
+            if(favouriteMovies != nil && favouriteMovies!.count > 0){
+                self.moviesList = favouriteMovies!
                 
             }else{
                 self.moviesList = []
@@ -55,7 +56,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let movie = moviesList[indexPath.row]
+        let movie = moviesList[indexPath.row].movierelatioship?.firstObject as! Movie
         let cell = tableView.dequeueReusableCell(withIdentifier: "favouriteMovieTblViewCell", for: indexPath) as! FavouriteTableViewCell
         cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
         cell.movieTitleLbl.text = movie.name
@@ -100,8 +101,8 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedMovie = moviesList[indexPath.row]
-        performSegue(withIdentifier: "ShowMovieDetail", sender: self)
+        selectedMovie = moviesList[indexPath.row].movierelatioship?.firstObject as? Movie
+        performSegue(withIdentifier: "ShowUserFavMovieDetail", sender: self)
                                   
     }
     
@@ -110,7 +111,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
         switch(segue.identifier ?? ""){
             
             
-        case "ShowMovieDetail":
+        case "ShowUserFavMovieDetail":
             guard let detailviewcontroller = segue.destination as? MovieDetailViewController
             else{
                 fatalError("Unexpected destination \(segue.destination)")

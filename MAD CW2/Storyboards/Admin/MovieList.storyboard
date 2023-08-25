@@ -26,13 +26,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAp-zI-fM1">
-                                                <rect key="frame" x="10" y="5" width="363" height="50"/>
+                                                <rect key="frame" x="10" y="0.0" width="363" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-Oi-w0D">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="Oq1-lC-tFR"/>
-                                                        </constraints>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -58,7 +55,8 @@
                                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="OAp-zI-fM1" secondAttribute="trailing" constant="10" id="3VW-8P-dsi"/>
-                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="top" constant="5" id="SBS-Cu-i6Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="OAp-zI-fM1" secondAttribute="bottom" id="7hj-ZD-IFR"/>
+                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="top" id="DII-BQ-HOW"/>
                                             <constraint firstItem="OAp-zI-fM1" firstAttribute="leading" secondItem="Jja-i4-aVU" secondAttribute="leading" constant="10" id="bFg-jM-LTu"/>
                                             <constraint firstAttribute="height" constant="50" id="fkl-HA-FbH"/>
                                         </constraints>
@@ -188,10 +186,10 @@
         <!--MovieDetail-->
         <scene sceneID="3aI-1Z-EFu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ocA-zl-W9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="MovieDetail" id="QeP-Z0-u1j" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="m9F-Av-MIt"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocA-zl-W9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3443" y="-100"/>
         </scene>

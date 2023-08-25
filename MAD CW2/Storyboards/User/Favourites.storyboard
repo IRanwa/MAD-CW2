@@ -22,17 +22,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Siy-PO-eOT">
                                 <rect key="frame" x="5" y="59" width="383" height="710"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cO-8j-vdB">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwG-wl-4If">
                                         <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMA-og-Yd0">
-                                                <rect key="frame" x="10" y="5" width="363" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-iu-jRg">
+                                                <rect key="frame" x="10" y="0.0" width="363" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-Xs-34u">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uwc-r9-oc5">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="6lw-Zn-TOC"/>
-                                                        </constraints>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -42,11 +39,11 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IcT-U0-SQr">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-2b-vjH">
                                                         <rect key="frame" x="343" y="0.0" width="20" height="50"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="NxI-FZ-NqY"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="VsD-fe-fGs"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -54,10 +51,11 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="cMA-og-Yd0" firstAttribute="leading" secondItem="8cO-8j-vdB" secondAttribute="leading" constant="10" id="3pn-NB-JfP"/>
-                                            <constraint firstAttribute="trailing" secondItem="cMA-og-Yd0" secondAttribute="trailing" constant="10" id="Yqc-kc-HGE"/>
-                                            <constraint firstItem="cMA-og-Yd0" firstAttribute="top" secondItem="8cO-8j-vdB" secondAttribute="top" constant="5" id="hKe-6C-gLf"/>
-                                            <constraint firstAttribute="height" constant="50" id="rpL-Mc-FiR"/>
+                                            <constraint firstItem="Oiv-iu-jRg" firstAttribute="top" secondItem="GwG-wl-4If" secondAttribute="top" id="4fq-w2-xlk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oiv-iu-jRg" secondAttribute="bottom" id="9ZH-0K-A9J"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oiv-iu-jRg" secondAttribute="trailing" constant="10" id="Hk6-cb-rgD"/>
+                                            <constraint firstItem="Oiv-iu-jRg" firstAttribute="leading" secondItem="GwG-wl-4If" secondAttribute="leading" constant="10" id="dlE-hK-A8v"/>
+                                            <constraint firstAttribute="height" constant="50" id="w35-A6-2pg"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zte-e2-U16">
@@ -147,6 +145,7 @@
                                                             <outlet property="movieRatingLbl" destination="ey3-h6-Nv8" id="H1G-T9-P8G"/>
                                                             <outlet property="movieReleaseDateLbl" destination="BUE-VC-jRh" id="X4s-Gq-a2b"/>
                                                             <outlet property="movieTitleLbl" destination="R6R-J0-I7l" id="tny-Ph-Nyf"/>
+                                                            <outletCollection property="gestureRecognizers" destination="oI8-LQ-afv" appends="YES" id="4cy-Sf-yR6"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -160,12 +159,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="8cO-8j-vdB" firstAttribute="top" secondItem="Siy-PO-eOT" secondAttribute="top" id="C8W-yf-NJh"/>
-                                    <constraint firstItem="zte-e2-U16" firstAttribute="top" secondItem="8cO-8j-vdB" secondAttribute="bottom" constant="20" id="Hrd-IV-HVG"/>
-                                    <constraint firstItem="8cO-8j-vdB" firstAttribute="leading" secondItem="Siy-PO-eOT" secondAttribute="leading" id="ZTU-kA-aqj"/>
-                                    <constraint firstAttribute="trailing" secondItem="8cO-8j-vdB" secondAttribute="trailing" id="vj1-oV-WgQ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NC3-CN-sB9"/>
@@ -188,12 +181,26 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="moviesTblView" destination="JIY-lP-7Qd" id="a6c-L9-ISs"/>
-                        <outlet property="txtMovieSearch" destination="h2z-Xs-34u" id="lY1-jv-1Pq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oI8-LQ-afv">
+                    <connections>
+                        <segue destination="xaY-JW-OqH" kind="show" identifier="ShowUserFavMovieDetail" id="Asi-Wo-82N"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+        <!--MovieDetail-->
+        <scene sceneID="DYK-VU-0I8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MovieDetail" id="xaY-JW-OqH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GGd-TH-dpZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmg-qX-sHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-32"/>
         </scene>
     </scenes>
     <resources>

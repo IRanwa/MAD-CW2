@@ -2,7 +2,7 @@
 //  MovieRating+CoreDataClass.swift
 //  MAD CW2
 //
-//  Created by user235597 on 8/16/23.
+//  Created by user245466 on 8/26/23.
 //
 //
 

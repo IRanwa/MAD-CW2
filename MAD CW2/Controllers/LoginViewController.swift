@@ -83,8 +83,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func submitOnClick(_ sender: Any) {
-        //txtEmail.text = adminEmail
-        //txtPassword.text = adminPassword
+        txtEmail.text = "imesh.ranawaka@gmail.com"
+        txtPassword.text = "Test@1234"
         
         do{
             let status = verifyFields()
@@ -100,12 +100,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     if let userType = loginUser.usertype{
                         let password = loginUser.password!
                         let email = loginUser.email!
+                        let userId = loginUser.id!
                         if(userType == String(describing:  Enums.UserType.standard)){
                             if(password != txtPassword.text){
                                 showErrorPopup(message: "User login credentials invalid.")
                             }else{
                                 UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
                                 UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
+                                UserDefaults.standard.set(userId, forKey: String(describing: Enums.UserDefaultKeys.userId))
                                 let storyboard = UIStoryboard(name: "UserHome", bundle: nil)
                                 let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar") as! UITabBarController
                                 navigationController!.setViewControllers([tabBarController], animated: true)
@@ -116,7 +118,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             }else{
                                 UserDefaults.standard.set(email, forKey: String(describing: Enums.UserDefaultKeys.email))
                                 UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
-                                
+                                UserDefaults.standard.set(userId, forKey: String(describing: Enums.UserDefaultKeys.userId))
                                 let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
                                 let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar") as! UITabBarController
                                 navigationController!.setViewControllers([tabBarController], animated: true)

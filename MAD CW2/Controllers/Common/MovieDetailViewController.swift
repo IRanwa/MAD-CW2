@@ -65,7 +65,7 @@ class MovieDetailViewController: UIViewController {
                 let request = NSFetchRequest<NSFetchRequestResult>(
                     entityName: "Movie"
                 )
-                request.predicate = NSPredicate(format: "id == %@", movie.id)
+                request.predicate = NSPredicate(format: "id == %@", movie.id!)
                 let movies = try self.context?.fetch(request) as? [Movie]
                 if(movies != nil && movies!.count > 0){
                     self.selectedMovie = movies![0]
