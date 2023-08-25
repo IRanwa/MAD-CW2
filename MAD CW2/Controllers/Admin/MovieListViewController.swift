@@ -19,6 +19,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
     var moviesList = [Movie]()
     
     @IBOutlet weak var moviesTblView: UITableView!
+    @IBOutlet weak var txtMovieSearch: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +27,23 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         self.navigationItem.title = "Movies"
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
-        loadMoviesList()
+        loadMoviesList(movieName: "")
     }
     
-    func loadMoviesList(){
+    func loadMoviesList(movieName: String){
         do{
             let request = NSFetchRequest<NSFetchRequestResult>(
                 entityName: "Movie"
             )
+             request.predicate = NSPredicate(format: "name LIKE[c] %@", "*\(movieName)*")
             let movies = try self.context?.fetch(request) as? [Movie]
             if(movies != nil && movies!.count > 0){
                 self.moviesList = movies!
-                moviesTblView.reloadData()
+                
+            }else{
+                self.moviesList = []
             }
-//            else{
-//                _ = Movie(coverimage: CommonData.imageToBase64(image: UIImage(named: "TestMovie")!), desc: "Mission Impossible Image", id: UUID().uuidString, imdblink: "https://www.imdb.com/title/tt9603212/", name: "Mission Impossible", rating: 4.5, useroverallrating: 4.5, youtubelink: "https://www.youtube.com/watch?v=avz06PDqDbM&t=55s&pp=ygUabWlzc2lvbiBpbXBvc3NpYmxlIHRyYWlsZXI%3D", insertIntoManagedObjectContext: context!)
-//                try context?.save()
-//            }
+            moviesTblView.reloadData()
         }catch{
             print("Movies loading failed")
         }
@@ -58,6 +59,11 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
             cell.movieTitleLbl.text = movie.name
             cell.movieGenresLbl.text = movie.genres?.replacingOccurrences(of: ",", with: "|")
+            
+            let selectedBackgroundView = UIView()
+            selectedBackgroundView.backgroundColor = UIColor.systemGray // Customize the highlight color
+                    
+                    cell.selectedBackgroundView = selectedBackgroundView
             return cell
         }
     
@@ -87,6 +93,11 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
                    present(alertController, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func searchOnClick(_ sender: Any) {
+        loadMoviesList(movieName: txtMovieSearch.text ?? "")
+    }
+    
     /*
     // MARK: - Navigation
 

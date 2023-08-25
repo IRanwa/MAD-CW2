@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAp-zI-fM1">
-                                                <rect key="frame" x="10" y="0.0" width="363" height="50"/>
+                                                <rect key="frame" x="10" y="5" width="363" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-Oi-w0D">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -42,21 +42,25 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="03D-vP-07P">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="03D-vP-07P">
                                                         <rect key="frame" x="343" y="0.0" width="20" height="50"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="QoP-hw-3p5"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="fOm-HO-00C" appends="YES" id="gbd-Uu-fUI"/>
+                                                        </connections>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="centerY" secondItem="Jja-i4-aVU" secondAttribute="centerY" id="1bF-7e-Df5"/>
-                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="leading" secondItem="Jja-i4-aVU" secondAttribute="leading" constant="10" id="I4D-XC-piN"/>
-                                            <constraint firstAttribute="trailing" secondItem="OAp-zI-fM1" secondAttribute="trailing" constant="10" id="ao4-ua-d7c"/>
-                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="top" id="mRU-ex-zPz"/>
+                                            <constraint firstAttribute="trailing" secondItem="OAp-zI-fM1" secondAttribute="trailing" constant="10" id="3VW-8P-dsi"/>
+                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="top" constant="5" id="SBS-Cu-i6Z"/>
+                                            <constraint firstItem="OAp-zI-fM1" firstAttribute="leading" secondItem="Jja-i4-aVU" secondAttribute="leading" constant="10" id="bFg-jM-LTu"/>
+                                            <constraint firstAttribute="height" constant="50" id="fkl-HA-FbH"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6A1-Gc-bgA">
@@ -64,9 +68,9 @@
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7QW-Nv-RWY">
                                                 <rect key="frame" x="0.0" y="0.0" width="383" height="640"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieDetailTblViewCell" rowHeight="250" id="rj8-7R-ndk" customClass="AdminMovieDetailTableViewCell" customModule="MAD_CW2" customModuleProvider="target">
+                                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="movieDetailTblViewCell" rowHeight="250" id="rj8-7R-ndk" customClass="AdminMovieDetailTableViewCell" customModule="MAD_CW2" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="50" width="383" height="250"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rj8-7R-ndk" id="Llz-Up-Z8M">
@@ -74,47 +78,47 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-gt-LNK">
-                                                                    <rect key="frame" x="10" y="10" width="363" height="230"/>
+                                                                    <rect key="frame" x="0.0" y="10" width="383" height="230"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestMovie" translatesAutoresizingMaskIntoConstraints="NO" id="kDd-Af-g2y">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="230"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="230"/>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-OE-bdF">
-                                                                            <rect key="frame" x="186.66666666666663" y="0.0" width="176.33333333333337" height="230"/>
+                                                                            <rect key="frame" x="196.66666666666663" y="0.0" width="186.33333333333337" height="230"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission: Impossible – Dead Reckoning Part One" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSI-Pc-poi">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="176.33333333333334" height="95.666666666666671"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="186.33333333333334" height="71.666666666666671"/>
                                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action | Adventure | Thriller" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdI-yX-aJS">
-                                                                                    <rect key="frame" x="0.0" y="105.66666666666667" width="176.33333333333334" height="36.000000000000014"/>
+                                                                                    <rect key="frame" x="0.0" y="81.666666666666671" width="186.33333333333334" height="18"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGM-82-Zdr">
-                                                                                    <rect key="frame" x="0.0" y="151.66666666666666" width="176.33333333333334" height="78.333333333333343"/>
-                                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                    <rect key="frame" x="0.0" y="109.66666666666669" width="186.33333333333334" height="120.33333333333331"/>
                                                                                 </view>
                                                                             </subviews>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="250" id="D5b-Fb-U2o"/>
+                                                                        <constraint firstAttribute="height" constant="230" id="DB3-w4-iKD"/>
                                                                     </constraints>
                                                                 </stackView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="4Uc-gt-LNK" firstAttribute="top" secondItem="Llz-Up-Z8M" secondAttribute="top" constant="10" id="9U8-pn-r7G"/>
-                                                                <constraint firstItem="4Uc-gt-LNK" firstAttribute="leading" secondItem="Llz-Up-Z8M" secondAttribute="leading" constant="10" id="PFG-z0-3Ns"/>
-                                                                <constraint firstAttribute="bottom" secondItem="4Uc-gt-LNK" secondAttribute="bottom" constant="10" id="cLk-9E-KIR"/>
-                                                                <constraint firstAttribute="trailing" secondItem="4Uc-gt-LNK" secondAttribute="trailing" constant="10" id="dHJ-QV-N4G"/>
+                                                                <constraint firstAttribute="bottom" secondItem="4Uc-gt-LNK" secondAttribute="bottom" constant="10" id="7Vw-tH-zhv"/>
+                                                                <constraint firstItem="4Uc-gt-LNK" firstAttribute="leading" secondItem="Llz-Up-Z8M" secondAttribute="leading" id="pg1-F9-922"/>
+                                                                <constraint firstItem="4Uc-gt-LNK" firstAttribute="top" secondItem="Llz-Up-Z8M" secondAttribute="top" constant="10" id="r9c-CH-ofg"/>
+                                                                <constraint firstAttribute="trailing" secondItem="4Uc-gt-LNK" secondAttribute="trailing" id="uii-8g-iBH"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
                                                             <outlet property="movieGenresLbl" destination="WdI-yX-aJS" id="JKq-EC-t67"/>
                                                             <outlet property="movieImg" destination="kDd-Af-g2y" id="Ln8-6v-0Si"/>
@@ -133,7 +137,10 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6A1-Gc-bgA" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="bottom" constant="20" id="dGh-cn-oJC"/>
+                                    <constraint firstItem="6A1-Gc-bgA" firstAttribute="top" secondItem="Jja-i4-aVU" secondAttribute="bottom" constant="20" id="5B8-wc-yQB"/>
+                                    <constraint firstItem="Jja-i4-aVU" firstAttribute="top" secondItem="wQf-SM-rNi" secondAttribute="top" id="abL-V0-APO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jja-i4-aVU" secondAttribute="trailing" id="k5P-q5-I45"/>
+                                    <constraint firstItem="Jja-i4-aVU" firstAttribute="leading" secondItem="wQf-SM-rNi" secondAttribute="leading" id="kXd-YE-ySd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -158,9 +165,15 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="moviesTblView" destination="7QW-Nv-RWY" id="7aZ-jx-wQM"/>
+                        <outlet property="txtMovieSearch" destination="1ed-Oi-w0D" id="K2c-21-ubP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE5-ky-flW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fOm-HO-00C">
+                    <connections>
+                        <action selector="searchOnClick:" destination="Za4-Bl-TjO" id="FkC-iJ-udx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2727" y="-68"/>
         </scene>
