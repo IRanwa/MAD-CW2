@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MovieDetailViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vei-YR-YAa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                                             <color key="baseBackgroundColor" red="0.094117656349999995" green="0.3058823645" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="brJ-lm-81H" kind="show" id="xhy-EH-pP9"/>
+                                                            <action selector="clickUpdateMovie:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ddv-2d-pN1"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -192,9 +192,9 @@
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Ok-Km8">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="239.66666666666666"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="separatorColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="sectionIndexBackgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pp2-dD-gyL">
@@ -304,22 +304,20 @@
                             <constraint firstAttribute="trailing" secondItem="WPT-uC-m9J" secondAttribute="trailing" id="fn8-HV-vQC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerMovieRating" destination="rjA-bR-YPZ" id="nwH-Ty-Wu4"/>
+                        <outlet property="imgMovie" destination="pHG-Bu-bVb" id="i2I-kH-0Hb"/>
+                        <outlet property="lblMovieDesc" destination="Itu-a2-qbz" id="UZ6-hg-ZFN"/>
+                        <outlet property="lblMovieGenre" destination="Htf-VU-8gp" id="XIW-Dk-vxL"/>
+                        <outlet property="lblMovieRating" destination="5Fs-dB-teR" id="Zwi-5v-hXQ"/>
+                        <outlet property="lblMovieTitle" destination="fog-6o-Sx6" id="LXA-aS-oeH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="fne-ke-wYw"/>
                 <tapGestureRecognizer id="Mq8-M8-xja"/>
             </objects>
             <point key="canvasLocation" x="130" y="-2"/>
-        </scene>
-        <!--ManageMovie-->
-        <scene sceneID="TCC-ZO-Tzl">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ManageMovie" id="brJ-lm-81H" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="eL1-Jc-kbd"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9yM-9z-D8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="671" y="-50"/>
         </scene>
     </scenes>
     <resources>

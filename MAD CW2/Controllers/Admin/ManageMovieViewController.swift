@@ -28,6 +28,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var txtMovieName: UITextField!
     
     var identifier: String?
+    var selectedMovie: Movie?
     let datePicker = UIDatePicker()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,23 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
             self.navigationItem.title = "Add Movie"
         }else if(identifier == "Update"){
             self.navigationItem.title = "Update Movie"
+            if let movie = selectedMovie {
+                txtMovieName.text = movie.name
+                txtMovieDesc.text = movie.desc
+                txtGenres.text = movie.genres
+                txtMovieTrailer.text = movie.youtubelink
+                txtMovieIMDB.text = movie.imdblink
+                txtMovieRating.text = String(movie.rating)
+                
+                imgMovie.image = CommonData.base64ToImage(movie.coverimage!)
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                if let movieReleaseDate = movie.releaseDate{
+                    txtReleaseDate.text = dateFormatter.string(from: movieReleaseDate)
+                }
+                print(movie.releaseDate)
+            }
         }
         
         txtMovieName.delegate = self
@@ -75,26 +93,35 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func btnSaveTapped(_ sender: Any) {
-//        let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
-//
-//        let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
-//            // Handle "Yes" button tap
-//            print("User tapped Yes")
-//        }
-//
-//        let noAction = UIAlertAction(title: "No", style: .default) { _ in
-//            // Handle "No" button tap
-//            print("User tapped No")
-//        }
-//
-//        alertController.addAction(yesAction)
-//        alertController.addAction(noAction)
-//
-//        present(alertController, animated: true, completion: nil)
+        let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
+
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
+            if(self.identifier == "Add"){
+                self.addMovie()
+            }else if(self.identifier == "Update"){
+                        self.updateMovie()
+            }
+        }
+
+        let noAction = UIAlertAction(title: "No", style: .default) { _ in
+            // Handle "No" button tap
+            print("User tapped No")
+        }
+
+        alertController.addAction(yesAction)
+        alertController.addAction(noAction)
+
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func addMovie(){
         do{
             let status = verifyFields()
             if(status){
-                _ = Movie(coverimage: CommonData.imageToBase64(image: imgMovie.image!), desc: txtMovieDesc.text!, id: UUID().uuidString, imdblink: txtMovieIMDB.text!, name: txtMovieName.text!, rating: Double(txtMovieRating.text!) ?? 0.0, useroverallrating: 0.0, youtubelink: txtMovieTrailer.text!, releaseDate: DateFormatter().date(from: txtReleaseDate.text!), genres: txtGenres.text!, insertIntoManagedObjectContext: context!)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                
+                _ = Movie(coverimage: CommonData.imageToBase64(image: imgMovie.image!), desc: txtMovieDesc.text!, id: UUID().uuidString, imdblink: txtMovieIMDB.text!, name: txtMovieName.text!, rating: Double(txtMovieRating.text!) ?? 0.0, useroverallrating: 0.0, youtubelink: txtMovieTrailer.text!, releaseDate: dateFormatter.date(from: txtReleaseDate.text!), genres: txtGenres.text!, insertIntoManagedObjectContext: context!)
                 try context?.save()
                 
                 let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
@@ -105,6 +132,36 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
             print("Movie create failed.")
         }
     }
+    
+    
+    func updateMovie(){
+        do{
+            let status = verifyFields()
+            if(status){
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                selectedMovie?.coverimage = CommonData.imageToBase64(image: imgMovie.image!)
+                selectedMovie?.desc = txtMovieDesc.text!
+                selectedMovie?.imdblink = txtMovieIMDB.text!
+                selectedMovie?.name = txtMovieName.text!
+                selectedMovie?.rating = Double(txtMovieRating.text!) ?? 0.0
+                selectedMovie?.youtubelink = txtMovieTrailer.text!
+                selectedMovie?.releaseDate = dateFormatter.date(from: txtReleaseDate.text!)
+                selectedMovie?.genres = txtGenres.text!
+                try context?.save()
+                
+//                let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
+//                let tabBarController = storyboard.instantiateViewController(withIdentifier: "adminHomeTabBar") as! UIViewController
+//
+//                navigationController!.setViewControllers([tabBarController], animated: true)
+                navigationController?.popViewController(animated: true)
+            }
+        }catch{
+            print("Movie create failed.")
+        }
+    }
+    
+    
     
     func verifyFields() -> Bool{
         var status = true
