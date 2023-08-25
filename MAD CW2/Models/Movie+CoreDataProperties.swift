@@ -22,7 +22,7 @@ extension Movie {
     @NSManaged public var imdblink: String?
     @NSManaged public var name: String?
     @NSManaged public var rating: Double
-    @NSManaged public var useroverallrating: Double
+    @NSManaged public var useroverallrating: Int32
     @NSManaged public var youtubelink: String?
     @NSManaged public var releaseDate: Date?
     @NSManaged public var genres: String?

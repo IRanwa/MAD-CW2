@@ -19,7 +19,7 @@ extension MovieRating {
     @NSManaged public var comment: String?
     @NSManaged public var id: String
     @NSManaged public var movieid: String
-    @NSManaged public var rating: Double
+    @NSManaged public var rating: Int32
     @NSManaged public var userid: String
     @NSManaged public var movierelationship: Movie?
     @NSManaged public var userrelationship: User?

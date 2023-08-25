@@ -121,7 +121,7 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd"
                 
-                _ = Movie(coverimage: CommonData.imageToBase64(image: imgMovie.image!), desc: txtMovieDesc.text!, id: UUID().uuidString, imdblink: txtMovieIMDB.text!, name: txtMovieName.text!, rating: Double(txtMovieRating.text!) ?? 0.0, useroverallrating: 0.0, youtubelink: txtMovieTrailer.text!, releaseDate: dateFormatter.date(from: txtReleaseDate.text!), genres: txtGenres.text!, insertIntoManagedObjectContext: context!)
+                _ = Movie(coverimage: CommonData.imageToBase64(image: imgMovie.image!), desc: txtMovieDesc.text!, id: UUID().uuidString, imdblink: txtMovieIMDB.text!, name: txtMovieName.text!, rating: Double(txtMovieRating.text!) ?? 0.0, useroverallrating: 0, youtubelink: txtMovieTrailer.text!, releaseDate: dateFormatter.date(from: txtReleaseDate.text!), genres: txtGenres.text!, insertIntoManagedObjectContext: context!)
                 try context?.save()
                 
                 let storyboard = UIStoryboard(name: "AdminHome", bundle: nil)
