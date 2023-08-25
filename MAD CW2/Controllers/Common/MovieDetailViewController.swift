@@ -68,7 +68,9 @@ class MovieDetailViewController: UIViewController {
             if ident == "ShowMovieDetail" {
                 updateMovieDetails()
             } else if ident == "UserMovieDetail" {
+                rateMovie()
             } else if ident == "ShowUserFavMovieDetail" {
+                rateMovie()
             }
         }
         
