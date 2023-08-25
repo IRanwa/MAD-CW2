@@ -33,22 +33,18 @@ class MovieDetailViewController: UIViewController {
             loadMovieDetails()
             
             if ident == "ShowMovieDetail" {
-                btnMovieAction.setTitle("Update Info", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Update Info"
+                movieLikeView.isHidden = true
             } else if ident == "UserMovieDetail" {
-                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Rate"
+                updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
             } else if ident == "ShowUserFavMovieDetail" {
-                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Rate"
+                updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
             }
             
-        loadMovieDetails()
-        if(UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userType)) == String(describing: Enums.UserType.standard)){
-            updateAndRateButton.titleLabel?.text = "Rate Movie"
-            updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
-        }else{
-            movieLikeView.isHidden = true
+            loadMovieDetails()
         }
-        
-        // Do any additional setup after loading the view.
     }
     
     func loadMovieDetails(){

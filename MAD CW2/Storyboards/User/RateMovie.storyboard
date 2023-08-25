@@ -226,6 +226,12 @@
                             <constraint firstItem="xvV-Sv-nji" firstAttribute="leading" secondItem="jUL-BY-hhg" secondAttribute="leading" id="iHo-vu-Krd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieGenreLbl" destination="YRS-iQ-ugA" id="5vG-0C-B5K"/>
+                        <outlet property="movieImg" destination="Pds-6x-NFG" id="Wtx-sI-HtI"/>
+                        <outlet property="movieRatingLbl" destination="Tag-ey-jUp" id="bCa-Vd-5k1"/>
+                        <outlet property="movieTitleLbl" destination="oxj-tU-YG9" id="3va-7S-KuN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,13 +12,26 @@ class RateMovieViewController: UIViewController {
 
     var selectedMovie: Movie?
     var context: NSManagedObjectContext!
+    
+    @IBOutlet weak var movieTitleLbl: UILabel!
+    @IBOutlet weak var movieGenreLbl: UILabel!
+    @IBOutlet weak var movieRatingLbl: UILabel!
+    @IBOutlet weak var movieImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        loadMovie()
     }
     
-
+    func loadMovie(){
+        if let movie = selectedMovie{
+            movieTitleLbl.text = movie.name
+            movieGenreLbl.text = movie.genres!.replacingOccurrences(of: ",", with: " |")
+            movieRatingLbl.text = String(describing: movie.rating)
+            movieImg.image = CommonData.base64ToImage(movie.coverimage!)
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -71,7 +71,6 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
                 if let movieReleaseDate = movie.releaseDate{
                     txtReleaseDate.text = dateFormatter.string(from: movieReleaseDate)
                 }
-                print(movie.releaseDate)
             }
         }
         

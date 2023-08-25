@@ -414,9 +414,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "favouriteOnClick(_:)"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "getMovieLiked()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -430,9 +430,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "favouriteOnClick(_:)"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "getMovieLiked()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -478,9 +478,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "favouriteOnClick(_:)"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "getMovieLiked()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -526,9 +526,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "getMovieLiked()"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -574,9 +574,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "getMovieLiked()"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -622,10 +622,10 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getMovieLiked()"
-            landmarkType = "7">
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "MovieDetailViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "8BD195B2-6205-4713-9C91-26180E9B123A - ddec308b30cd145e"
@@ -670,9 +670,9 @@
             filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "getMovieLiked()"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
