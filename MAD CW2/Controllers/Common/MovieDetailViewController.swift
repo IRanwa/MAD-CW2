@@ -21,6 +21,9 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var lblMovieTitle: UILabel!
     @IBOutlet weak var containerMovieRating: UIStackView!
     @IBOutlet weak var btnMovieAction: UIButton!
+    @IBOutlet weak var updateAndRateButton: UIButton!
+    @IBOutlet weak var movieLikeView: UIView!
+    @IBOutlet weak var movieLikeImg: UIImageView!
     
     var ratingImgs = [UIImageView]()
     override func viewDidLoad() {
@@ -31,15 +34,17 @@ class MovieDetailViewController: UIViewController {
             
             if ident == "ShowMovieDetail" {
                 btnMovieAction.titleLabel?.text = "Update Info"
+                movieLikeView.isHidden = true
             } else if ident == "UserMovieDetail" {
                 btnMovieAction.titleLabel?.text = "Rate"
+                updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
             } else if ident == "ShowUserFavMovieDetail" {
                 btnMovieAction.titleLabel?.text = "Rate"
+                updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
             }
             
+            loadMovieDetails()
         }
-        
-        // Do any additional setup after loading the view.
     }
     
     func loadMovieDetails(){
@@ -84,15 +89,13 @@ class MovieDetailViewController: UIViewController {
         navigationController!.pushViewController(manageMovieViewController, animated: true)
     }
     
-    
     func rateMovie(){
-        /*let storyboard = UIStoryboard(name: "RateMovie", bundle: nil)
-        let manageMovieViewController = storyboard.instantiateViewController(withIdentifier: "RateMovieView") as! ManageMovieViewController
-        manageMovieViewController.selectedMovie = selectedMovie
-        manageMovieViewController.identifier = "Update"
-        navigationController!.pushViewController(manageMovieViewController, animated: true)*/
+        let storyboard = UIStoryboard(name: "RateMovie", bundle: nil)
+        let rateMovieViewController = storyboard.instantiateViewController(withIdentifier: "RateMovieView") as! RateMovieViewController
+        rateMovieViewController.selectedMovie = selectedMovie
+        rateMovieViewController.context = context
+        navigationController!.pushViewController(rateMovieViewController, animated: true)
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -110,6 +113,52 @@ class MovieDetailViewController: UIViewController {
             }catch{
                 print("Reload movie details failed.")
             }
+        }
+    }
+    
+    func getMovieLiked() -> Favourite?{
+        do{
+            if let movie = selectedMovie{
+                let request = NSFetchRequest<NSFetchRequestResult>(
+                    entityName: "Favourite"
+                )
+                let predicate1 = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+                let predicate2 = NSPredicate(format: "movieId == %@", movie.id!)
+                let compoundPredicate = NSCompoundPredicate(type: .and, subpredicates: [predicate1, predicate2])
+                request.predicate = compoundPredicate
+                request.fetchLimit = 1
+                let favourites = try self.context?.fetch(request) as? [Favourite]
+                if(favourites != nil && favourites!.count > 0){
+                    return favourites![0]
+                }
+            }
+        }catch{
+            print("Retrieve movie favourite failed.")
+        }
+        return nil;
+    }
+    
+    @IBAction func favouriteOnClick(_ sender: Any) {
+        do{
+            let favouriteMovie = getMovieLiked()
+            if(favouriteMovie != nil){
+                context.delete(favouriteMovie!)
+            }else{
+                _ = Favourite(id: UUID().uuidString, movieId: selectedMovie!.id!, userId: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, insertIntoManagedObjectContext: context)
+                
+            }
+            try context?.save()
+            updateMovieFavouriteByUser(movieLiked: favouriteMovie == nil)
+        }catch{
+            print("Retrieve movie favourite failed.")
+        }
+    }
+    
+    func updateMovieFavouriteByUser(movieLiked: Bool){
+        if(movieLiked){
+            movieLikeImg.image = UIImage(systemName: "hand.thumbsup.fill")
+        }else{
+            movieLikeImg.image = UIImage(systemName: "hand.thumbsup")
         }
     }
     /*

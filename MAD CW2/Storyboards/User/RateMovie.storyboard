@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rate Movie View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateMovieView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RateMovieViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jUL-BY-hhg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,6 +226,12 @@
                             <constraint firstItem="xvV-Sv-nji" firstAttribute="leading" secondItem="jUL-BY-hhg" secondAttribute="leading" id="iHo-vu-Krd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieGenreLbl" destination="YRS-iQ-ugA" id="5vG-0C-B5K"/>
+                        <outlet property="movieImg" destination="Pds-6x-NFG" id="Wtx-sI-HtI"/>
+                        <outlet property="movieRatingLbl" destination="Tag-ey-jUp" id="bCa-Vd-5k1"/>
+                        <outlet property="movieTitleLbl" destination="oxj-tU-YG9" id="3va-7S-KuN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
