@@ -53,6 +53,7 @@
 		3D87C19A2A995059008BED12 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1982A995059008BED12 /* Movie+CoreDataProperties.swift */; };
 		EB10D5EF2A9915A100F3C227 /* SearchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */; };
 		EB10D5F12A99180600F3C227 /* SearchMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */; };
+		EB28908C2A99636F006E28BD /* RateMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28908B2A99636F006E28BD /* RateMovieViewController.swift */; };
 		EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB692A8E66A30095A967 /* Validations.swift */; };
 		EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB6B2A8E67F20095A967 /* Enums.swift */; };
 		EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */; };
@@ -114,6 +115,7 @@
 		3D87C1982A995059008BED12 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieViewController.swift; sourceTree = "<group>"; };
 		EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB28908B2A99636F006E28BD /* RateMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMovieViewController.swift; sourceTree = "<group>"; };
 		EB2BEB692A8E66A30095A967 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		EB2BEB6B2A8E67F20095A967 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */,
 				3D87C17F2A994450008BED12 /* FavouriteViewController.swift */,
 				3D87C1812A994461008BED12 /* RateHistoryViewController.swift */,
+				EB28908B2A99636F006E28BD /* RateMovieViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
 				3D87C1802A994450008BED12 /* FavouriteViewController.swift in Sources */,
+				EB28908C2A99636F006E28BD /* RateMovieViewController.swift in Sources */,
 				EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */,
 				EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */,
 				EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */,
