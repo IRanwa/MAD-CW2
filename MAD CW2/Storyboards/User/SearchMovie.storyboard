@@ -102,9 +102,13 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
+                                                            <gestureRecognizers/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="108" id="wWZ-ym-qq6"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outletCollection property="gestureRecognizers" destination="8vc-hX-pOY" appends="YES" id="eJp-iv-G3b"/>
+                                                            </connections>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -163,8 +167,23 @@
                         <action selector="searchOnClick:" destination="Y6W-OH-hqX" id="dDX-nc-FPu"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="8vc-hX-pOY">
+                    <connections>
+                        <segue destination="8P7-LA-nkc" kind="show" identifier="UserMovieDetail" id="KxR-16-Xyb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="129.00763358778624" y="-2.1126760563380285"/>
+        </scene>
+        <!--MovieDetail-->
+        <scene sceneID="ydS-l3-M0i">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MovieDetail" id="8P7-LA-nkc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6uD-jC-o2g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aly-VJ-ZfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-8"/>
         </scene>
     </scenes>
     <resources>

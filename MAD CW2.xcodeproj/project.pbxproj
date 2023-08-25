@@ -12,8 +12,6 @@
 		0A88A0982A8BDBDE006C630F /* ManageMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */; };
 		0A88A09C2A8BDC29006C630F /* SearchMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */; };
 		0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */; };
-		0A88A0A02A8BDC48006C630F /* ViewMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */; };
-		0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A12A8BDC56006C630F /* Favourites.storyboard */; };
 		0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */; };
 		0A88A0A72A8BDC9E006C630F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A62A8BDC9E006C630F /* Settings.storyboard */; };
 		0A88A0A92A8BDCAF006C630F /* FAQs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */; };
@@ -40,6 +38,11 @@
 		3D6966722A91162700251B76 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966712A91162700251B76 /* UserHomeViewController.swift */; };
 		3D6966742A911E7900251B76 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966732A911E7900251B76 /* AdminHomeViewController.swift */; };
 		3D6966762A91215300251B76 /* ManageMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6966752A91215300251B76 /* ManageMovieViewController.swift */; };
+		3D87C17E2A99440B008BED12 /* Favourites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D87C17D2A99440B008BED12 /* Favourites.storyboard */; };
+		3D87C1802A994450008BED12 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C17F2A994450008BED12 /* FavouriteViewController.swift */; };
+		3D87C1822A994461008BED12 /* RateHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1812A994461008BED12 /* RateHistoryViewController.swift */; };
+		3D87C1842A994743008BED12 /* UserRatingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */; };
+		3D87C1862A994872008BED12 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */; };
 		EB10D5EF2A9915A100F3C227 /* SearchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */; };
 		EB10D5F12A99180600F3C227 /* SearchMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */; };
 		EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB692A8E66A30095A967 /* Validations.swift */; };
@@ -66,8 +69,6 @@
 		0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageMovie.storyboard; sourceTree = "<group>"; };
 		0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchMovie.storyboard; sourceTree = "<group>"; };
 		0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateMovie.storyboard; sourceTree = "<group>"; };
-		0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewMovie.storyboard; sourceTree = "<group>"; };
-		0A88A0A12A8BDC56006C630F /* Favourites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourites.storyboard; sourceTree = "<group>"; };
 		0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateHistory.storyboard; sourceTree = "<group>"; };
 		0A88A0A62A8BDC9E006C630F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQs.storyboard; sourceTree = "<group>"; };
@@ -96,6 +97,11 @@
 		3D6966712A91162700251B76 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
 		3D6966732A911E7900251B76 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
 		3D6966752A91215300251B76 /* ManageMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMovieViewController.swift; sourceTree = "<group>"; };
+		3D87C17D2A99440B008BED12 /* Favourites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourites.storyboard; sourceTree = "<group>"; };
+		3D87C17F2A994450008BED12 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		3D87C1812A994461008BED12 /* RateHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoryViewController.swift; sourceTree = "<group>"; };
+		3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRatingDetailTableViewCell.swift; sourceTree = "<group>"; };
+		3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieViewController.swift; sourceTree = "<group>"; };
 		EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB2BEB692A8E66A30095A967 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		0A88A0A52A8BDC8C006C630F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */,
 				0A88A0A62A8BDC9E006C630F /* Settings.storyboard */,
 				0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */,
 				0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */,
@@ -142,6 +149,7 @@
 		0A88A0B42A8BE430006C630F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3D26CBCE2A9916A800504537 /* MovieDetailViewController.swift */,
 				0A88A0B52A8BE444006C630F /* SettingsViewController.swift */,
 				EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */,
 				EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */,
@@ -228,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				0ACF3C5E2A8B9EF7000AA6CB /* MovieList.storyboard */,
-				0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */,
 				0A88A0972A8BDBDE006C630F /* ManageMovie.storyboard */,
 				0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */,
 			);
@@ -240,11 +247,10 @@
 			children = (
 				0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */,
 				0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */,
-				0A88A09F2A8BDC48006C630F /* ViewMovie.storyboard */,
-				0A88A0A12A8BDC56006C630F /* Favourites.storyboard */,
 				0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */,
 				0A88A0AE2A8BDD13006C630F /* UserHome.storyboard */,
 				0A88A0B22A8BDE88006C630F /* Statistics.storyboard */,
+				3D87C17D2A99440B008BED12 /* Favourites.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -255,7 +261,6 @@
 				0ACF3C642A8BA188000AA6CB /* MovieListViewController.swift */,
 				3D6966732A911E7900251B76 /* AdminHomeViewController.swift */,
 				3D6966752A91215300251B76 /* ManageMovieViewController.swift */,
-				3D26CBCE2A9916A800504537 /* MovieDetailViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -265,6 +270,8 @@
 			children = (
 				3D6966712A91162700251B76 /* UserHomeViewController.swift */,
 				EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */,
+				3D87C17F2A994450008BED12 /* FavouriteViewController.swift */,
+				3D87C1812A994461008BED12 /* RateHistoryViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -286,6 +293,8 @@
 				EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */,
 				EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */,
 				EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */,
+				3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */,
+				3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 				0A88A0AD2A8BDCC9006C630F /* ChangePassword.storyboard in Resources */,
 				0A88A0A92A8BDCAF006C630F /* FAQs.storyboard in Resources */,
 				0A88A0B32A8BDE88006C630F /* Statistics.storyboard in Resources */,
+				3D87C17E2A99440B008BED12 /* Favourites.storyboard in Resources */,
 				0ACF3C392A8B36EE000AA6CB /* Main.storyboard in Resources */,
 				0ACF3C5F2A8B9EF7000AA6CB /* MovieList.storyboard in Resources */,
 				0A88A0A42A8BDC61006C630F /* RateHistory.storyboard in Resources */,
@@ -359,8 +369,6 @@
 				0A88A09E2A8BDC37006C630F /* RateMovie.storyboard in Resources */,
 				EB857A2C2A97931E0086B905 /* MultipleOptionsPicker.storyboard in Resources */,
 				0ACF3C572A8B9803000AA6CB /* Login.storyboard in Resources */,
-				0A88A0A22A8BDC56006C630F /* Favourites.storyboard in Resources */,
-				0A88A0A02A8BDC48006C630F /* ViewMovie.storyboard in Resources */,
 				0A88A0AB2A8BDCBC006C630F /* ManageAccount.storyboard in Resources */,
 				0A88A0A72A8BDC9E006C630F /* Settings.storyboard in Resources */,
 				0A88A0962A8BDBC2006C630F /* MovieDetail.storyboard in Resources */,
@@ -380,14 +388,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */,
+				3D87C1862A994872008BED12 /* FavouriteTableViewCell.swift in Sources */,
 				EB4256762A908D8B00B00F20 /* CommonData.swift in Sources */,
 				3D6966762A91215300251B76 /* ManageMovieViewController.swift in Sources */,
 				FEC9565C2A8BFC96000F1237 /* Movie+CoreDataProperties.swift in Sources */,
 				3D26CBCF2A9916A800504537 /* MovieDetailViewController.swift in Sources */,
+				3D87C1842A994743008BED12 /* UserRatingDetailTableViewCell.swift in Sources */,
 				0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */,
 				EB4A50342A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
+				3D87C1802A994450008BED12 /* FavouriteViewController.swift in Sources */,
 				EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */,
 				EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */,
 				EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */,
@@ -401,6 +412,7 @@
 				EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */,
 				EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */,
 				EB10D5EF2A9915A100F3C227 /* SearchMovieViewController.swift in Sources */,
+				3D87C1822A994461008BED12 /* RateHistoryViewController.swift in Sources */,
 				0ACF3C552A8B83D0000AA6CB /* RegisterViewController.swift in Sources */,
 				FEC956592A8BFC96000F1237 /* MovieRating+CoreDataClass.swift in Sources */,
 				EB4256792A9090CF00B00F20 /* User+CoreDataClass.swift in Sources */,
