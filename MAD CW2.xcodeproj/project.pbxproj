@@ -53,6 +53,8 @@
 		EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */; };
 		EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */; };
 		EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */; };
+		EBC04D102A9949A900783DE8 /* Favourite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC04D0E2A9949A900783DE8 /* Favourite+CoreDataClass.swift */; };
+		EBC04D112A9949A900783DE8 /* Favourite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC04D0F2A9949A900783DE8 /* Favourite+CoreDataProperties.swift */; };
 		FEC956592A8BFC96000F1237 /* MovieRating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */; };
 		FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */; };
 		FEC9565B2A8BFC96000F1237 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */; };
@@ -108,6 +110,8 @@
 		EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsPickerViewController.swift; sourceTree = "<group>"; };
 		EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		EBC04D0E2A9949A900783DE8 /* Favourite+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favourite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EBC04D0F2A9949A900783DE8 /* Favourite+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favourite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FEC956542A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieRating+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEC956552A8BFC96000F1237 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 		0ACF3C452A8B4C76000AA6CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBC04D0E2A9949A900783DE8 /* Favourite+CoreDataClass.swift */,
+				EBC04D0F2A9949A900783DE8 /* Favourite+CoreDataProperties.swift */,
 				EB4256772A9090CF00B00F20 /* User+CoreDataClass.swift */,
 				EB4256782A9090CF00B00F20 /* User+CoreDataProperties.swift */,
 				FEC956532A8BFC96000F1237 /* MovieRating+CoreDataClass.swift */,
@@ -387,9 +393,11 @@
 				EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */,
 				EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */,
 				EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */,
+				EBC04D102A9949A900783DE8 /* Favourite+CoreDataClass.swift in Sources */,
 				0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */,
 				EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */,
 				FEC9565A2A8BFC96000F1237 /* MovieRating+CoreDataProperties.swift in Sources */,
+				EBC04D112A9949A900783DE8 /* Favourite+CoreDataProperties.swift in Sources */,
 				EB42567A2A9090CF00B00F20 /* User+CoreDataProperties.swift in Sources */,
 				EB10D5F12A99180600F3C227 /* SearchMovieCollectionViewCell.swift in Sources */,
 				EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */,
