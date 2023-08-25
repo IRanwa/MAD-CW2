@@ -7,14 +7,38 @@
 
 import UIKit
 
-class UserHomeViewController: UITabBarController {
+class UserHomeViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
+        self.delegate = self
         self.selectedIndex = 2
+        setTabBarTitle(self.selectedIndex)
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let selectedIndex = tabBarController.viewControllers?.firstIndex(of: viewController)
+        setTabBarTitle(selectedIndex!)
+    }
+    
+    func setTabBarTitle(_ currentselectedIndex: Int){
+        if(currentselectedIndex == 0){
+            self.title = "Favourites"
+        }else if(currentselectedIndex == 1){
+            self.title = "Statistics"
+        }else if(currentselectedIndex == 2){
+            self.title = "Movies"
+        }else if(currentselectedIndex == 3){
+            self.title = "Rating history"
+        }else if(currentselectedIndex == 4){
+            self.title = "Settings"
+        }
+    }
+
     
 
     /*

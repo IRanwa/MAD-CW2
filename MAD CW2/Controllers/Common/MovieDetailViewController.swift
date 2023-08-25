@@ -30,11 +30,11 @@ class MovieDetailViewController: UIViewController {
             loadMovieDetails()
             
             if ident == "ShowMovieDetail" {
-                btnMovieAction.setTitle("Update Info", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Update Info"
             } else if ident == "UserMovieDetail" {
-                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Rate"
             } else if ident == "ShowUserFavMovieDetail" {
-                btnMovieAction.setTitle("Rate", for: <#T##UIControl.State#>)
+                btnMovieAction.titleLabel?.text = "Rate"
             }
             
         }

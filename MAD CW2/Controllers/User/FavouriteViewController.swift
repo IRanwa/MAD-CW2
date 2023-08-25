@@ -25,7 +25,6 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Movies"
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
         loadMoviesList(movieName: "")
