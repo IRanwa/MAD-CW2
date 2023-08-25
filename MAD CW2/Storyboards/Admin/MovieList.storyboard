@@ -119,10 +119,13 @@
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <connections>
                                                             <outlet property="movieGenresLbl" destination="WdI-yX-aJS" id="JKq-EC-t67"/>
                                                             <outlet property="movieImg" destination="kDd-Af-g2y" id="Ln8-6v-0Si"/>
                                                             <outlet property="movieTitleLbl" destination="xSI-Pc-poi" id="Mv8-uT-6oM"/>
+                                                            <outletCollection property="gestureRecognizers" destination="kBl-VA-ttI" appends="YES" id="yof-ut-sge"/>
+                                                            <outletCollection property="gestureRecognizers" destination="kBl-VA-ttI" appends="YES" id="b07-lx-8EW"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -174,16 +177,21 @@
                         <action selector="searchOnClick:" destination="Za4-Bl-TjO" id="FkC-iJ-udx"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="kBl-VA-ttI">
+                    <connections>
+                        <segue destination="QeP-Z0-u1j" kind="show" identifier="ShowMovieDetail" id="69m-mn-my7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2727" y="-68"/>
         </scene>
-        <!--ManageMovie-->
+        <!--MovieDetail-->
         <scene sceneID="3aI-1Z-EFu">
             <objects>
-                <viewControllerPlaceholder storyboardName="ManageMovie" id="QeP-Z0-u1j" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocA-zl-W9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MovieDetail" id="QeP-Z0-u1j" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="m9F-Av-MIt"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ocA-zl-W9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3443" y="-100"/>
         </scene>
