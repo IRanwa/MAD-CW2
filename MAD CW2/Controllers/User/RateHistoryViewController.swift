@@ -57,7 +57,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let movie = ratingList[indexPath.row].movierelationship as! Movie
+        let movie = ratingList[indexPath.row].movierelationship!
         let movierating = ratingList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "userRatingDetailTblViewCell", for: indexPath) as! UserRatingDetailTableViewCell
         cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
@@ -79,32 +79,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            let movie = ratingList[indexPath.row]
-            let alertController = UIAlertController(title: self.navigationItem.title, message: "Are you sure you want to proceed?", preferredStyle: .alert)
-            
-            let yesAction = UIAlertAction(title: "Yes", style: .default) { _ in
-                do{
-                    self.context?.delete(movie)
-                    try self.context?.save()
-                    self.ratingList.remove(at: indexPath.row)
-                    self.moviesTblView.reloadData()
-                }catch{
-                    print("Movie remove failed")
-                }
-            }
-            
-            let noAction = UIAlertAction(title: "No", style: .default) { _ in
-                print("User tapped No")
-            }
-            
-            alertController.addAction(yesAction)
-            alertController.addAction(noAction)
-            
-            present(alertController, animated: true, completion: nil)
-        }
-    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedMovie = ratingList[indexPath.row].movierelationship as! Movie

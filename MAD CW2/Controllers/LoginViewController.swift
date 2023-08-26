@@ -86,8 +86,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         //txtEmail.text = "imesh.ranawaka@gmail.com"
         //txtPassword.text = "Test@1234"
         
-        //txtEmail.text = adminEmail
-        //txtPassword.text = adminPassword
+        txtEmail.text = "imesh.ranawaka@gmail.com"
+        txtPassword.text = "Test@1234"
         
         do{
             let status = verifyFields()

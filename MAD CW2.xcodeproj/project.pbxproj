@@ -58,6 +58,9 @@
 		EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB692A8E66A30095A967 /* Validations.swift */; };
 		EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB6B2A8E67F20095A967 /* Enums.swift */; };
 		EB3CDC7B2A99C5EE0016B0FE /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */; };
+		EB3CDC7D2A99FFCC0016B0FE /* FirstGenreMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CDC7C2A99FFCC0016B0FE /* FirstGenreMoviesCollectionViewCell.swift */; };
+		EB3CDC7F2A9A07BE0016B0FE /* SecondGenreMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CDC7E2A9A07BE0016B0FE /* SecondGenreMoviesCollectionViewCell.swift */; };
+		EB3CDC812A9A07D30016B0FE /* ThirdGenreMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CDC802A9A07D30016B0FE /* ThirdGenreMoviesCollectionViewCell.swift */; };
 		EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */; };
 		EB4256762A908D8B00B00F20 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256752A908D8B00B00F20 /* CommonData.swift */; };
 		EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */; };
@@ -122,6 +125,9 @@
 		EB2BEB692A8E66A30095A967 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		EB2BEB6B2A8E67F20095A967 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		EB3CDC7C2A99FFCC0016B0FE /* FirstGenreMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGenreMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB3CDC7E2A9A07BE0016B0FE /* SecondGenreMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGenreMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB3CDC802A9A07D30016B0FE /* ThirdGenreMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGenreMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
 		EB4256752A908D8B00B00F20 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
 		EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +316,9 @@
 				3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */,
 				3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */,
 				3DD981552A99BA1100C47F11 /* UserCommentTableViewCell.swift */,
+				EB3CDC7C2A99FFCC0016B0FE /* FirstGenreMoviesCollectionViewCell.swift */,
+				EB3CDC7E2A9A07BE0016B0FE /* SecondGenreMoviesCollectionViewCell.swift */,
+				EB3CDC802A9A07D30016B0FE /* ThirdGenreMoviesCollectionViewCell.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 				3D87C1862A994872008BED12 /* FavouriteTableViewCell.swift in Sources */,
 				EB4256762A908D8B00B00F20 /* CommonData.swift in Sources */,
 				3D36A2762A997F1D0032A566 /* Movie+CoreDataClass.swift in Sources */,
+				EB3CDC7F2A9A07BE0016B0FE /* SecondGenreMoviesCollectionViewCell.swift in Sources */,
 				3D6966762A91215300251B76 /* ManageMovieViewController.swift in Sources */,
 				3D26CBCF2A9916A800504537 /* MovieDetailViewController.swift in Sources */,
 				3D2B37622A99B2F500908033 /* MovieRating+CoreDataClass.swift in Sources */,
@@ -430,6 +440,7 @@
 				EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */,
 				EB10D5F12A99180600F3C227 /* SearchMovieCollectionViewCell.swift in Sources */,
 				EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */,
+				EB3CDC812A9A07D30016B0FE /* ThirdGenreMoviesCollectionViewCell.swift in Sources */,
 				0ACF3C4F2A8B5D37000AA6CB /* GradientView.swift in Sources */,
 				EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */,
 				EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */,
@@ -440,6 +451,7 @@
 				0ACF3C342A8B36EE000AA6CB /* SceneDelegate.swift in Sources */,
 				3D6966742A911E7900251B76 /* AdminHomeViewController.swift in Sources */,
 				3D6966722A91162700251B76 /* UserHomeViewController.swift in Sources */,
+				EB3CDC7D2A99FFCC0016B0FE /* FirstGenreMoviesCollectionViewCell.swift in Sources */,
 				0A88A0B62A8BE444006C630F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
