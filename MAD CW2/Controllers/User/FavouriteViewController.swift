@@ -36,6 +36,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
                 entityName: "Favourite"
             )
             request.predicate = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            request.relationshipKeyPathsForPrefetching = ["Movie"]
             let favouriteMovies = try self.context?.fetch(request) as? [Favourite]
             
             if(favouriteMovies != nil && favouriteMovies!.count > 0){
@@ -55,7 +56,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let movie = moviesList[indexPath.row].movierelatioship?.firstObject as! Movie
+        let movie = moviesList[indexPath.row].movierelatioship!
         let cell = tableView.dequeueReusableCell(withIdentifier: "favouriteMovieTblViewCell", for: indexPath) as! FavouriteTableViewCell
         cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
         cell.movieTitleLbl.text = movie.name
@@ -100,7 +101,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedMovie = moviesList[indexPath.row].movierelatioship?.firstObject as? Movie
+        selectedMovie = moviesList[indexPath.row].movierelatioship!
         performSegue(withIdentifier: "ShowUserFavMovieDetail", sender: self)
                                   
     }

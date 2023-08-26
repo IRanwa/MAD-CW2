@@ -26,8 +26,43 @@ extension Movie {
     @NSManaged public var releaseDate: Date?
     @NSManaged public var useroverallrating: Int32
     @NSManaged public var youtubelink: String?
+    @NSManaged public var moviefavouriterelationship: NSOrderedSet?
     @NSManaged public var movieratingrelationship: NSOrderedSet?
-    @NSManaged public var moviefavouriterelationship: Favourite?
+
+}
+
+// MARK: Generated accessors for moviefavouriterelationship
+extension Movie {
+
+    @objc(insertObject:inMoviefavouriterelationshipAtIndex:)
+    @NSManaged public func insertIntoMoviefavouriterelationship(_ value: Favourite, at idx: Int)
+
+    @objc(removeObjectFromMoviefavouriterelationshipAtIndex:)
+    @NSManaged public func removeFromMoviefavouriterelationship(at idx: Int)
+
+    @objc(insertMoviefavouriterelationship:atIndexes:)
+    @NSManaged public func insertIntoMoviefavouriterelationship(_ values: [Favourite], at indexes: NSIndexSet)
+
+    @objc(removeMoviefavouriterelationshipAtIndexes:)
+    @NSManaged public func removeFromMoviefavouriterelationship(at indexes: NSIndexSet)
+
+    @objc(replaceObjectInMoviefavouriterelationshipAtIndex:withObject:)
+    @NSManaged public func replaceMoviefavouriterelationship(at idx: Int, with value: Favourite)
+
+    @objc(replaceMoviefavouriterelationshipAtIndexes:withMoviefavouriterelationship:)
+    @NSManaged public func replaceMoviefavouriterelationship(at indexes: NSIndexSet, with values: [Favourite])
+
+    @objc(addMoviefavouriterelationshipObject:)
+    @NSManaged public func addToMoviefavouriterelationship(_ value: Favourite)
+
+    @objc(removeMoviefavouriterelationshipObject:)
+    @NSManaged public func removeFromMoviefavouriterelationship(_ value: Favourite)
+
+    @objc(addMoviefavouriterelationship:)
+    @NSManaged public func addToMoviefavouriterelationship(_ values: NSOrderedSet)
+
+    @objc(removeMoviefavouriterelationship:)
+    @NSManaged public func removeFromMoviefavouriterelationship(_ values: NSOrderedSet)
 
 }
 

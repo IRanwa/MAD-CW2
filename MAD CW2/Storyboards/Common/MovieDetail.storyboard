@@ -93,8 +93,8 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNL-Zw-13a">
                                                                 <rect key="frame" x="120.00000000000003" y="0.0" width="50" height="50"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EUs-D0-feG">
-                                                                        <rect key="frame" x="10" y="-0.33333333333333215" width="30" height="50"/>
+                                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThumbUpIconLine" translatesAutoresizingMaskIntoConstraints="NO" id="EUs-D0-feG">
+                                                                        <rect key="frame" x="10" y="0.0" width="30" height="50"/>
                                                                         <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                                         <gestureRecognizers/>
                                                                         <connections>
@@ -355,9 +355,9 @@
         <image name="BackGround" width="100" height="100"/>
         <image name="FavouriteIcon" width="8" height="8"/>
         <image name="TestMovie" width="666.66668701171875" height="1000"/>
+        <image name="ThumbUpIconLine" width="8" height="8"/>
         <image name="YellowStarIcon" width="8" height="8"/>
         <image name="YoutubeIcon" width="8" height="8"/>
-        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

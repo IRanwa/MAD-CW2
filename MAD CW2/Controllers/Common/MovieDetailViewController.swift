@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 class MovieDetailViewController: UIViewController {
-
+    
     var selectedMovie: Movie?
     var identifier: String?
     var context: NSManagedObjectContext!
@@ -67,7 +67,7 @@ class MovieDetailViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func clickUpdateMovie(_ sender: Any) {
         if let ident = identifier {
             if ident == "ShowMovieDetail" {
@@ -140,15 +140,19 @@ class MovieDetailViewController: UIViewController {
     
     @IBAction func favouriteOnClick(_ sender: Any) {
         do{
+            let user = getUser()
             let favouriteMovie = getMovieLiked()
             if(favouriteMovie != nil){
                 context.delete(favouriteMovie!)
+                updateMovieFavouriteByUser(movieLiked: false)
             }else{
-                _ = Favourite(id: UUID().uuidString, movieId: selectedMovie!.id!, userId: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, insertIntoManagedObjectContext: context)
-                
+                let newFavouriteMovie = Favourite(id: UUID().uuidString, movieId: selectedMovie!.id!, userId: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, insertIntoManagedObjectContext: context)
+                selectedMovie?.addToMoviefavouriterelationship(newFavouriteMovie)
+                user?.addToFavouriterelationship(newFavouriteMovie)
+                updateMovieFavouriteByUser(movieLiked: true)
             }
             try context?.save()
-            updateMovieFavouriteByUser(movieLiked: favouriteMovie == nil)
+            
         }catch{
             print("Retrieve movie favourite failed.")
         }
@@ -156,19 +160,36 @@ class MovieDetailViewController: UIViewController {
     
     func updateMovieFavouriteByUser(movieLiked: Bool){
         if(movieLiked){
-            movieLikeImg.image = UIImage(systemName: "hand.thumbsup.fill")
+            movieLikeImg.image = UIImage(named:"ThumbUpIcon")
         }else{
-            movieLikeImg.image = UIImage(systemName: "hand.thumbsup")
+            movieLikeImg.image = UIImage(named: "ThumbUpIconLine")
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func getUser() -> User?{
+        do{
+            let request = NSFetchRequest<NSFetchRequestResult>(
+                entityName: "User"
+            )
+            request.predicate = NSPredicate(format: "id == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            request.fetchLimit = 1
+            let users = try self.context?.fetch(request) as? [User]
+            if(users != nil && users!.count > 0){
+                return users![0]
+            }
+        }catch{
+            print("Retrieve userß failed.")
+        }
+        return nil;
     }
-    */
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

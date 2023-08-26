@@ -467,5 +467,276 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18A68323-42A9-4226-BDA5-E17E37B870A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/User/FavouriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadMoviesList(movieName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48D0331F-E22C-402E-BE5A-0285C6CFD4AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/User/FavouriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "loadMoviesList(movieName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5964CE1-E59B-456A-B7EA-2995A9D66A45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/User/FavouriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "loadMoviesList(movieName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A68C189-187C-467E-8D3D-543CC4306948"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "favouriteOnClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A68C189-187C-467E-8D3D-543CC4306948 - a7f87dab3c5056de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "2364">
+               </Location>
+               <Location
+                  uuid = "7A68C189-187C-467E-8D3D-543CC4306948 - a7f87dab3c5056de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "820">
+               </Location>
+               <Location
+                  uuid = "7A68C189-187C-467E-8D3D-543CC4306948 - a7f87dab3c5056de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "1784">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DDDB895-E1CB-4159-A310-F2F78D2EC5EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "favouriteOnClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0DDDB895-E1CB-4159-A310-F2F78D2EC5EF - a7f87dab3c50557b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "0DDDB895-E1CB-4159-A310-F2F78D2EC5EF - a7f87dab3c50557b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9F94235-664D-4D76-9BA9-1D3D43D2323F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "favouriteOnClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C9F94235-664D-4D76-9BA9-1D3D43D2323F - a7f87dab3c5056ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "2496">
+               </Location>
+               <Location
+                  uuid = "C9F94235-664D-4D76-9BA9-1D3D43D2323F - a7f87dab3c5056ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "2360">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B4FC253-B4B2-4B46-9C12-C66E72EAD25C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "favouriteOnClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B4FC253-B4B2-4B46-9C12-C66E72EAD25C - a7f87dab3c505680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "2596">
+               </Location>
+               <Location
+                  uuid = "2B4FC253-B4B2-4B46-9C12-C66E72EAD25C - a7f87dab3c505680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MAD_CW2.MovieDetailViewController.favouriteOnClick(Any) -&gt; ()"
+                  moduleName = "MAD CW2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user245466/Desktop/Prameel/MAD-CW2/MAD%20CW2/Controllers/Common/MovieDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "2492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03CE8FC6-3585-47CC-900D-B4A76721F65E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MAD CW2/Controllers/Common/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "favouriteOnClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
