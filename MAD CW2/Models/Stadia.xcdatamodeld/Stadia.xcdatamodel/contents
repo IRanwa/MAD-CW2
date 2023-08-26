@@ -18,8 +18,8 @@
         <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="useroverallrating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="youtubelink" optional="YES" attributeType="String"/>
-        <relationship name="moviefavouriterelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Favourite" inverseName="movierelatioship" inverseEntity="Favourite"/>
-        <relationship name="movieratingrelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MovieRating" inverseName="movierelationship" inverseEntity="MovieRating"/>
+        <relationship name="moviefavouriterelationship" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Favourite" inverseName="movierelatioship" inverseEntity="Favourite"/>
+        <relationship name="movieratingrelationship" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="MovieRating" inverseName="movierelationship" inverseEntity="MovieRating"/>
     </entity>
     <entity name="MovieRating" representedClassName="MovieRating" syncable="YES">
         <attribute name="comment" optional="YES" attributeType="String"/>
@@ -40,7 +40,7 @@
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="usertype" optional="YES" attributeType="String"/>
-        <relationship name="favouriterelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Favourite" inverseName="userelationship" inverseEntity="Favourite"/>
-        <relationship name="ratinguserrelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MovieRating" inverseName="userrelationship" inverseEntity="MovieRating"/>
+        <relationship name="favouriterelationship" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="Favourite" inverseName="userelationship" inverseEntity="Favourite"/>
+        <relationship name="ratinguserrelationship" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="MovieRating" inverseName="userrelationship" inverseEntity="MovieRating"/>
     </entity>
 </model>

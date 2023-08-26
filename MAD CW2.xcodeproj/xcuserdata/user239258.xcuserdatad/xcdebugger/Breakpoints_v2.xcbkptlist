@@ -704,8 +704,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
             endingLineNumber = "139"
-            landmarkName = "renderTopGenres()"
-            landmarkType = "9">
+            landmarkName = "loadTopGenres()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -720,8 +720,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "renderTopGenres()"
-            landmarkType = "9">
+            landmarkName = "loadTopGenres()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -927,8 +927,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "renderTopGenres()"
-            landmarkType = "9">
+            landmarkName = "loadTopGenres()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -991,8 +991,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "190"
             endingLineNumber = "190"
-            landmarkName = "getFirstGenreMovies(genre:)"
-            landmarkType = "9">
+            landmarkName = "renderTopGenres()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1007,8 +1007,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "188"
             endingLineNumber = "188"
-            landmarkName = "getFirstGenreMovies(genre:)"
-            landmarkType = "9">
+            landmarkName = "renderTopGenres()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "6580331A-CE3E-4053-83B2-27C280EE38A1 - 3b86e81e561398bf"
@@ -1055,8 +1055,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "244"
             endingLineNumber = "244"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "9">
+            landmarkName = "getThirdGenreMovies(genre:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1071,8 +1071,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
             endingLineNumber = "189"
-            landmarkName = "getFirstGenreMovies(genre:)"
-            landmarkType = "9">
+            landmarkName = "renderTopGenres()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "1002080B-AB4F-4128-93F8-400FFCDD3B90 - 3b86e81e561386cd"
@@ -1119,8 +1119,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "255"
             endingLineNumber = "255"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "9">
+            landmarkName = "StatisticsViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1135,8 +1135,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "263"
             endingLineNumber = "263"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "9">
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1151,8 +1151,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "256"
             endingLineNumber = "256"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "9">
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1167,8 +1167,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "250"
             endingLineNumber = "250"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "9">
+            landmarkName = "getThirdGenreMovies(genre:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1184,7 +1184,7 @@
             startingLineNumber = "285"
             endingLineNumber = "285"
             landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "2DA43111-2840-4514-895F-832E41855307 - 82ce492c3cf8c1d4"
