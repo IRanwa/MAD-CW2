@@ -94,7 +94,8 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
                         .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
                     for genre in genres{
                         
-                        topGenresRating.append(StatisticsModel(genre: genre, score: Double(rating.rating) / 5))
+                        topGenresRating.append(StatisticsModel(genre: genre, score: Double(rating.rating) / Double(5.0)))
+                        
                         /*if(topGenres[genre]! == 0){
                             topGenres[genre] = Double(rating.rating) / 5
                         }else{
@@ -136,6 +137,7 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             
             
             let sortedGenres = genreToTotalScore.sorted { $0.value > $1.value }
+            print(sortedGenres)
             let topThree = Array(sortedGenres.prefix(3))
             let topThreeGenres = Dictionary(uniqueKeysWithValues: topThree)
             

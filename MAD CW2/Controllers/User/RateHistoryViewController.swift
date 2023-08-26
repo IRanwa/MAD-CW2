@@ -63,7 +63,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         cell.movieImg?.image = CommonData.base64ToImage(movie.coverimage!)
         cell.movieTitleLbl.text = movie.name
         cell.movieGenresLbl.text = movie.genres?.replacingOccurrences(of: ",", with: " |")
-        cell.movieRatingLbl.text = "\(String(movie.useroverallrating))/5"
+        cell.movieRatingLbl.text = "\(String(movierating.rating))/5"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMM yyyy"
         if let ratedate = movierating.createddate {
