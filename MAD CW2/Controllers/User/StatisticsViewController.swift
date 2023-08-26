@@ -87,13 +87,15 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             let movieRatings = try self.context?.fetch(request) as? [MovieRating]
             if(movieRatings != nil && movieRatings!.count > 0){
                 for rating in movieRatings!{
-                    let genres = rating.movierelationship?.genres!.components(separatedBy: ",")
-                        .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
-                    for genre in genres{
-                        if(topGenres[genre]! == 0){
-                            topGenres[genre] = Double(rating.rating) / 5
-                        }else{
-                            topGenres[genre] = (topGenres[genre]! + Double(rating.rating/5))/2
+                    if(rating.movierelationship != nil && rating.movierelationship?.genres != nil){
+                        let genres = rating.movierelationship?.genres!.components(separatedBy: ",")
+                            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
+                        for genre in genres{
+                            if(topGenres[genre]! == 0){
+                                topGenres[genre] = Double(rating.rating) / 5
+                            }else{
+                                topGenres[genre] = (topGenres[genre]! + Double(rating.rating/5))/2
+                            }
                         }
                     }
                 }
@@ -106,14 +108,16 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             let favourites = try self.context?.fetch(request) as? [Favourite]
             if(favourites != nil && favourites!.count > 0){
                 for favourite in favourites!{
-                    let genres =
-                    favourite.movierelatioship?.genres!.components(separatedBy: ",")
-                        .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
-                    for genre in genres{
-                        if(topGenres[genre]! == 0){
-                            topGenres[genre] = 1
-                        }else{
-                            topGenres[genre] = (topGenres[genre]! + 1)/2
+                    if (favourite.movierelatioship != nil && favourite.movierelatioship?.genres != nil){
+                        let genres =
+                        favourite.movierelatioship?.genres!.components(separatedBy: ",")
+                            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
+                        for genre in genres{
+                            if(topGenres[genre]! == 0){
+                                topGenres[genre] = 1
+                            }else{
+                                topGenres[genre] = (topGenres[genre]! + 1)/2
+                            }
                         }
                     }
                 }
