@@ -12,7 +12,7 @@
         <!--Movie Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MovieDetailViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MovieDetailViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vei-YR-YAa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,44 +26,44 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJy-bP-OPq">
                                         <rect key="frame" x="10" y="50" width="373" height="772"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-LB-l7n">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-LB-l7n">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="772"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Fo-Ik-2bG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="214.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="244"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestMovie" translatesAutoresizingMaskIntoConstraints="NO" id="pHG-Bu-bVb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="214.33333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="244"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-ed-lU2">
-                                                                <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="214.33333333333334"/>
+                                                                <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="244"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Mission: Impossible" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fog-6o-Sx6">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="181.33333333333334" height="57.333333333333336"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181.33333333333334" height="87"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Action | Adventure | Thriller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htf-VU-8gp">
-                                                                        <rect key="frame" x="0.0" y="77.333333333333329" width="181.33333333333334" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="107" width="181.33333333333334" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tg1-om-K8m">
-                                                                        <rect key="frame" x="0.0" y="114.33333333333334" width="181.33333333333334" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="144" width="181.33333333333334" height="50"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-on-PyS">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-dB-teR">
+                                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-dB-teR">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <gestureRecognizers/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                         <connections>
-                                                                                            <outletCollection property="gestureRecognizers" destination="fne-ke-wYw" appends="YES" id="jtp-HG-waf"/>
+                                                                                            <outletCollection property="gestureRecognizers" destination="AId-Pi-6cJ" appends="YES" id="nfw-v9-ixT"/>
                                                                                         </connections>
                                                                                     </label>
                                                                                 </subviews>
@@ -95,6 +95,7 @@
                                                                                 </constraints>
                                                                                 <connections>
                                                                                     <outletCollection property="gestureRecognizers" destination="Mq8-M8-xja" appends="YES" id="Xge-ab-8dr"/>
+                                                                                    <outletCollection property="gestureRecognizers" destination="QI6-HP-jEl" appends="YES" id="UF7-Hp-qvi"/>
                                                                                 </connections>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNL-Zw-13a">
@@ -128,7 +129,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-OO-LF2">
-                                                                        <rect key="frame" x="0.0" y="184.33333333333334" width="181.33333333333334" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="214" width="181.33333333333334" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="XfF-PT-I5m"/>
                                                                         </constraints>
@@ -150,9 +151,9 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-Gk-xXt">
-                                                        <rect key="frame" x="0.0" y="234.33333333333329" width="373" height="273.66666666666674"/>
+                                                        <rect key="frame" x="0.0" y="264" width="373" height="244"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itu-a2-qbz">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itu-a2-qbz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="143.33333333333334"/>
                                                                 <string key="text">Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands. With control of the future and the fate of the world at stake, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than the mission -- not even the lives of those he cares about most.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -166,7 +167,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rjA-bR-YPZ">
-                                                                <rect key="frame" x="0.0" y="183.66666666666663" width="373" height="30"/>
+                                                                <rect key="frame" x="0.0" y="183.66666666666669" width="373" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YMi-ox-Ebe">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -212,7 +213,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPx-PG-0m9">
-                                                                <rect key="frame" x="0.0" y="223.66666666666663" width="373" height="50"/>
+                                                                <rect key="frame" x="0.0" y="223.66666666666669" width="373" height="20.333333333333343"/>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -226,7 +227,7 @@
                                                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <prototypes>
-                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCommentTableViewCell" rowHeight="80" id="pp2-dD-gyL" customClass="UserCommentTableViewCell" customModule="MAD_CW2" customModuleProvider="target">
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCommentTableViewCell" rowHeight="80" id="pp2-dD-gyL" customClass="UserCommentTableViewCell" customModule="Stadia" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="50" width="373" height="80"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pp2-dD-gyL" id="agT-np-6Fl">
@@ -381,6 +382,16 @@
                 <tapGestureRecognizer id="Mfx-Z1-sRM">
                     <connections>
                         <action selector="favouriteOnClick:" destination="Y6W-OH-hqX" id="u1w-3p-z43"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="AId-Pi-6cJ">
+                    <connections>
+                        <action selector="imdbOnClick:" destination="Y6W-OH-hqX" id="vuW-is-r8B"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QI6-HP-jEl">
+                    <connections>
+                        <action selector="youtubeOnClick:" destination="Y6W-OH-hqX" id="Rdy-Jt-ZL2"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

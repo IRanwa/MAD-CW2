@@ -8,8 +8,8 @@
 import UIKit
 
 class CommonData{
-    static let titles = ["Mr", "Mrs", "Ms", "Miss"]
-    static let genres = ["Anime", "Adventure", "Comedy"]
+    static let titles = ["Mr", "Mrs", "Ms", "Miss", "Dr"]
+    static let genres = ["Anime", "Adventure", "Comedy", "Action", "Thriller", "Sci-Fi"]
     
     static func imageToBase64(image: UIImage) -> String {
         if let imageData = image.pngData() {

@@ -64,7 +64,7 @@
                                                                                 <rect key="frame" x="0.0" y="17" width="353" height="23"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                         <color key="value" systemColor="opaqueSeparatorColor"/>
@@ -131,7 +131,7 @@
                                                                                 <rect key="frame" x="0.0" y="17" width="353" height="23"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                         <color key="value" systemColor="opaqueSeparatorColor"/>
@@ -167,7 +167,7 @@
                                                                                 <rect key="frame" x="0.0" y="17" width="353" height="23"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="url"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                         <color key="value" systemColor="opaqueSeparatorColor"/>
@@ -203,7 +203,7 @@
                                                                                 <rect key="frame" x="0.0" y="17" width="353" height="23"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="url"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                         <color key="value" systemColor="opaqueSeparatorColor"/>
@@ -240,7 +240,7 @@
                                                                                 <gestureRecognizers/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                                <textInputTraits key="textInputTraits"/>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                         <color key="value" systemColor="opaqueSeparatorColor"/>

@@ -9,11 +9,12 @@
         <!--Admin Home View Controller-->
         <scene sceneID="0mw-Q6-tUc">
             <objects>
-                <tabBarController storyboardIdentifier="adminHomeTabBar" id="gse-tK-Xpe" customClass="AdminHomeViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="adminHomeTabBar" id="gse-tK-Xpe" customClass="AdminHomeViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xay-UP-iIt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="OQS-MK-Tfe" kind="relationship" relationship="viewControllers" id="l5x-nr-WSN"/>

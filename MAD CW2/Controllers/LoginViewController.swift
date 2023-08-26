@@ -83,11 +83,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func submitOnClick(_ sender: Any) {
-        txtEmail.text = "imesh.ranawaka@gmail.com"
-        txtPassword.text = "Test@1234"
+        //txtEmail.text = "imesh.ranawaka@gmail.com"
+        //txtPassword.text = "Test@1234"
         
-        //txtEmail.text = adminEmail
-        //txtPassword.text = adminPassword
+//        txtEmail.text = adminEmail
+//        txtPassword.text = adminPassword
         
         do{
             let status = verifyFields()
