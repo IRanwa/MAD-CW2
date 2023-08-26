@@ -91,6 +91,11 @@ class MovieDetailViewController: UIViewController, UITableViewDelegate,UITableVi
         cell.lblUserComment.text = rating.comment
         cell.lblUserRating.text = "\(String(rating.rating))/5"
         cell.lblUserAndDate.text = "\(String(describing: rating.userrelationship!.firstname!)) \(String(describing: rating.userrelationship!.lastname!)) - \(dateFormatter.string(from: rating.createddate!))"
+        
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor.clear
+        
+        cell.selectedBackgroundView = selectedBackgroundView
         return cell
     }
     
