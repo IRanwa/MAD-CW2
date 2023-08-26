@@ -155,7 +155,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="HomeIcon" id="3Do-IE-p7i">
-                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <inset key="imageInsets" minX="30" minY="30" maxX="30" maxY="30"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

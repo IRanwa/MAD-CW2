@@ -220,7 +220,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="SettingsIcon" selectedImage="SettingsIcon" id="qlp-hD-VGr">
-                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <inset key="imageInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
