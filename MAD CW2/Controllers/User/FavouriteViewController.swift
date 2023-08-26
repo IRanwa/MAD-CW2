@@ -35,7 +35,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
             let request = NSFetchRequest<NSFetchRequestResult>(
                 entityName: "Favourite"
             )
-            request.predicate = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            request.predicate = NSPredicate(format: "userId == %@  AND ANY movierelatioship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!,"*\(movieName)*")
             request.relationshipKeyPathsForPrefetching = ["Movie"]
             let favouriteMovies = try self.context?.fetch(request) as? [Favourite]
             

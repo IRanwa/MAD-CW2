@@ -36,7 +36,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
                 entityName: "MovieRating"
             )
             
-            request.predicate = NSPredicate(format: "userid == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            request.predicate = NSPredicate(format: "userid == %@ AND ANY movierelationship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, "*\(movieName)*")
             let movieRatings = try self.context?.fetch(request) as? [MovieRating]
             
             

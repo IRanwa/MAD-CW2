@@ -21,6 +21,7 @@ extension Favourite {
     @NSManaged public var userId: String?
     @NSManaged public var movierelatioship: Movie?
     @NSManaged public var userelationship: User?
+    
 
 }
 
