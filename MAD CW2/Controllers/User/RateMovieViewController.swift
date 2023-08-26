@@ -44,6 +44,7 @@ class RateMovieViewController: UIViewController {
             let currentRating = getMovieRating()
             if(currentRating != nil){
                 userRating = currentRating!.rating
+                txtComment.text = currentRating?.comment
             }
             updateRating(userRating: userRating)
         }
@@ -92,22 +93,47 @@ class RateMovieViewController: UIViewController {
             if let user = getUser(){
                 var movieRating = getMovieRating()
                 if(movieRating == nil){
-                    _ = MovieRating(comment: txtComment.text, id: UUID().uuidString, movieid: selectedMovie!.id!, rating: userMarkedRating, userid: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, movierelationship: selectedMovie!, userrelationship: user, insertIntoManagedObjectContext: context)
+                    _ = MovieRating(comment: txtComment.text, id: UUID().uuidString, movieid: selectedMovie!.id!, rating: userMarkedRating, userid: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, createddate: Date(), movierelationship: selectedMovie!, userrelationship: user, insertIntoManagedObjectContext: context)
                 }else{
+                    movieRating?.createddate = Date()
                     movieRating?.rating = userMarkedRating
                     movieRating?.comment = txtComment.text
                 }
-                
-                if((selectedMovie!.useroverallrating) == 0){
-                    selectedMovie!.useroverallrating = userMarkedRating
-                }else{
-                    selectedMovie?.useroverallrating = Int32((selectedMovie!.useroverallrating + userMarkedRating)/2)
-                }
                 try context.save()
+                updateMovieUserOverrallRating()
                 navigationController?.popViewController(animated: true)
             }
         }catch{
             print("Movie rating save failed.")
+        }
+    }
+    
+    func updateMovieUserOverrallRating(){
+        do{
+            let request = NSFetchRequest<NSFetchRequestResult>(
+                entityName: "Movie"
+            )
+            request.predicate = NSPredicate(format: "id == %@", selectedMovie!.id!)
+            request.fetchLimit = 1
+            let movies = try self.context?.fetch(request) as? [Movie]
+            if(movies != nil && movies!.count > 0){
+                var movie = movies![0]
+                var overrallRating: Int32 = 0
+                if let ratings = movie.movieratingrelationship?.array as? [MovieRating]{
+                    for rating in ratings {
+                        if(overrallRating == 0){
+                            overrallRating = rating.rating
+                        }else{
+                            overrallRating = (overrallRating+rating.rating)/2
+                        }
+                    }
+                    movie.useroverallrating = overrallRating
+                    try context.save()
+                }
+                
+            }
+        }catch{
+            print("Update movie user overrall rating failed.")
         }
     }
     

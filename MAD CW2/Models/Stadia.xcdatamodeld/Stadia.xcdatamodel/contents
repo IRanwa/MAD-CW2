@@ -23,6 +23,7 @@
     </entity>
     <entity name="MovieRating" representedClassName="MovieRating" syncable="YES">
         <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="createddate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="movieid" optional="YES" attributeType="String"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>

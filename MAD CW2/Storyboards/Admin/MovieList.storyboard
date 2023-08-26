@@ -123,7 +123,7 @@
                                                             <outlet property="movieImg" destination="kDd-Af-g2y" id="Ln8-6v-0Si"/>
                                                             <outlet property="movieTitleLbl" destination="xSI-Pc-poi" id="Mv8-uT-6oM"/>
                                                             <outletCollection property="gestureRecognizers" destination="kBl-VA-ttI" appends="YES" id="yof-ut-sge"/>
-                                                            <outletCollection property="gestureRecognizers" destination="kBl-VA-ttI" appends="YES" id="b07-lx-8EW"/>
+                                                            <outletCollection property="gestureRecognizers" destination="kBl-VA-ttI" appends="YES" id="rWV-bd-y9q"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>

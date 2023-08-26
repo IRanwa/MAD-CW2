@@ -12,7 +12,7 @@ import CoreData
 @objc(MovieRating)
 public class MovieRating: NSManagedObject {
     convenience init(comment: String, id: String, movieid: String, rating: Int32,
-                     userid: String, movierelationship: Movie, userrelationship: User,
+                     userid: String, createddate: Date, movierelationship: Movie, userrelationship: User,
                      insertIntoManagedObjectContext context : NSManagedObjectContext) {
         self.init(context: context)
         self.comment = comment
@@ -20,7 +20,9 @@ public class MovieRating: NSManagedObject {
         self.movieid = movieid
         self.rating = rating
         self.userid = userid
+        self.createddate = createddate
         self.movierelationship = movierelationship
         self.userrelationship = userrelationship
     }
+    
 }

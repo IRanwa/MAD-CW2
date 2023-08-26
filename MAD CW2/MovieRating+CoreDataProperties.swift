@@ -21,6 +21,7 @@ extension MovieRating {
     @NSManaged public var movieid: String?
     @NSManaged public var rating: Int32
     @NSManaged public var userid: String?
+    @NSManaged public var createddate: Date?
     @NSManaged public var movierelationship: Movie?
     @NSManaged public var userrelationship: User?
 

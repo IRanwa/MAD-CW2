@@ -66,7 +66,11 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         cell.movieRatingLbl.text = "\(String(movie.useroverallrating))/5"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMM yyyy"
-        cell.movieRateDateLbl.text = dateFormatter.string(from: movie.releaseDate!)
+        if let ratedate = movierating.createddate {
+            cell.movieRateDateLbl.text = dateFormatter.string(from: ratedate)
+        }else{
+            cell.movieRateDateLbl.text = ""
+        }
         
         let selectedBackgroundView = UIView()
         selectedBackgroundView.backgroundColor = UIColor.systemGray
@@ -104,7 +108,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedMovie = ratingList[indexPath.row].movierelationship as! Movie
-        performSegue(withIdentifier: "ShowMovieDetail", sender: self)
+        performSegue(withIdentifier: "ShowMovieRating", sender: self)
                                   
     }
     
@@ -113,15 +117,14 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         switch(segue.identifier ?? ""){
             
             
-        case "ShowMovieDetail":
-            guard let detailviewcontroller = segue.destination as? MovieDetailViewController
+        case "ShowMovieRating":
+            guard let detailviewcontroller = segue.destination as? RateMovieViewController
             else{
                 fatalError("Unexpected destination \(segue.destination)")
             }
             
             detailviewcontroller.selectedMovie = selectedMovie
             detailviewcontroller.context = self.context
-            detailviewcontroller.identifier = segue.identifier
             
         default:
             fatalError("Unexpected seague identifier \(segue.identifier)")

@@ -80,6 +80,7 @@
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestMovie" translatesAutoresizingMaskIntoConstraints="NO" id="ziy-vk-jMu">
                                                                             <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="230"/>
+                                                                            <gestureRecognizers/>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XC5-mw-kym">
                                                                             <rect key="frame" x="196.66666666666663" y="0.0" width="186.33333333333337" height="230"/>
@@ -148,7 +149,8 @@
                                                             <outlet property="movieRatingLbl" destination="ey3-h6-Nv8" id="H1G-T9-P8G"/>
                                                             <outlet property="movieReleaseDateLbl" destination="BUE-VC-jRh" id="X4s-Gq-a2b"/>
                                                             <outlet property="movieTitleLbl" destination="R6R-J0-I7l" id="tny-Ph-Nyf"/>
-                                                            <outletCollection property="gestureRecognizers" destination="oI8-LQ-afv" appends="YES" id="4cy-Sf-yR6"/>
+                                                            <outletCollection property="gestureRecognizers" destination="oI8-LQ-afv" appends="YES" id="0LC-V4-hOj"/>
+                                                            <outletCollection property="gestureRecognizers" destination="oI8-LQ-afv" appends="YES" id="Yra-Mh-JpG"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -187,14 +189,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oI8-LQ-afv">
-                    <connections>
-                        <segue destination="xaY-JW-OqH" kind="show" identifier="ShowUserFavMovieDetail" id="Asi-Wo-82N"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="BTw-9r-2UQ">
                     <connections>
                         <action selector="searchOnClick:" destination="Y6W-OH-hqX" id="keJ-RR-PBv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oI8-LQ-afv">
+                    <connections>
+                        <segue destination="xaY-JW-OqH" kind="show" identifier="ShowUserFavMovieDetail" id="Asi-Wo-82N"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

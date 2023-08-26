@@ -8,10 +8,11 @@
 import UIKit
 import CoreData
 
-class MovieDetailViewController: UIViewController {
+class MovieDetailViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var selectedMovie: Movie?
-    var identifier: String?
+    var movieRatings = [MovieRating]()
+    var identifierDetail: String?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var lblMovieGenre: UILabel!
@@ -23,27 +24,76 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var btnMovieAction: UIButton!
     @IBOutlet weak var movieLikeView: UIView!
     @IBOutlet weak var movieLikeImg: UIImageView!
+    @IBOutlet weak var userCommentTableView: UITableView!
     
     var ratingImgs = [UIImageView]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let ident = identifier {
+        if let ident = identifierDetail {
             loadMovieDetails()
             
             if ident == "ShowMovieDetail" {
-                btnMovieAction.titleLabel?.text = "Update Info"
+                btnMovieAction.setTitle("Update Info", for: .normal)
                 movieLikeView.isHidden = true
             } else if ident == "UserMovieDetail" {
-                btnMovieAction.titleLabel?.text = "Rate"
+                btnMovieAction.setTitle("Rate", for: .normal)
                 updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
             } else if ident == "ShowUserFavMovieDetail" {
-                btnMovieAction.titleLabel?.text = "Rate"
+                btnMovieAction.setTitle("Rate", for: .normal)
                 updateMovieFavouriteByUser(movieLiked: getMovieLiked() != nil)
+            }else{
+                btnMovieAction.setTitle("", for: .normal)
             }
             
             loadMovieDetails()
         }
+        
+        loadComments()
+    }
+    
+    func loadComments(){
+        if let movie = selectedMovie {
+            
+            do{
+                let request = NSFetchRequest<NSFetchRequestResult>(
+                    entityName: "MovieRating"
+                )
+                request.predicate = NSPredicate(format: "movieid == %@", movie.id!)
+                let moviertings = try self.context?.fetch(request) as? [MovieRating]
+                if(moviertings != nil && moviertings!.count > 0){
+                    self.movieRatings = moviertings!
+                    
+                }else{
+                    self.movieRatings = []
+                }
+                userCommentTableView.reloadData()
+                 
+                
+            }catch{
+                print("Reload movie details failed.")
+            }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movieRatings.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let rating = movieRatings[indexPath.row]
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMM yyyy"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieDetailTblViewCell", for: indexPath) as! UserCommentTableViewCell
+        cell.lblUserComment.text = rating.comment
+        cell.lblUserRating.text = "\(String(rating.rating))/5"
+        cell.lblUserAndDate.text = "\(rating.userrelationship?.firstname) \(rating.userrelationship?.lastname) - \(dateFormatter.string(from: rating.createddate!))"
+        
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor.systemGray
+        
+        cell.selectedBackgroundView = selectedBackgroundView
+        return cell
     }
     
     func loadMovieDetails(){
@@ -68,7 +118,7 @@ class MovieDetailViewController: UIViewController {
     
     
     @IBAction func clickUpdateMovie(_ sender: Any) {
-        if let ident = identifier {
+        if let ident = identifierDetail {
             if ident == "ShowMovieDetail" {
                 updateMovieDetails()
             } else if ident == "UserMovieDetail" {
