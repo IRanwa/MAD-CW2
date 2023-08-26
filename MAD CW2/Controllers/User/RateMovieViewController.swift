@@ -46,6 +46,7 @@ class RateMovieViewController: UIViewController {
                 userRating = currentRating!.rating
                 txtComment.text = currentRating?.comment
             }
+            userMarkedRating = userRating
             updateRating(userRating: userRating)
         }
     }
