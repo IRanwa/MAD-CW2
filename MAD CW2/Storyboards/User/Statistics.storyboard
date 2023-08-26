@@ -12,7 +12,7 @@
         <!--Statistics View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="StatisticsViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="StatisticsViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cnd-Kb-lPe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,23 +24,23 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GP5-zx-6Jq">
-                                        <rect key="frame" x="10" y="0.0" width="373" height="195"/>
+                                        <rect key="frame" x="10" y="0.0" width="373" height="71"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VzH-zk-5yF">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-qD-7cD">
-                                                        <rect key="frame" x="0.0" y="17.666666666666671" width="45.666666666666664" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-H1-VHh">
-                                                        <rect key="frame" x="55.666666666666686" y="26" width="277" height="4"/>
+                                                        <rect key="frame" x="55.666666666666686" y="8.3333333333333286" width="277" height="4"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zb-wk-SOS">
-                                                        <rect key="frame" x="342.66666666666669" y="19.333333333333329" width="30.333333333333314" height="17"/>
+                                                        <rect key="frame" x="342.66666666666669" y="1.6666666666666643" width="30.333333333333314" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -48,20 +48,20 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QFm-hi-Wld">
-                                                <rect key="frame" x="0.0" y="61" width="373" height="55.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="25.333333333333329" width="373" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cD-fp-rnc">
-                                                        <rect key="frame" x="0.0" y="17.666666666666657" width="48.666666666666664" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dmb-cK-xrb">
-                                                        <rect key="frame" x="58.666666666666686" y="25.666666666666657" width="274" height="4"/>
+                                                        <rect key="frame" x="58.666666666666686" y="8.3333333333333428" width="274" height="4"/>
                                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eix-Lg-dLU">
-                                                        <rect key="frame" x="342.66666666666669" y="19.333333333333343" width="30.333333333333314" height="17"/>
+                                                        <rect key="frame" x="342.66666666666669" y="1.6666666666666714" width="30.333333333333314" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -69,20 +69,20 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HJ2-Yr-2JU">
-                                                <rect key="frame" x="0.0" y="121.66666666666666" width="373" height="73.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="50.666666666666671" width="373" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-u0-4iy">
-                                                        <rect key="frame" x="0.0" y="26.666666666666686" width="48" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="heO-03-bSg">
-                                                        <rect key="frame" x="58" y="34.666666666666686" width="274.66666666666669" height="4"/>
+                                                        <rect key="frame" x="58" y="8.3333333333333286" width="274.66666666666669" height="4"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyj-7w-cuA">
-                                                        <rect key="frame" x="342.66666666666669" y="28.333333333333343" width="30.333333333333314" height="17"/>
+                                                        <rect key="frame" x="342.66666666666669" y="1.6666666666666572" width="30.333333333333314" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -92,7 +92,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-Vq-Ilx">
-                                        <rect key="frame" x="10" y="215" width="373" height="495"/>
+                                        <rect key="frame" x="10" y="91" width="373" height="495"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-85-V2D">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="165"/>
@@ -119,7 +119,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstGenreCollectionViewCell" id="LIH-r1-6Jm" customClass="FirstGenreMoviesCollectionViewCell" customModule="MAD_CW2" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstGenreCollectionViewCell" id="LIH-r1-6Jm" customClass="FirstGenreMoviesCollectionViewCell" customModule="Stadia" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="170"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="F5E-Od-0xh">
@@ -192,7 +192,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondGenreCollectionViewCell" id="CNM-zj-PEh" customClass="SecondGenreMoviesCollectionViewCell" customModule="MAD_CW2" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondGenreCollectionViewCell" id="CNM-zj-PEh" customClass="SecondGenreMoviesCollectionViewCell" customModule="Stadia" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="170"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4jj-zN-G3O">
@@ -263,7 +263,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdGenreCollectionViewCell" id="DeW-HA-dAr" customClass="ThirdGenreMoviesCollectionViewCell" customModule="MAD_CW2" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdGenreCollectionViewCell" id="DeW-HA-dAr" customClass="ThirdGenreMoviesCollectionViewCell" customModule="Stadia" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C1v-SI-JMc">
@@ -317,12 +317,19 @@
                                             <constraint firstItem="SeH-9G-Bwm" firstAttribute="top" secondItem="x0D-85-V2D" secondAttribute="bottom" id="jpk-M0-kVf"/>
                                         </constraints>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAm-JA-2sR">
+                                        <rect key="frame" x="0.0" y="606" width="393" height="104"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AAm-JA-2sR" secondAttribute="trailing" id="2c5-Jd-Jji"/>
                                     <constraint firstItem="c0d-Vq-Ilx" firstAttribute="leading" secondItem="uE9-qp-jIY" secondAttribute="leading" constant="10" id="3HN-qn-AEp"/>
-                                    <constraint firstAttribute="bottom" secondItem="c0d-Vq-Ilx" secondAttribute="bottom" id="3s9-B8-fMV"/>
+                                    <constraint firstItem="AAm-JA-2sR" firstAttribute="top" secondItem="c0d-Vq-Ilx" secondAttribute="bottom" constant="20" id="4nL-ic-CxP"/>
                                     <constraint firstAttribute="trailing" secondItem="c0d-Vq-Ilx" secondAttribute="trailing" constant="10" id="8Ij-wf-FYe"/>
                                     <constraint firstAttribute="trailing" secondItem="GP5-zx-6Jq" secondAttribute="trailing" constant="10" id="HgD-ma-kJt"/>
+                                    <constraint firstItem="AAm-JA-2sR" firstAttribute="leading" secondItem="uE9-qp-jIY" secondAttribute="leading" id="lbT-xx-H42"/>
+                                    <constraint firstAttribute="bottom" secondItem="AAm-JA-2sR" secondAttribute="bottom" id="mjF-Es-VmJ"/>
                                     <constraint firstItem="c0d-Vq-Ilx" firstAttribute="top" secondItem="GP5-zx-6Jq" secondAttribute="bottom" constant="20" id="nmn-BP-1a0"/>
                                     <constraint firstItem="GP5-zx-6Jq" firstAttribute="leading" secondItem="uE9-qp-jIY" secondAttribute="leading" constant="10" id="zWI-bz-7FT"/>
                                 </constraints>
@@ -355,6 +362,7 @@
                     <connections>
                         <outlet property="firstGenreCollectionView" destination="xPE-z3-IgH" id="gZf-nQ-eWb"/>
                         <outlet property="firstGenreLbl" destination="X7B-Qq-zhY" id="HGa-bE-Axw"/>
+                        <outlet property="firstGenreMoviesListView" destination="x0D-85-V2D" id="2US-DP-zZd"/>
                         <outlet property="genreFirstView" destination="VzH-zk-5yF" id="YNm-88-X1L"/>
                         <outlet property="genreNameFirst" destination="qIf-qD-7cD" id="CDL-vw-az8"/>
                         <outlet property="genreNameSecond" destination="7cD-fp-rnc" id="ojw-aD-ZYZ"/>
@@ -369,8 +377,10 @@
                         <outlet property="genreThirdView" destination="HJ2-Yr-2JU" id="d4Y-9U-ESg"/>
                         <outlet property="secondGenreCollectionView" destination="2Fb-tU-1hG" id="g7z-zF-4my"/>
                         <outlet property="secondGenreLbl" destination="Daf-J2-cuX" id="5Ph-5r-2PT"/>
+                        <outlet property="secondGenreMoviesListView" destination="SeH-9G-Bwm" id="nBV-Sa-uVH"/>
                         <outlet property="thirdGenreCollectionView" destination="xx5-5V-YoD" id="oLg-BL-KKS"/>
                         <outlet property="thirdGenreLbl" destination="r0L-2p-qln" id="Qxv-FS-9ep"/>
+                        <outlet property="thirdGenreMoviesListView" destination="qG0-kV-NFj" id="rmB-dY-0Yr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

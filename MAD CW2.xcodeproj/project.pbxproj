@@ -69,6 +69,7 @@
 		EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */; };
 		EB857A302A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */; };
 		EB857A322A9797C40086B905 /* MultipleOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */; };
+		EBD3C5362A9A433600E302C2 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3C5352A9A433600E302C2 /* FAQViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		EB857A2D2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsPickerViewController.swift; sourceTree = "<group>"; };
 		EB857A2F2A9794F80086B905 /* MultipleOptionsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EB857A312A9797C40086B905 /* MultipleOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		EBD3C5352A9A433600E302C2 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +156,6 @@
 			children = (
 				0A88A0952A8BDBC2006C630F /* MovieDetail.storyboard */,
 				0A88A0A62A8BDC9E006C630F /* Settings.storyboard */,
-				0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */,
 				0A88A0AA2A8BDCBC006C630F /* ManageAccount.storyboard */,
 				0A88A0AC2A8BDCC9006C630F /* ChangePassword.storyboard */,
 				EB857A2B2A97931E0086B905 /* MultipleOptionsPicker.storyboard */,
@@ -263,6 +264,7 @@
 		0ACF3C5B2A8B9EC3000AA6CB /* User */ = {
 			isa = PBXGroup;
 			children = (
+				0A88A0A82A8BDCAF006C630F /* FAQs.storyboard */,
 				0A88A09B2A8BDC29006C630F /* SearchMovie.storyboard */,
 				0A88A09D2A8BDC37006C630F /* RateMovie.storyboard */,
 				0A88A0A32A8BDC61006C630F /* RateHistory.storyboard */,
@@ -292,6 +294,7 @@
 				3D87C1812A994461008BED12 /* RateHistoryViewController.swift */,
 				EB28908B2A99636F006E28BD /* RateMovieViewController.swift */,
 				EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */,
+				EBD3C5352A9A433600E302C2 /* FAQViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				EB857A2E2A9794BB0086B905 /* MultipleOptionsPickerViewController.swift in Sources */,
 				EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */,
 				0ACF3C652A8BA188000AA6CB /* MovieListViewController.swift in Sources */,
+				EBD3C5362A9A433600E302C2 /* FAQViewController.swift in Sources */,
 				3D36A2722A997EFB0032A566 /* Favourite+CoreDataClass.swift in Sources */,
 				3D2B37632A99B2F500908033 /* MovieRating+CoreDataProperties.swift in Sources */,
 				3D36A2832A997FD00032A566 /* User+CoreDataProperties.swift in Sources */,

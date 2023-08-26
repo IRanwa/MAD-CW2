@@ -30,16 +30,19 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
     @IBOutlet weak var genreNameFirst: UILabel!
     @IBOutlet weak var genreProgressFirst: UIProgressView!
     @IBOutlet weak var genreProgressLblFirst: UILabel!
+    @IBOutlet weak var firstGenreMoviesListView: UIStackView!
     
     //Second Genre View
     @IBOutlet weak var genreNameSecond: UILabel!
     @IBOutlet weak var genreProgressSecond: UIProgressView!
     @IBOutlet weak var genreProgressLblSecond: UILabel!
+    @IBOutlet weak var secondGenreMoviesListView: UIStackView!
     
     //Third Genre View
     @IBOutlet weak var genreNameThird: UILabel!
     @IBOutlet weak var genreProgressThird: UIProgressView!
     @IBOutlet weak var genreProgressLblThird: UILabel!
+    @IBOutlet weak var thirdGenreMoviesListView: UIStackView!
     
     @IBOutlet weak var firstGenreLbl: UILabel!
     @IBOutlet weak var firstGenreCollectionView: UICollectionView!
@@ -135,8 +138,11 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             genreProgressFirst.progress = Float(sortedGenres[0].value)
             genreProgressLblFirst.text = "\(String(format: "%.2f", sortedGenres[0].value*100))%"
             getFirstGenreMovies(genre: sortedGenres[0].key)
+            genreFirstView.isHidden = false
+            firstGenreMoviesListView.isHidden = false
         }else{
             genreFirstView.isHidden = true
+            firstGenreMoviesListView.isHidden = true
         }
         
         if(sortedGenres.count > 1 && sortedGenres[1].value > 0.0){
@@ -144,8 +150,11 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             genreProgressSecond.progress = Float(sortedGenres[1].value)
             genreProgressLblSecond.text = "\(String(format: "%.2f", sortedGenres[1].value*100))%"
             getSecondGenreMovies(genre: sortedGenres[1].key)
+            genreSecondView.isHidden = false
+            secondGenreMoviesListView.isHidden = false
         }else{
             genreSecondView.isHidden = true
+            secondGenreMoviesListView.isHidden = true
         }
         
         if(sortedGenres.count > 2 && sortedGenres[2].value > 0.0){
@@ -153,8 +162,11 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             genreProgressThird.progress = Float(sortedGenres[2].value)
             genreProgressLblThird.text = "\(String(format: "%.2f", sortedGenres[2].value*100))%"
             getThirdGenreMovies(genre: sortedGenres[2].key)
+            genreThirdView.isHidden = false
+            thirdGenreMoviesListView.isHidden = true
         }else{
             genreThirdView.isHidden = true
+            thirdGenreMoviesListView.isHidden = true
         }
     }
     

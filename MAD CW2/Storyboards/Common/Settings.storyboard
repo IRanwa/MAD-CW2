@@ -11,7 +11,7 @@
         <!--Settings View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHS-Pc-QUn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="5Hd-kx-YzZ">
                     <connections>
-                        <segue destination="4UA-i1-66E" kind="show" id="5dH-Lp-mcC"/>
+                        <segue destination="4UA-i1-66E" kind="show" id="rWw-eh-GBL"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="b8S-b9-edz">
@@ -272,7 +272,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="px0-Xe-qdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="-60"/>
+            <point key="canvasLocation" x="780" y="-104"/>
         </scene>
         <!--ChangePassword-->
         <scene sceneID="0gN-za-2aZ">
