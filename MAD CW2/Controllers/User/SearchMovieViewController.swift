@@ -23,6 +23,7 @@ class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowL
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         movieCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         movieCollectionView.dataSource = self
         movieCollectionView.delegate = self

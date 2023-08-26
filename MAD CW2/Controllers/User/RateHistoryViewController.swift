@@ -25,7 +25,6 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Movies"
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
         loadMoviesList(movieName: "")
@@ -37,7 +36,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
                 entityName: "MovieRating"
             )
             
-            request.predicate = NSPredicate(format: "userId == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
+            request.predicate = NSPredicate(format: "userid == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
             let movieRatings = try self.context?.fetch(request) as? [MovieRating]
             
             
