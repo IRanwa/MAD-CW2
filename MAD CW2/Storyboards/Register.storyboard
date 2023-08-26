@@ -11,7 +11,7 @@
         <!--Register View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Raf-nt-eYh">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -613,14 +613,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QED-lL-8nj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2745" y="14"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="1J0-cl-4Ez">
-            <objects>
-                <viewControllerPlaceholder id="BYU-cm-as9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PAt-G1-JOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734" y="-360"/>
         </scene>
     </scenes>
     <resources>

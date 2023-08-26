@@ -92,7 +92,7 @@ class RateMovieViewController: UIViewController {
     @IBAction func submitOnClick(_ sender: Any) {
         do{
             if let user = getUser(){
-                var movieRating = getMovieRating()
+                let movieRating = getMovieRating()
                 if(movieRating == nil){
                     _ = MovieRating(comment: txtComment.text, id: UUID().uuidString, movieid: selectedMovie!.id!, rating: userMarkedRating, userid: UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, createddate: Date(), movierelationship: selectedMovie!, userrelationship: user, insertIntoManagedObjectContext: context)
                 }else{
@@ -118,7 +118,7 @@ class RateMovieViewController: UIViewController {
             request.fetchLimit = 1
             let movies = try self.context?.fetch(request) as? [Movie]
             if(movies != nil && movies!.count > 0){
-                var movie = movies![0]
+                let movie = movies![0]
                 var overrallRating: Int32 = 0
                 if let ratings = movie.movieratingrelationship?.array as? [MovieRating]{
                     for rating in ratings {

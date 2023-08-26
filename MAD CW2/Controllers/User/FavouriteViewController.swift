@@ -122,7 +122,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
             detailviewcontroller.identifierDetail = segue.identifier
             
         default:
-            fatalError("Unexpected seague identifier \(segue.identifier)")
+            fatalError("Unexpected seague identifier \(String(describing: segue.identifier))")
         }
     }
     

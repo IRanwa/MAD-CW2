@@ -82,8 +82,10 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedMovie = ratingList[indexPath.row].movierelationship as! Movie
-        performSegue(withIdentifier: "ShowMovieRating", sender: self)
+        if let movie = ratingList[indexPath.row].movierelationship{
+            selectedMovie = movie
+            performSegue(withIdentifier: "ShowMovieRating", sender: self)
+        }
                                   
     }
     
@@ -102,7 +104,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
             detailviewcontroller.context = self.context
             
         default:
-            fatalError("Unexpected seague identifier \(segue.identifier)")
+            fatalError("Unexpected seague identifier \(String(describing: segue.identifier))")
         }
     }
     
