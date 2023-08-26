@@ -51,6 +51,7 @@
 		3D87C1822A994461008BED12 /* RateHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1812A994461008BED12 /* RateHistoryViewController.swift */; };
 		3D87C1842A994743008BED12 /* UserRatingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */; };
 		3D87C1862A994872008BED12 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */; };
+		3DB119F92A9A58F300C430A4 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB119F82A9A58F300C430A4 /* StatisticsModel.swift */; };
 		3DD981562A99BA1100C47F11 /* UserCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD981552A99BA1100C47F11 /* UserCommentTableViewCell.swift */; };
 		EB10D5EF2A9915A100F3C227 /* SearchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */; };
 		EB10D5F12A99180600F3C227 /* SearchMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */; };
@@ -119,6 +120,7 @@
 		3D87C1812A994461008BED12 /* RateHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoryViewController.swift; sourceTree = "<group>"; };
 		3D87C1832A994743008BED12 /* UserRatingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRatingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3D87C1852A994872008BED12 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		3DB119F82A9A58F300C430A4 /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
 		3DD981552A99BA1100C47F11 /* UserCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCommentTableViewCell.swift; sourceTree = "<group>"; };
 		EB10D5EE2A9915A100F3C227 /* SearchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieViewController.swift; sourceTree = "<group>"; };
 		EB10D5F02A99180600F3C227 /* SearchMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				EB2BEB692A8E66A30095A967 /* Validations.swift */,
 				EB2BEB6B2A8E67F20095A967 /* Enums.swift */,
 				EB4256752A908D8B00B00F20 /* CommonData.swift */,
+				3DB119F82A9A58F300C430A4 /* StatisticsModel.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				EB3CDC7B2A99C5EE0016B0FE /* StatisticsViewController.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
+				3DB119F92A9A58F300C430A4 /* StatisticsModel.swift in Sources */,
 				3D87C1802A994450008BED12 /* FavouriteViewController.swift in Sources */,
 				3D36A2822A997FD00032A566 /* User+CoreDataClass.swift in Sources */,
 				EB28908C2A99636F006E28BD /* RateMovieViewController.swift in Sources */,

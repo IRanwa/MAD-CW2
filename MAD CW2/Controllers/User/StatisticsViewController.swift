@@ -79,6 +79,8 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
     }
     
     func loadTopGenres(){
+        
+        var topGenresRating : [StatisticsModel] = []
         do{
             var request = NSFetchRequest<NSFetchRequestResult>(
                 entityName: "MovieRating"
@@ -86,15 +88,18 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             request.predicate = NSPredicate(format: "userid == %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!)
             let movieRatings = try self.context?.fetch(request) as? [MovieRating]
             if(movieRatings != nil && movieRatings!.count > 0){
+                
                 for rating in movieRatings!{
                     let genres = rating.movierelationship?.genres!.components(separatedBy: ",")
                         .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
                     for genre in genres{
-                        if(topGenres[genre]! == 0){
+                        
+                        topGenresRating.append(StatisticsModel(genre: genre, score: Double(rating.rating) / 5))
+                        /*if(topGenres[genre]! == 0){
                             topGenres[genre] = Double(rating.rating) / 5
                         }else{
                             topGenres[genre] = (topGenres[genre]! + Double(rating.rating/5))/2
-                        }
+                        }*/
                     }
                 }
             }
@@ -110,22 +115,38 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
                     favourite.movierelatioship?.genres!.components(separatedBy: ",")
                         .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) } as! [String]
                     for genre in genres{
-                        if(topGenres[genre]! == 0){
+                        topGenresRating.append(StatisticsModel(genre: genre, score: 1))
+                        /*if(topGenres[genre]! == 0){
                             topGenres[genre] = 1
                         }else{
                             topGenres[genre] = (topGenres[genre]! + 1)/2
-                        }
+                        }*/
                     }
                 }
             }
             
+            var genreToTotalScore: [String: Double] = [:]
+            for toprating in topGenresRating {
+                if let currentTotalScore = genreToTotalScore[toprating.genre] {
+                    genreToTotalScore[toprating.genre] = currentTotalScore + toprating.score
+                } else {
+                    genreToTotalScore[toprating.genre] = toprating.score
+                }
+            }
+            
+            
+            let sortedGenres = genreToTotalScore.sorted { $0.value > $1.value }
+            let topThree = Array(sortedGenres.prefix(3))
+            let topThreeGenres = Dictionary(uniqueKeysWithValues: topThree)
+            
             var totalGenreValue = 0.0
-            for genre in topGenres{
+            for genre in topThreeGenres{
                 totalGenreValue += genre.value
             }
-            for genre in topGenres{
+            for genre in topThreeGenres{
                 topGenres[genre.key] = (genre.value/totalGenreValue)
             }
+            
         }catch{
             print("Movies top genres loading failed")
         }
@@ -163,7 +184,7 @@ class StatisticsViewController: UIViewController, UICollectionViewDelegateFlowLa
             genreProgressLblThird.text = "\(String(format: "%.2f", sortedGenres[2].value*100))%"
             getThirdGenreMovies(genre: sortedGenres[2].key)
             genreThirdView.isHidden = false
-            thirdGenreMoviesListView.isHidden = true
+            thirdGenreMoviesListView.isHidden = false
         }else{
             genreThirdView.isHidden = true
             thirdGenreMoviesListView.isHidden = true
