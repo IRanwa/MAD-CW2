@@ -72,7 +72,6 @@ class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowL
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
         selectedMovie = moviesList[indexPath.item]
         performSegue(withIdentifier: "UserMovieDetail", sender: self)
     }
