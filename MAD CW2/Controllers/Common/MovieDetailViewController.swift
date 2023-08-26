@@ -30,6 +30,9 @@ class MovieDetailViewController: UIViewController, UITableViewDelegate,UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userCommentTableView.dataSource = self
+        userCommentTableView.delegate = self
+        
         if let ident = identifierDetail {
             loadMovieDetails()
             
@@ -84,15 +87,10 @@ class MovieDetailViewController: UIViewController, UITableViewDelegate,UITableVi
         let rating = movieRatings[indexPath.row]
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMM yyyy"
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieDetailTblViewCell", for: indexPath) as! UserCommentTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCommentTableViewCell", for: indexPath) as! UserCommentTableViewCell
         cell.lblUserComment.text = rating.comment
         cell.lblUserRating.text = "\(String(rating.rating))/5"
-        cell.lblUserAndDate.text = "\(rating.userrelationship?.firstname) \(rating.userrelationship?.lastname) - \(dateFormatter.string(from: rating.createddate!))"
-        
-        let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = UIColor.systemGray
-        
-        cell.selectedBackgroundView = selectedBackgroundView
+        cell.lblUserAndDate.text = "\(String(describing: rating.userrelationship!.firstname!)) \(String(describing: rating.userrelationship!.lastname!)) - \(dateFormatter.string(from: rating.createddate!))"
         return cell
     }
     
@@ -158,6 +156,7 @@ class MovieDetailViewController: UIViewController, UITableViewDelegate,UITableVi
                 if(movies != nil && movies!.count > 0){
                     self.selectedMovie = movies![0]
                     loadMovieDetails()
+                    loadComments()
                 }
             }catch{
                 print("Reload movie details failed.")
