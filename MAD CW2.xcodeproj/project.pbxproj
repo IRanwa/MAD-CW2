@@ -86,7 +86,7 @@
 		0A88A0B02A8BDD1F006C630F /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		0A88A0B22A8BDE88006C630F /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		0A88A0B52A8BE444006C630F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0ACF3C2E2A8B36EE000AA6CB /* MAD CW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAD CW2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACF3C2E2A8B36EE000AA6CB /* Stadia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stadia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACF3C312A8B36EE000AA6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACF3C332A8B36EE000AA6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ACF3C352A8B36EE000AA6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		0ACF3C2F2A8B36EE000AA6CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ACF3C2E2A8B36EE000AA6CB /* MAD CW2.app */,
+				0ACF3C2E2A8B36EE000AA6CB /* Stadia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ACF3C2D2A8B36EE000AA6CB /* MAD CW2 */ = {
+		0ACF3C2D2A8B36EE000AA6CB /* Stadia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ACF3C422A8B36EF000AA6CB /* Build configuration list for PBXNativeTarget "MAD CW2" */;
+			buildConfigurationList = 0ACF3C422A8B36EF000AA6CB /* Build configuration list for PBXNativeTarget "Stadia" */;
 			buildPhases = (
 				0ACF3C2A2A8B36EE000AA6CB /* Sources */,
 				0ACF3C2B2A8B36EE000AA6CB /* Frameworks */,
@@ -338,9 +338,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAD CW2";
+			name = Stadia;
 			productName = "MAD CW2";
-			productReference = 0ACF3C2E2A8B36EE000AA6CB /* MAD CW2.app */;
+			productReference = 0ACF3C2E2A8B36EE000AA6CB /* Stadia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -371,7 +371,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ACF3C2D2A8B36EE000AA6CB /* MAD CW2 */,
+				0ACF3C2D2A8B36EE000AA6CB /* Stadia */,
 			);
 		};
 /* End PBXProject section */
@@ -658,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ACF3C422A8B36EF000AA6CB /* Build configuration list for PBXNativeTarget "MAD CW2" */ = {
+		0ACF3C422A8B36EF000AA6CB /* Build configuration list for PBXNativeTarget "Stadia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ACF3C432A8B36EF000AA6CB /* Debug */,

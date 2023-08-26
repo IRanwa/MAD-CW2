@@ -160,7 +160,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="FilmIcon" selectedImage="FilmIcon" id="xr6-ZZ-jIZ">
-                        <inset key="imageInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <inset key="imageInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="0BW-Ii-frl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
