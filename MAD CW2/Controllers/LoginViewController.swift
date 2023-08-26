@@ -112,7 +112,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                 UserDefaults.standard.set(userType, forKey: String(describing: Enums.UserDefaultKeys.userType))
                                 UserDefaults.standard.set(userId, forKey: String(describing: Enums.UserDefaultKeys.userId))
                                 let storyboard = UIStoryboard(name: "UserHome", bundle: nil)
-                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar") as! UITabBarController
+                                let tabBarController = storyboard.instantiateViewController(withIdentifier: "userHomeTabBar")
                                 navigationController!.setViewControllers([tabBarController], animated: true)
                             }
                         }else{

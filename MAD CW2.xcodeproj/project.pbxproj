@@ -57,6 +57,7 @@
 		EB28908C2A99636F006E28BD /* RateMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28908B2A99636F006E28BD /* RateMovieViewController.swift */; };
 		EB2BEB6A2A8E66A30095A967 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB692A8E66A30095A967 /* Validations.swift */; };
 		EB2BEB6C2A8E67F20095A967 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEB6B2A8E67F20095A967 /* Enums.swift */; };
+		EB3CDC7B2A99C5EE0016B0FE /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */; };
 		EB4256742A908C2000B00F20 /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */; };
 		EB4256762A908D8B00B00F20 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4256752A908D8B00B00F20 /* CommonData.swift */; };
 		EB42567C2A90F0A400B00F20 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */; };
@@ -120,6 +121,7 @@
 		EB28908B2A99636F006E28BD /* RateMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMovieViewController.swift; sourceTree = "<group>"; };
 		EB2BEB692A8E66A30095A967 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		EB2BEB6B2A8E67F20095A967 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		EB4256732A908C2000B00F20 /* ManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
 		EB4256752A908D8B00B00F20 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
 		EB42567B2A90F0A400B00F20 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				3D87C17F2A994450008BED12 /* FavouriteViewController.swift */,
 				3D87C1812A994461008BED12 /* RateHistoryViewController.swift */,
 				EB28908B2A99636F006E28BD /* RateMovieViewController.swift */,
+				EB3CDC7A2A99C5EE0016B0FE /* StatisticsViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				3D87C1842A994743008BED12 /* UserRatingDetailTableViewCell.swift in Sources */,
 				0ACF3C592A8B9AB3000AA6CB /* LoginViewController.swift in Sources */,
 				EB4A50342A96606B003ED9DA /* AdminMovieDetailTableViewCell.swift in Sources */,
+				EB3CDC7B2A99C5EE0016B0FE /* StatisticsViewController.swift in Sources */,
 				0ACF3C362A8B36EE000AA6CB /* ViewController.swift in Sources */,
 				0ACF3C4A2A8B4CD1000AA6CB /* Stadia.xcdatamodeld in Sources */,
 				3D87C1802A994450008BED12 /* FavouriteViewController.swift in Sources */,

@@ -186,6 +186,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="moviesTblView" destination="JIY-lP-7Qd" id="a6c-L9-ISs"/>
+                        <outlet property="txtMovieSearch" destination="uwc-r9-oc5" id="LZG-Au-pDx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
