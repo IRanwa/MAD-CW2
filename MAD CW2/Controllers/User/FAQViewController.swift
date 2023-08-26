@@ -28,8 +28,14 @@ class FAQViewController: UIPageViewController {
         
         let storyboard = UIStoryboard(name: "FAQs", bundle: nil)
         
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"searchMovieFAQViewController"))
         viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"rateMovieFAQViewController"))
-        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"favouriteMovieFAQViewController"))
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"addFavouriteFAQViewController"))
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"rateHistoryFAQViewController"))
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"searchFavoriteFAQViewController"))
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"changeMyAccountFAQViewController"))
+        viewControllersList.append(storyboard.instantiateViewController(withIdentifier:"changePasswordFAQViewController"))
+        
         
         if let firstViewController = viewControllersList.first {
             setViewControllers([firstViewController],direction: .forward, animated: true, completion: nil)
