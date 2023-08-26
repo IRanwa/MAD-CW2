@@ -31,7 +31,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-ed-lU2">
                                                 <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="239.66666666666666"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Mission: Impossible – Dead Reckoning Part One" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fog-6o-Sx6">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Mission: Impossible" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fog-6o-Sx6">
                                                         <rect key="frame" x="0.0" y="0.0" width="181.33333333333334" height="112.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,7 +44,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tg1-om-K8m">
-                                                        <rect key="frame" x="0.0" y="149.66666666666666" width="181.33333333333334" height="50"/>
+                                                        <rect key="frame" x="0.0" y="149.66666666666663" width="181.33333333333334" height="50"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-on-PyS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -121,7 +121,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-OO-LF2">
-                                                        <rect key="frame" x="0.0" y="209.66666666666669" width="181.33333333333334" height="30"/>
+                                                        <rect key="frame" x="0.0" y="209.66666666666674" width="181.33333333333334" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="XfF-PT-I5m"/>
                                                         </constraints>
@@ -143,23 +143,23 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-Gk-xXt">
-                                        <rect key="frame" x="0.0" y="259.66666666666669" width="373" height="239.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="259.66666666666674" width="373" height="239.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itu-a2-qbz">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="143.33333333333334"/>
                                                 <string key="text">Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands. With control of the future and the fate of the world at stake, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than the mission -- not even the lives of those he cares about most.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-BE-Isi">
-                                                <rect key="frame" x="0.0" y="28" width="373" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="153.33333333333326" width="373" height="20.333333333333371"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rjA-bR-YPZ">
-                                                <rect key="frame" x="0.0" y="58.333333333333314" width="373" height="30"/>
+                                                <rect key="frame" x="0.0" y="183.66666666666663" width="373" height="30"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YMi-ox-Ebe">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -205,12 +205,12 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPx-PG-0m9">
-                                                <rect key="frame" x="0.0" y="98.333333333333329" width="373" height="141.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="223.66666666666674" width="373" height="16"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-oY-tUF">
-                                        <rect key="frame" x="0.0" y="519.33333333333337" width="373" height="239.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="519.33333333333348" width="373" height="239.66666666666652"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Ok-Km8">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="239.66666666666666"/>
@@ -336,7 +336,6 @@
                         <outlet property="lblMovieTitle" destination="fog-6o-Sx6" id="LXA-aS-oeH"/>
                         <outlet property="movieLikeImg" destination="EUs-D0-feG" id="pXt-D1-utL"/>
                         <outlet property="movieLikeView" destination="VNL-Zw-13a" id="Gcc-b1-jFP"/>
-                        <outlet property="updateAndRateButton" destination="OxU-OO-LF2" id="7Ms-8U-8Fr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

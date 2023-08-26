@@ -21,7 +21,6 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var lblMovieTitle: UILabel!
     @IBOutlet weak var containerMovieRating: UIStackView!
     @IBOutlet weak var btnMovieAction: UIButton!
-    @IBOutlet weak var updateAndRateButton: UIButton!
     @IBOutlet weak var movieLikeView: UIView!
     @IBOutlet weak var movieLikeImg: UIImageView!
     
