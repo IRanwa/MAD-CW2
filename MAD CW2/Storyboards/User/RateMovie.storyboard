@@ -113,36 +113,41 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pf8-Jh-BQq">
                                                 <rect key="frame" x="0.0" y="20" width="373" height="30"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="grY-Ic-mSo">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="grY-Ic-mSo">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Di7-xZ-VjH"/>
                                                             <constraint firstAttribute="width" constant="30" id="tE0-ze-I9S"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-Y3-vHU">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-Y3-vHU">
                                                         <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="X0q-EY-ncf"/>
                                                             <constraint firstAttribute="width" constant="30" id="cIw-5Y-UH6"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HKp-zw-Gp5">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HKp-zw-Gp5">
                                                         <rect key="frame" x="80" y="0.0" width="30" height="30"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="hCg-CG-ptL"/>
                                                             <constraint firstAttribute="width" constant="30" id="ycW-zO-8oD"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavouriteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2W9-oo-VVx">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavouriteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2W9-oo-VVx">
                                                         <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="j5G-uB-13G"/>
                                                             <constraint firstAttribute="width" constant="30" id="r8d-ec-q8l"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavouriteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-B4-YrB">
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavouriteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-B4-YrB">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Y8j-AE-qiR"/>
                                                             <constraint firstAttribute="width" constant="30" id="g1g-Uk-bNd"/>
@@ -178,7 +183,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="282" id="WmJ-Bv-O1l"/>
                                                                 </constraints>
-                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -205,6 +209,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="SUBMIT"/>
+                                                <connections>
+                                                    <action selector="submitOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RP9-Po-sIV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="tintColor" red="0.094117656349999995" green="0.3058823645" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,6 +238,8 @@
                         <outlet property="movieImg" destination="Pds-6x-NFG" id="Wtx-sI-HtI"/>
                         <outlet property="movieRatingLbl" destination="Tag-ey-jUp" id="bCa-Vd-5k1"/>
                         <outlet property="movieTitleLbl" destination="oxj-tU-YG9" id="3va-7S-KuN"/>
+                        <outlet property="ratingView" destination="Pf8-Jh-BQq" id="Bck-Lu-3WO"/>
+                        <outlet property="txtComment" destination="12b-oO-EGc" id="fin-99-VUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
