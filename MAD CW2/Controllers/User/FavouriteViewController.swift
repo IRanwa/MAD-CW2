@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class FavouriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FavouriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     var context:NSManagedObjectContext?{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -27,7 +27,13 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
         
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
+        txtMovieSearch.delegate = self
         loadMoviesList(movieName: "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtMovieSearch.resignFirstResponder()
+        return true
     }
     
     func loadMoviesList(movieName: String){
@@ -35,7 +41,7 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
             let request = NSFetchRequest<NSFetchRequestResult>(
                 entityName: "Favourite"
             )
-            request.predicate = NSPredicate(format: "userId == %@  AND ANY movierelatioship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!,"*\(movieName)*")
+            request.predicate = NSPredicate(format: "userId == %@  AND movierelatioship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!,"*\(movieName)*")
             request.relationshipKeyPathsForPrefetching = ["Movie"]
             let favouriteMovies = try self.context?.fetch(request) as? [Favourite]
             

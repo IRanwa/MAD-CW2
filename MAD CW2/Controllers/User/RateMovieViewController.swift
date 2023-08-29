@@ -154,6 +154,22 @@ class RateMovieViewController: UIViewController {
         }
         return nil
     }
+    
+    @IBAction func imdbOnClick(_ sender: Any) {
+        if let url = URL(string: (selectedMovie?.imdblink!)!) {
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
+    }
+    
+    @IBAction func trailerOnClick(_ sender: Any) {
+        if let url = URL(string: (selectedMovie?.youtubelink!)!) {
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
+    }
     /*
     // MARK: - Navigation
 

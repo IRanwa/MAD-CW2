@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITextFieldDelegate {
     
     var context:NSManagedObjectContext?{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -27,7 +27,13 @@ class SearchMovieViewController: UIViewController, UICollectionViewDelegateFlowL
         movieCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         movieCollectionView.dataSource = self
         movieCollectionView.delegate = self
+        txtSearchMovie.delegate = self
         loadMoviesList(movieName: "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtSearchMovie.resignFirstResponder()
+        return true
     }
     
     func loadMoviesList(movieName: String){

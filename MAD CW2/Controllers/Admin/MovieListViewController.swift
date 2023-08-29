@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class MovieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MovieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     var context:NSManagedObjectContext?{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -28,7 +28,14 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         self.navigationItem.title = "Movies"
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
+        
+        txtMovieSearch.delegate = self
         loadMoviesList(movieName: "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtMovieSearch.resignFirstResponder()
+        return true
     }
     
     func loadMoviesList(movieName: String){

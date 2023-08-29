@@ -40,10 +40,12 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
         
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(datePickerDoneOnClick))
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneOnClick))
+        toolbar.items = [doneButton]
+        toolbar.sizeToFit()
         txtReleaseDate.inputAccessoryView = toolbar
+        txtMovieDesc.inputAccessoryView = toolbar
+        txtMovieRating.inputAccessoryView = toolbar
         
         txtMovieRating.keyboardType = .decimalPad
         
@@ -81,8 +83,10 @@ class ManageMovieViewController: UIViewController, UIImagePickerControllerDelega
         // Do any additional setup after loading the view.
     }
     
-    @objc func datePickerDoneOnClick(){
+    @objc func doneOnClick(){
         txtReleaseDate.resignFirstResponder()
+        txtMovieDesc.resignFirstResponder()
+        txtMovieRating.resignFirstResponder()
     }
     
     @objc func datePickerValueChanged(sender: UIDatePicker){

@@ -11,7 +11,7 @@
         <!--Rate Movie View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RateMovieView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RateMovieViewController" customModule="MAD_CW2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateMovieView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RateMovieViewController" customModule="Stadia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jUL-BY-hhg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,11 +52,15 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2K-km-CaB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-ey-jUp">
+                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-ey-jUp">
                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <gestureRecognizers/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="hep-hW-dZX" appends="YES" id="PTS-yt-3zP"/>
+                                                                        </connections>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,8 +76,12 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p11-oZ-qCY">
                                                                 <rect key="frame" x="60.000000000000028" y="0.0" width="50" height="50"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoutubeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="K4P-C4-d1s">
+                                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoutubeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="K4P-C4-d1s">
                                                                         <rect key="frame" x="10" y="0.0" width="30" height="50"/>
+                                                                        <gestureRecognizers/>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="7DO-LT-NYc" appends="YES" id="PHs-ot-7KE"/>
+                                                                        </connections>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,6 +251,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hep-hW-dZX">
+                    <connections>
+                        <action selector="imdbOnClick:" destination="Y6W-OH-hqX" id="9kv-m6-hu7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7DO-LT-NYc">
+                    <connections>
+                        <action selector="trailerOnClick:" destination="Y6W-OH-hqX" id="xIY-cO-e7g"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="130" y="-2"/>
         </scene>

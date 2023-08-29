@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     var context:NSManagedObjectContext?{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -27,7 +27,13 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         
         moviesTblView.delegate = self
         moviesTblView.dataSource = self
+        txtMovieSearch.delegate = self
         loadMoviesList(movieName: "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtMovieSearch.resignFirstResponder()
+        return true
     }
     
     func loadMoviesList(movieName: String){
@@ -36,7 +42,7 @@ class RateHistoryViewController: UIViewController, UITableViewDelegate, UITableV
                 entityName: "MovieRating"
             )
             
-            request.predicate = NSPredicate(format: "userid == %@ AND ANY movierelationship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, "*\(movieName)*")
+            request.predicate = NSPredicate(format: "userid == %@ AND movierelationship.name LIKE[c] %@", UserDefaults.standard.string(forKey: String(describing: Enums.UserDefaultKeys.userId))!, "*\(movieName)*")
             let movieRatings = try self.context?.fetch(request) as? [MovieRating]
             
             
